@@ -1,6 +1,8 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace Server.Models;
 
-public class CandidateModel
+public class Candidate
 {
     [Key]
     public int CandidateId { get; set; }
