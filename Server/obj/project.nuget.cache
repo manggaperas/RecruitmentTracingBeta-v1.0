@@ -1,16 +1,23 @@
 {
   "version": 2,
-  "dgSpecHash": "uJ3DnbB/qnvtTanMsePxkFbIe2iKz0IYEb8FSFRxBX/07uHd9rmNBhjd22RGWXlb8hFgRhXmI+d3p38rX0TjgQ==",
+  "dgSpecHash": "Bn2+ShfKHbvqv3lbbd8L0BvXiemZ5C8PopCeVn+sUx2UE8meSNTT2N96yJwkkXv1DLYINBO7hH2NYa/HzlMkYg==",
   "success": true,
   "projectFilePath": "/home/ignatius/Desktop/Project Team/RecruitmentTracking/Server/Server.csproj",
   "expectedPackageFiles": [
+    "/home/ignatius/.nuget/packages/log4net/2.0.15/log4net.2.0.15.nupkg.sha512",
     "/home/ignatius/.nuget/packages/microsoft.aspnetcore.openapi/7.0.5/microsoft.aspnetcore.openapi.7.0.5.nupkg.sha512",
     "/home/ignatius/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "/home/ignatius/.nuget/packages/microsoft.netcore.platforms/2.0.0/microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "/home/ignatius/.nuget/packages/microsoft.openapi/1.4.3/microsoft.openapi.1.4.3.nupkg.sha512",
     "/home/ignatius/.nuget/packages/swashbuckle.aspnetcore/6.4.0/swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "/home/ignatius/.nuget/packages/swashbuckle.aspnetcore.swagger/6.4.0/swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "/home/ignatius/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.4.0/swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
-    "/home/ignatius/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.4.0/swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+    "/home/ignatius/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.4.0/swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
+    "/home/ignatius/.nuget/packages/system.configuration.configurationmanager/4.5.0/system.configuration.configurationmanager.4.5.0.nupkg.sha512",
+    "/home/ignatius/.nuget/packages/system.security.accesscontrol/4.5.0/system.security.accesscontrol.4.5.0.nupkg.sha512",
+    "/home/ignatius/.nuget/packages/system.security.cryptography.protecteddata/4.5.0/system.security.cryptography.protecteddata.4.5.0.nupkg.sha512",
+    "/home/ignatius/.nuget/packages/system.security.permissions/4.5.0/system.security.permissions.4.5.0.nupkg.sha512",
+    "/home/ignatius/.nuget/packages/system.security.principal.windows/4.5.0/system.security.principal.windows.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }
