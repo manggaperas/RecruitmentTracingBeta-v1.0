@@ -1,6 +1,8 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace Server.Models;
 
-public class AdminModel
+public class Admin
 {
     [Key]
     public int AdminId { get; set; }

@@ -1,6 +1,9 @@
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace Server.Models;
 
-public class JobModel
+public class Job
 {
     [Key]
     public int JobId { get; set; }
@@ -17,12 +20,14 @@ public class JobModel
     [Required]
     public bool IsJobAvailable { get; set; }
 
-    [ForeignKey("Admin")]
-    public int AdminId { get; set; }
-
     [DataType(DataType.Date)]
     public DateTime? JobPostedDate { get; set; }
 
     [DataType(DataType.Date)]
     public DateTime? JobExpiredDate { get; set; }
+
+
+    [ForeignKey("Admin")]
+    public int AdminId { get; set; }
+    public Admin? Admin { get; set; }
 }
