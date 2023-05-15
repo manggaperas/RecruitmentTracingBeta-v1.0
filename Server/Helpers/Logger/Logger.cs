@@ -1,41 +1,13 @@
 using log4net;
 using log4net.Config;
 
-namespace MainLogger
+namespace logger
 {
-    class Logger<T>
+    static class Logger
     {
-        private delegate void LoggerList(string Message);
-        private readonly ILog Log = LogManager.GetLogger(typeof(T));
-        private readonly List<LoggerList> logger;
-        private bool initialized;
-
-        public Logger()
+        public static void Config()
         {
-            logger = new(){
-                Log.Info,
-                Log.Warn,
-                Log.Error,
-                Log.Fatal,
-            };
-        }
-        public void Config(bool Status)
-        {
-            initialized = Status;
-            if (Status) XmlConfigurator.Configure(new FileInfo("Helpers/Logger/log4net.config"));
-        }
-
-        public void Message(string message, LogLevel LogLevel)
-        {
-            if (initialized) logger[(int)LogLevel](message);
+            XmlConfigurator.Configure(new FileInfo("Helpers/Logger/log4net.config"));
         }
     }
-}
-
-public enum LogLevel
-{
-    Info = 0,
-    Warn = 1,
-    Error = 2,
-    Fatal = 3,
 }
