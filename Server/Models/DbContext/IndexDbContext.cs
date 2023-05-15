@@ -2,7 +2,7 @@ using System.Data.SQLite;
 using Microsoft.EntityFrameworkCore;
 using Server.Models;
 
-namespace IndexDbContex
+namespace IndexDb
 {
     public class IndexDbContex : DbContext
     {
@@ -14,7 +14,7 @@ namespace IndexDbContex
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite($"Data Source= Data Source= {_path}");
+            optionsBuilder.UseSqlite($"Data Source= {_path}");
         }
 
         public static void CreateDb()
