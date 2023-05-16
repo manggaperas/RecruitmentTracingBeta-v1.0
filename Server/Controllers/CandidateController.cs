@@ -11,7 +11,7 @@ namespace Server.Controllers;
 [Route("[controller]")]
 public class CandidateController : ControllerBase
 {
-    private readonly IndexDbContex _db = new();
+    private readonly DataContex _db = new();
     private readonly ILog _log;
 
     public CandidateController()
@@ -19,22 +19,20 @@ public class CandidateController : ControllerBase
         _log = LogManager.GetLogger(typeof(CandidateController));
     }
 
-    [HttpGet]
-    [Route("/Jobs")]
+    [HttpGet("/Jobs")]
     public async Task<IEnumerable<Job>> Job()
     {
         return await _db.Jobs!.Where(Job => Job.IsJobAvailable).ToListAsync();
     }
 
-    [HttpPatch]
-    [Route("/EditProfile")]
-    public async Task<Candidate> EditProfile(Candidate objCandidate)
+    [HttpPatch("/EditProfile")]
+    public async Task<IActionResult> EditProfile(Candidate objCandidate)
     {
-        _db.Entry(objCandidate).State = (Microsoft.EntityFrameworkCore.EntityState)EntityState.Modified;
+        _db.Entry(objCandidate).State = EntityState.Modified;
         await _db.SaveChangesAsync();
 
         _log.Info("Job Updated.");
 
-        return objCandidate;
+        return Ok(objCandidate);
     }
 }

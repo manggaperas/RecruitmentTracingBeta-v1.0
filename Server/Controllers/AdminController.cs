@@ -11,7 +11,7 @@ namespace Server.Controllers;
 [Route("[controller]")]
 public class AdminController : ControllerBase
 {
-    private readonly IndexDbContex _db = new();
+    private readonly DataContex _db = new();
     private readonly ILog _log;
 
     public AdminController()
@@ -19,28 +19,25 @@ public class AdminController : ControllerBase
         _log = LogManager.GetLogger(typeof(AdminController));
     }
 
-    [HttpGet]
-    [Route("/AvailableJobs")]
+    [HttpGet("/AvailableJobs")]
     public async Task<IEnumerable<Job>> AvailbaleJob()
     {
         return await _db.Jobs!.Where(Job => Job.IsJobAvailable).ToListAsync();
     }
 
-    [HttpGet]
-    [Route("/NotAvailableJobs")]
+    [HttpGet("/NotAvailableJobs")]
     public async Task<IEnumerable<Job>> NotAvailableJob()
     {
         return await _db.Jobs!.Where(Job => !Job.IsJobAvailable).ToListAsync();
     }
 
-    [HttpPost]
-    [Route("/CreateJob")]
-    public async Task<Job> CreateJob(Job objJob)
+    [HttpPost("/CreateJob")]
+    public async Task<IActionResult> CreateJob(IJob objJob)
     {
-        Admin admin = new()
-        {
-            AdminId = objJob.AdminId,
-        };
+        // Admin admin = new()
+        // {
+        //     AdminId = objJob.AdminId,
+        // };
 
         Job newJob = new()
         {
@@ -50,31 +47,29 @@ public class AdminController : ControllerBase
             JobRequirement = objJob.JobRequirement,
             JobPostedDate = DateTime.Now,
             IsJobAvailable = true,
-            Admin = admin,
+            //Admin = admin,
         };
         _db.Jobs!.Add(newJob);
         await _db.SaveChangesAsync();
 
         _log.Info("Job Added.");
 
-        return newJob;
+        return Ok(newJob);
     }
 
-    [HttpPatch]
-    [Route("/Update/{id}")]
-    public async Task<Job> UpdateJob(Job objJob)
+    [HttpPatch("/Update/{id}")]
+    public async Task<IActionResult> UpdateJob(IJob objJob)
     {
         _db.Entry(objJob).State = (Microsoft.EntityFrameworkCore.EntityState)EntityState.Modified;
         await _db.SaveChangesAsync();
 
         _log.Info("Job Updated.");
 
-        return objJob;
+        return Ok(objJob);
     }
 
-    [HttpDelete]
-    [Route("/Delete/{id}")]
-    public async Task<bool> DeleteJob(int id)
+    [HttpDelete("/Delete/{id}")]
+    public async Task<IActionResult> DeleteJob(int id)
     {
         Job job = _db.Jobs!.Find(id)!;
         if (job != null)
@@ -84,8 +79,8 @@ public class AdminController : ControllerBase
 
             _log.Info("Job deleted.");
 
-            return true;
+            return Ok(true);
         }
-        return false;
+        return BadRequest(false);
     }
 }

@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Server.Models;
 
-public class Admin
+public class Admin : IAdmin
 {
     [Key]
     public int AdminId { get; set; }
@@ -10,7 +10,7 @@ public class Admin
     [Required]
     public string? Name { get; set; }
 
-    [Required]
+    [Required, EmailAddress]
     public string? Email { get; set; }
 
     [Required]
