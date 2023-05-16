@@ -1,6 +1,3 @@
-// using IndexDb;
-// IndexDbContex.CreateDb();
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
