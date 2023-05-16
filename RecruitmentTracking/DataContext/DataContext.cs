@@ -1,6 +1,6 @@
 using System.Data.SQLite;
 using Microsoft.EntityFrameworkCore;
-using Server.Models;
+using RecruitmentTracking.Models;
 
 namespace IndexDb
 {

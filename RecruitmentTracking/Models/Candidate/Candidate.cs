@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Server.Models;
+namespace RecruitmentTracking.Models;
 
 public class Candidate
 {

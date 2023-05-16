@@ -1,11 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
 using log4net;
 
-using Server.Models;
+using RecruitmentTracking.Models;
 using IndexDb;
 using Microsoft.EntityFrameworkCore;
 
-namespace Server.Controllers;
+namespace RecruitmentTracking.Controllers;
 
 [ApiController]
 [Route("[controller]")]

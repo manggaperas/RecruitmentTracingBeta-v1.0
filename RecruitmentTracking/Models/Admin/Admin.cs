@@ -1,8 +1,8 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Server.Models;
+namespace RecruitmentTracking.Models;
 
-public class Admin : IAdmin
+public class Admin
 {
     [Key]
     public int AdminId { get; set; }
