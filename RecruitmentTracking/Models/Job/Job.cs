@@ -1,9 +1,9 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Server.Models;
+namespace RecruitmentTracking.Models;
 
-public class Job : IJob, IEmailTemplate
+public class Job
 {
     [Key]
     public int JobId { get; set; }

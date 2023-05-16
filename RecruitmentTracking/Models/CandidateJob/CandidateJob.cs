@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
-namespace Server.Models;
+namespace RecruitmentTracking.Models;
 
 public class CandidateJob
 {

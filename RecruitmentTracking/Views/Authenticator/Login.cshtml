@@ -1,0 +1,35 @@
+@model LoginRequest
+
+@{
+    ViewData["Title"] = "Login";
+}
+  <!-- add square box to wrap login form -->
+  <div class = "container" style="justify-content: center; padding-top: 100pt;">
+      <div class = "row" >
+          <div class = "col-md-4 offset-md-4 shadow-lg p-3 mb-5 bg-white rounded">
+              <h4 style="text-align:center">Sign in to your account</h4>
+
+                @using (Html.BeginForm("Logins", "Authenticator", FormMethod.Post))
+                {
+                  <div class="mb-3 mt-5">
+                    <label for="name" class="form-label">Email</label>
+                    @Html.TextBoxFor(m => m.Email, new { @class="form-control"})
+                    </div>
+                  <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    @Html.TextBoxFor(m => m.Password, new { @class="form-control"})
+                  </div>
+                  <div class="mb-3">
+                      <a href = "forgot-password.php" style="text-decoration: none">Forgot password?</a>
+                  </div>
+                  <div class="d-grid gap-2">
+                      <button class="btn btn-primary mt-3" type="submit">Sign in</button>
+                  </div>
+                }
+                <div>
+                  <p class = "mt-3">Don't have an account? <a asp-controller="Authenticator" asp-action="Signup" style="text-decoration: none">Sign up</a></p>
+                </div>
+          </div>
+      </div>
+  </div>
+  

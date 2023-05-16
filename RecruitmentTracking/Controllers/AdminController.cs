@@ -1,15 +1,13 @@
 using Microsoft.AspNetCore.Mvc;
 using log4net;
 
-using Server.Models;
+using RecruitmentTracking.Models;
 using IndexDb;
 using System.Data.Entity;
 
-namespace Server.Controllers;
+namespace RecruitmentTracking.Controllers;
 
-[ApiController]
-[Route("[controller]")]
-public class AdminController : ControllerBase
+public class AdminController : Controller
 {
     private readonly DataContex _db = new();
     private readonly ILog _log;
@@ -19,68 +17,68 @@ public class AdminController : ControllerBase
         _log = LogManager.GetLogger(typeof(AdminController));
     }
 
-    [HttpGet("/AvailableJobs")]
-    public async Task<IEnumerable<Job>> AvailbaleJob()
+    [HttpGet]
+    public IActionResult Index()
     {
-        return await _db.Jobs!.Where(Job => Job.IsJobAvailable).ToListAsync();
+        return View();
     }
 
-    [HttpGet("/NotAvailableJobs")]
-    public async Task<IEnumerable<Job>> NotAvailableJob()
-    {
-        return await _db.Jobs!.Where(Job => !Job.IsJobAvailable).ToListAsync();
-    }
+    // [HttpGet("/NotAvailableJobs")]
+    // public async Task<IEnumerable<Job>> NotAvailableJob()
+    // {
+    //     return await _db.Jobs!.Where(Job => !Job.IsJobAvailable).ToListAsync();
+    // }
 
-    [HttpPost("/CreateJob")]
-    public async Task<IActionResult> CreateJob(IJob objJob)
-    {
-        // Admin admin = new()
-        // {
-        //     AdminId = objJob.AdminId,
-        // };
+    // [HttpPost("/CreateJob")]
+    // public async Task<IActionResult> CreateJob(JobCreate objJob)
+    // {
+    //     // Admin admin = new()
+    //     // {
+    //     //     AdminId = objJob.AdminId,
+    //     // };
 
-        Job newJob = new()
-        {
-            JobTitle = objJob.JobTitle,
-            JobDescription = objJob.JobDescription,
-            JobExpiredDate = objJob.JobExpiredDate,
-            JobRequirement = objJob.JobRequirement,
-            JobPostedDate = DateTime.Now,
-            IsJobAvailable = true,
-            //Admin = admin,
-        };
-        _db.Jobs!.Add(newJob);
-        await _db.SaveChangesAsync();
+    //     Job newJob = new()
+    //     {
+    //         JobTitle = objJob.JobTitle,
+    //         JobDescription = objJob.JobDescription,
+    //         JobExpiredDate = objJob.JobExpiredDate,
+    //         JobRequirement = objJob.JobRequirement,
+    //         JobPostedDate = DateTime.Now,
+    //         IsJobAvailable = true,
+    //         //Admin = admin,
+    //     };
+    //     _db.Jobs!.Add(newJob);
+    //     await _db.SaveChangesAsync();
 
-        _log.Info("Job Added.");
+    //     _log.Info("Job Added.");
 
-        return Ok(newJob);
-    }
+    //     return Ok(newJob);
+    // }
 
-    [HttpPatch("/Update/{id}")]
-    public async Task<IActionResult> UpdateJob(IJob objJob)
-    {
-        _db.Entry(objJob).State = (Microsoft.EntityFrameworkCore.EntityState)EntityState.Modified;
-        await _db.SaveChangesAsync();
+    // [HttpPatch("/Update/{id}")]
+    // public async Task<IActionResult> UpdateJob(JobCreate objJob)
+    // {
+    //     _db.Entry(objJob).State = (Microsoft.EntityFrameworkCore.EntityState)EntityState.Modified;
+    //     await _db.SaveChangesAsync();
 
-        _log.Info("Job Updated.");
+    //     _log.Info("Job Updated.");
 
-        return Ok(objJob);
-    }
+    //     return Ok(objJob);
+    // }
 
-    [HttpDelete("/Delete/{id}")]
-    public async Task<IActionResult> DeleteJob(int id)
-    {
-        Job job = _db.Jobs!.Find(id)!;
-        if (job != null)
-        {
-            _db.Jobs.Remove(job);
-            await _db.SaveChangesAsync();
+    // [HttpDelete("/Delete/{id}")]
+    // public async Task<IActionResult> DeleteJob(int id)
+    // {
+    //     Job job = _db.Jobs!.Find(id)!;
+    //     if (job != null)
+    //     {
+    //         _db.Jobs.Remove(job);
+    //         await _db.SaveChangesAsync();
 
-            _log.Info("Job deleted.");
+    //         _log.Info("Job deleted.");
 
-            return Ok(true);
-        }
-        return BadRequest(false);
-    }
+    //         return Ok(true);
+    //     }
+    //     return BadRequest(false);
+    // }
 }
