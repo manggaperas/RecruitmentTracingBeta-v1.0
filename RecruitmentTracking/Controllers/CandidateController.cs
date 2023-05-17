@@ -7,9 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace RecruitmentTracking.Controllers;
 
-[ApiController]
-[Route("[controller]")]
-public class CandidateController : ControllerBase
+public class CandidateController : Controller
 {
     private readonly DataContex _db = new();
     private readonly ILog _log;
@@ -19,20 +17,44 @@ public class CandidateController : ControllerBase
         _log = LogManager.GetLogger(typeof(CandidateController));
     }
 
-    [HttpGet("/Jobs")]
-    public async Task<IEnumerable<Job>> Job()
+    [HttpGet]
+    public IActionResult Index()
     {
-        return await _db.Jobs!.Where(Job => Job.IsJobAvailable).ToListAsync();
+        return View();
     }
 
-    [HttpPatch("/EditProfile")]
-    public async Task<IActionResult> EditProfile(Candidate objCandidate)
+    [HttpGet("/Job")]
+    public IActionResult DetailJob()
     {
-        _db.Entry(objCandidate).State = EntityState.Modified;
-        await _db.SaveChangesAsync();
-
-        _log.Info("Job Updated.");
-
-        return Ok(objCandidate);
+        return View();
     }
+
+    [HttpGet("/Profile")]
+    public IActionResult EditProfile()
+    {
+        return View();
+    }
+
+    [HttpGet("/Jobs/{id}")]
+    public IActionResult Jobs()
+    {
+        return View();
+    }
+
+    // [HttpGet("/Jobs")]
+    // public async Task<IEnumerable<Job>> Job()
+    // {
+    //     return await _db.Jobs!.Where(Job => Job.IsJobAvailable).ToListAsync();
+    // }
+
+    // [HttpPatch("/EditProfile")]
+    // public async Task<IActionResult> EditProfile(Candidate objCandidate)
+    // {
+    //     _db.Entry(objCandidate).State = EntityState.Modified;
+    //     await _db.SaveChangesAsync();
+
+    //     _log.Info("Job Updated.");
+
+    //     return Ok(objCandidate);
+    // }
 }

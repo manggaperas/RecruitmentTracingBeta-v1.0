@@ -15,6 +15,8 @@ public class Job
     public string? JobRequirement { get; set; }
     [Required]
     public bool IsJobAvailable { get; set; }
+    [Required]
+    public string? Location { get; set; }
 
     [Required]
     [DataType(DataType.Date)]

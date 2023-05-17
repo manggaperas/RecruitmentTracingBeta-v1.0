@@ -18,4 +18,7 @@ public class Candidate
 
     public string? Phone { get; set; }
     public string? LastEducation { get; set; }
+
+    public string? Schedule { get; set; }
+    public string? Salary { get; set; }
 }

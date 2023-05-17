@@ -9,89 +9,81 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RecruitmentTracking
 build_property.RootNamespace = RecruitmentTracking
-build_property.ProjectDir = e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking\RecruitmentTracking\
+build_property.ProjectDir = /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking\RecruitmentTracking
+build_property.MSBuildProjectDirectory = /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking
 build_property._RazorSourceGeneratorDebug = 
 
-[E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking/RecruitmentTracking/Views/Admin/Administration.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW5pc3RyYXRpb24uY3NodG1s
+[/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/Views/Admin/Administration.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vQWRtaW5pc3RyYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking/RecruitmentTracking/Views/Admin/HRInterview.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSFJJbnRlcnZpZXcuY3NodG1s
+[/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/Views/Admin/HRInterview.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vSFJJbnRlcnZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking/RecruitmentTracking/Views/Admin/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+[/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking/RecruitmentTracking/Views/Admin/Offering.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cT2ZmZXJpbmcuY3NodG1s
+[/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/Views/Admin/Offering.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vT2ZmZXJpbmcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking/RecruitmentTracking/Views/Admin/TemplateEmail.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVGVtcGxhdGVFbWFpbC5jc2h0bWw=
+[/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/Views/Admin/TemplateEmail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vVGVtcGxhdGVFbWFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking/RecruitmentTracking/Views/Admin/UserInterview.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXNlckludGVydmlldy5jc2h0bWw=
+[/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/Views/Admin/UserInterview.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vVXNlckludGVydmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking/RecruitmentTracking/Views/Authenticator/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aGVudGljYXRvclxMb2dpbi5jc2h0bWw=
+[/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/Views/Authenticator/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXV0aGVudGljYXRvci9Mb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking/RecruitmentTracking/Views/Authenticator/Signup.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aGVudGljYXRvclxTaWdudXAuY3NodG1s
+[/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/Views/Authenticator/Signup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXV0aGVudGljYXRvci9TaWdudXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking/RecruitmentTracking/Views/Candidate/ApplyJob.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuZGlkYXRlXEFwcGx5Sm9iLmNzaHRtbA==
+[/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/Views/Candidate/ApplyJob.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FuZGlkYXRlL0FwcGx5Sm9iLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking/RecruitmentTracking/Views/Candidate/DetailJob.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuZGlkYXRlXERldGFpbEpvYi5jc2h0bWw=
+[/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/Views/Candidate/DetailJob.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FuZGlkYXRlL0RldGFpbEpvYi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking/RecruitmentTracking/Views/Candidate/EditProfile.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuZGlkYXRlXEVkaXRQcm9maWxlLmNzaHRtbA==
+[/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/Views/Candidate/EditProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FuZGlkYXRlL0VkaXRQcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking/RecruitmentTracking/Views/Candidate/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuZGlkYXRlXEluZGV4LmNzaHRtbA==
+[/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/Views/Candidate/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FuZGlkYXRlL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking/RecruitmentTracking/Views/Candidate/Jobs.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuZGlkYXRlXEpvYnMuY3NodG1s
+[/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/Views/Candidate/Jobs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FuZGlkYXRlL0pvYnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking/RecruitmentTracking/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking/RecruitmentTracking/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking/RecruitmentTracking/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+[/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking/RecruitmentTracking/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking/RecruitmentTracking/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking/RecruitmentTracking/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking/RecruitmentTracking/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-bk9asiu30y
+[/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ozv69qn49q
