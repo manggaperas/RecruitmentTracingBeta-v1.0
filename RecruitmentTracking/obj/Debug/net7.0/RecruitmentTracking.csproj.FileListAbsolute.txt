@@ -96,3 +96,14 @@
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.pdb
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.genruntimeconfig.cache
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/ref/RecruitmentTracking.dll
+E:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\RecruitmentTracking.csproj.AssemblyReference.cache
+E:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\RecruitmentTracking.GeneratedMSBuildEditorConfig.editorconfig
+E:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\RecruitmentTracking.AssemblyInfoInputs.cache
+E:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\RecruitmentTracking.AssemblyInfo.cs
+E:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\RecruitmentTracking.csproj.CoreCompileInputs.cache
+E:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\RecruitmentTracking.MvcApplicationPartsAssemblyInfo.cache
+E:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\RecruitmentTracking.RazorAssemblyInfo.cache
+E:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\RecruitmentTracking.RazorAssemblyInfo.cs
+E:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\RecruitmentTracking.dll
+E:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\refint\RecruitmentTracking.dll
+E:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\RecruitmentTracking.pdb
