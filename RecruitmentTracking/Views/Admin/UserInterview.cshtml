@@ -1,0 +1,88 @@
+
+    <div class="d-flex w-100">
+      <aside
+        class="d-flex justify-content-center py-5 align-items-center vh-100"
+        style="width: 20%"
+      >
+        <nav class="nav nav-pills flex-column text-center vh-100 py-5">
+          <h1 class="mb-5">MENU</h1>
+          <div
+            class="d-flex flex-column justify-content-around"
+            style="height: 350px"
+          >
+            <div>
+              <a class="nav-link" href="administration.html">Administration</a>
+            </div>
+            <div>
+                <a class="nav-link" href="hr_interview.html">HR Interview</a>
+              </div>
+              <div>
+                <a class="nav-link active" href="user_interview.html">User Interview</a>
+              </div>
+              <div>
+                <a class="nav-link" href="offering.html">Offering</a>
+              </div>
+          </div>
+        </nav>
+      </aside>
+      <main class="p-5" style="height: 100vh; width: 80%">
+        <header class="mb-5">
+          <div class="d-flex justify-content-between">
+            <h3>Software Engineer</h3>
+            <div
+              class="d-flex justify-content-around align-items-center"
+              style="width: 150px"
+            >
+              <span>HR Name</span>
+              <div
+                class="rounded-circle"
+                style="width: 40px; height: 40px; background-color: aquamarine"
+              >
+            </div>
+            </div>
+          </div>
+        </header>
+        <!-- content -->
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <a class="btn btn-secondary" type="button" href="template_email.html">View</a>
+            <a class="btn btn-secondary mr-5 " type="button" href="">Edit</a>
+            <form>
+            <input type="text" class="rounded" />
+            </form>
+        </div>
+          
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Name</th>
+                <th scope="col">Schedule</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            @using (Html.BeginForm("UserInterview", "Admin", FormMethod.Post))
+            {
+            <tbody>
+                @foreach (var m in Model)
+                {    
+                <tr>
+                    <th scope="row">1</th>
+                    <td>@Html.DisplayFor(m => m.Name, new { @class="form-control"})</td>
+                    <td>@Html.DisplayFor(m => m.Schedule, new { @class="form-control"})</td>
+                    <td>
+                        <button type="button" class="btn btn-warning">Send</button>
+                        <button type="button" class="btn btn-primary">Accept</button>
+                        <button type="button" class="btn btn-danger">Reject</button>
+                        <button type="button" class="btn btn-success">Download CV</button>
+                    </td>
+                </tr>
+                }
+            </tbody>
+            }
+          </table>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <a class="btn btn-primary" type="button" href="offering.html">Next Process</a>
+          </div>
+      
+      </main>
+    </div>
