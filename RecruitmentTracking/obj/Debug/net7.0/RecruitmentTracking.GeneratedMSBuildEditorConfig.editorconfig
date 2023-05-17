@@ -56,16 +56,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FuZGlkYXRlL0RldGFpbEpvYi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/Views/Candidate/EditProfile.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FuZGlkYXRlL0VkaXRQcm9maWxlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/Views/Candidate/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FuZGlkYXRlL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/Views/Candidate/Jobs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FuZGlkYXRlL0pvYnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/Views/Candidate/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FuZGlkYXRlL1Byb2ZpbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/Views/Shared/Error.cshtml]

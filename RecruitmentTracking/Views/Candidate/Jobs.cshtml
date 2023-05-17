@@ -4,26 +4,6 @@
 }
 
   <body>
-    <!-- navbar -->
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Recruitment Tracking</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            <a class="nav-link" href="jobs.html">Jobs</a>
-          </div>
-        </div>
-        <div class="d-flex">
-          <a class="btn btn-outline-primary me-2" href="signin.html">Sign in</a>
-          <a class="btn btn-primary" href="signup.html">Sign up</a>
-        </div>
-      </div>
-    </nav>
 
     <!-- search bar -->
     <div class="p-5 " style="background-color: lightgray; justify-content: center;">
@@ -43,7 +23,7 @@
       </div>
 
     <!-- job list -->
-    @foreach(var job in Model)
+    @* @foreach(var job in Model)
     {
         <div class="container">
             <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
@@ -61,7 +41,7 @@
                 </div>
             </div>  
         </div>
-    }
+    } *@
    
     <!-- footer -->
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">

@@ -26,23 +26,26 @@ public class AuthenticatorController : Controller
     [HttpGet("/Login")]
     public IActionResult Login()
     {
+        ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
+
         return View();
+    }
+
+    [HttpPost]
+    public IActionResult Logout()
+    {
+        Response.Cookies.Delete("ActionLogin");
+
+        return RedirectToAction("Index", "Candidate");
     }
 
     [HttpGet("/Signup")]
     public IActionResult Signup()
     {
+        ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
+
         return View();
     }
-
-    // [HttpPost("/signup")]
-    // public async Task<IActionResult> Signup(Candidate objCandidate)
-    // {
-    //     _db.Candidates!.Add(objCandidate);
-    //     await _db.SaveChangesAsync();
-
-    //     return Ok(objCandidate);
-    // }
 
     [HttpPost]
     public async Task<IActionResult> Signups(CandidateSignup request)
@@ -55,31 +58,50 @@ public class AuthenticatorController : Controller
         {
             Name = request.Name,
             Email = request.Email,
-            PasswordHash = HassedPassword,
+            Password = HassedPassword,
         };
 
         _db.Candidates!.Add(objCandidate);
         await _db.SaveChangesAsync();
 
-        return Ok(objCandidate);
+        return RedirectToAction("Login");
     }
 
     [HttpPost]
     public async Task<IActionResult> Logins(LoginRequest request)
     {
         Admin objAdmin = (await _db.Admins!.FirstOrDefaultAsync(a => a.Email == request.Email))!;
-        Candidate objCandidate = (await _db.Candidates!.FirstOrDefaultAsync(a => a.Email == request.Email))!;
-
         if (objAdmin != null && BCrypt.Net.BCrypt.Verify(request.Password, objAdmin.Password))
         {
             string token = CreateTokenAdmin(objAdmin!);
-            return Ok(token);
+
+            CookieOptions Options = new()
+            {
+                HttpOnly = true,
+                Secure = true,
+                Expires = DateTimeOffset.Now.AddHours(1),
+            };
+
+            Response.Cookies.Append("ActionLogin", token, Options);
+
+            return RedirectToAction("Index", "Candidate");
         }
 
-        if (objCandidate != null && BCrypt.Net.BCrypt.Verify(request.Password, objCandidate.PasswordHash))
+        Candidate objCandidate = (await _db.Candidates!.FirstOrDefaultAsync(a => a.Email == request.Email))!;
+        if (objCandidate != null && BCrypt.Net.BCrypt.Verify(request.Password, objCandidate.Password))
         {
             string token = CreateTokenCandidate(objCandidate!);
-            return Ok(token);
+
+            CookieOptions Options = new()
+            {
+                HttpOnly = true,
+                Secure = true,
+                Expires = DateTimeOffset.Now.AddHours(1),
+            };
+
+            Response.Cookies.Append("ActionLogin", token, Options);
+
+            return RedirectToAction("Index", "Candidate");
         }
 
         return BadRequest("User not found.");
@@ -88,7 +110,7 @@ public class AuthenticatorController : Controller
     private string CreateTokenAdmin(Admin objAdmin)
     {
         List<Claim> claims = new(){
-            new Claim(ClaimTypes.Name, objAdmin.Email!),
+            new Claim(ClaimTypes.Email, objAdmin.Email!),
         };
 
         SymmetricSecurityKey key = new(Encoding.UTF8.GetBytes(
@@ -109,7 +131,7 @@ public class AuthenticatorController : Controller
     private string CreateTokenCandidate(Candidate objCandidate)
     {
         List<Claim> claims = new(){
-            new Claim(ClaimTypes.Name, objCandidate.Email!),
+            new Claim(ClaimTypes.Email, objCandidate.Email!),
         };
 
         SymmetricSecurityKey key = new(Encoding.UTF8.GetBytes(
@@ -126,4 +148,13 @@ public class AuthenticatorController : Controller
 
         return new JwtSecurityTokenHandler().WriteToken(token);
     }
+
+    // [HttpPost("/signup")]
+    // public async Task<IActionResult> Signup(Candidate objCandidate)
+    // {
+    //     _db.Candidates!.Add(objCandidate);
+    //     await _db.SaveChangesAsync();
+
+    //     return Ok(objCandidate);
+    // }
 }

@@ -18695,6 +18695,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/Views/Candidate/Profile.cshtml",
+      "TargetPath": "Views\\Candidate\\Profile.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/Views/_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
@@ -18705,16 +18710,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/Views/Candidate/EditProfile.cshtml",
-      "TargetPath": "Views\\Candidate\\EditProfile.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/Views/Home/Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/Views/Authenticator/Login.cshtml",
       "TargetPath": "Views\\Authenticator\\Login.cshtml",
       "FileKind": "mvc"
@@ -18722,11 +18717,6 @@
     {
       "FilePath": "/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/Views/Admin/UserInterview.cshtml",
       "TargetPath": "Views\\Admin\\UserInterview.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/Views/Home/Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {

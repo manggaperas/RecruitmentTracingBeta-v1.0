@@ -29,31 +29,31 @@ public class AdminController : Controller
     //     return await _db.Jobs!.Where(Job => !Job.IsJobAvailable).ToListAsync();
     // }
 
-    // [HttpPost("/CreateJob")]
-    // public async Task<IActionResult> CreateJob(JobCreate objJob)
-    // {
-    //     // Admin admin = new()
-    //     // {
-    //     //     AdminId = objJob.AdminId,
-    //     // };
+    [HttpPost("/CreateJob")]
+    public async Task<IActionResult> CreateJob(JobCreate objJob)
+    {
+        // Admin admin = new()
+        // {
+        //     AdminId = objJob.AdminId,
+        // };
 
-    //     Job newJob = new()
-    //     {
-    //         JobTitle = objJob.JobTitle,
-    //         JobDescription = objJob.JobDescription,
-    //         JobExpiredDate = objJob.JobExpiredDate,
-    //         JobRequirement = objJob.JobRequirement,
-    //         JobPostedDate = DateTime.Now,
-    //         IsJobAvailable = true,
-    //         //Admin = admin,
-    //     };
-    //     _db.Jobs!.Add(newJob);
-    //     await _db.SaveChangesAsync();
+        Job newJob = new()
+        {
+            JobTitle = objJob.JobTitle,
+            JobDescription = objJob.JobDescription,
+            JobExpiredDate = objJob.JobExpiredDate,
+            JobRequirement = objJob.JobRequirement,
+            JobPostedDate = DateTime.Now,
+            IsJobAvailable = true,
+            //Admin = admin,
+        };
+        _db.Jobs!.Add(newJob);
+        await _db.SaveChangesAsync();
 
-    //     _log.Info("Job Added.");
+        _log.Info("Job Added.");
 
-    //     return Ok(newJob);
-    // }
+        return Ok(newJob);
+    }
 
     // [HttpPatch("/Update/{id}")]
     // public async Task<IActionResult> UpdateJob(JobCreate objJob)

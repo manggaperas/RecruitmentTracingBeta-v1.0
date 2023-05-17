@@ -14,11 +14,14 @@ public class Candidate
     public string? Email { get; set; }
 
     [Required]
-    public string? PasswordHash { get; set; }
+    public string? Password { get; set; }
 
     public string? Phone { get; set; }
+    public int GPA { get; set; }
     public string? LastEducation { get; set; }
 
     public string? Schedule { get; set; }
     public string? Salary { get; set; }
+
+    public string? StatusInJob { get; set; }
 }

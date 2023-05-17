@@ -7,5 +7,6 @@ public class JobCreate
     public string? JobDescription { get; set; }
     public string? JobRequirement { get; set; }
     public bool IsJobAvailable { get; set; }
+    public string? Location { get; set; }
     public DateTime? JobExpiredDate { get; set; }
 }
