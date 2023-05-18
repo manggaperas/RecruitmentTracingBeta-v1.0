@@ -28,12 +28,29 @@ public class CandidateController : Controller
     {
         ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
 
-        return View();
+        List<JobData> listJob = new();
+        foreach (Job job in _db.Jobs!.ToList())
+        {
+            JobData data = new()
+            {
+                JobTitle = job.JobTitle,
+                JobDescription = job.JobDescription,
+                JobRequirement = job.JobRequirement,
+                Location = job.Location,
+                JobPostedDate = job.JobPostedDate,
+                JobExpiredDate = job.JobExpiredDate,
+            };
+
+            listJob.Add(data);
+        }
+        return View(listJob);
     }
 
     [HttpGet("/Job")]
     public IActionResult DetailJob()
     {
+        ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
+
         return View();
     }
 
@@ -44,8 +61,8 @@ public class CandidateController : Controller
         if (!ViewBag.IsAuth) return Redirect("/Login");
 
         string token = Request.Cookies["ActionLogin"]!;
-
         string email = GetEmail(token);
+
         Candidate candidate = (await _db.Candidates!.FirstOrDefaultAsync(c => c.Email == email))!;
         CandidateEditProfile profile = new()
         {
@@ -62,8 +79,7 @@ public class CandidateController : Controller
     [HttpPost]
     public async Task<IActionResult> EditProfile(CandidateEditProfile profile)
     {
-        ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
-        if (!ViewBag.IsAuth) return Redirect("/Login");
+        if (Request.Cookies["ActionLogin"]! == null) return Redirect("/Login");
 
         string token = Request.Cookies["ActionLogin"]!;
 
@@ -80,15 +96,13 @@ public class CandidateController : Controller
 
     private string GetEmail(string token)
     {
-        SymmetricSecurityKey key = new(Encoding.UTF8.GetBytes(
-           _configuration.GetSection("AppSettings:TokenCandidate").Value!
-        ));
-
         ClaimsPrincipal claimsPrincipal = new JwtSecurityTokenHandler()
             .ValidateToken(token, new TokenValidationParameters
             {
                 ValidateIssuerSigningKey = true,
-                IssuerSigningKey = key,
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(
+                                    _configuration.GetSection("AppSettings:TokenCandidate").Value!
+                                    )),
                 ValidateIssuer = false,
                 ValidateAudience = false,
             }, out _);
@@ -111,8 +125,6 @@ public class CandidateController : Controller
 
         return View();
     }
-
-
 
     // [HttpGet("/Jobs")]
     // public async Task<IEnumerable<Job>> Job()

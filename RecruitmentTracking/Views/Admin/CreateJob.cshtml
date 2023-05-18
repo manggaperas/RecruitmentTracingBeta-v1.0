@@ -1,0 +1,80 @@
+@model JobCreate;
+
+@{
+    ViewData["Title"] = "Admin";
+    var dropdownOptions = new List<SelectListItem>
+    {
+        new SelectListItem { Value = "Salatiga", Text = "Salatiga" },
+        new SelectListItem { Value = "Semarang", Text = "Semarang" },
+        new SelectListItem { Value = "Bandung", Text = "Bandung" }
+    };
+}
+
+<div class="d-flex w-100">
+    <aside
+    class="d-flex justify-content-center py-5 align-items-center vh-100"
+    style="width: 15%;"
+    >
+    <nav class="nav nav-pills flex-column text-center vh-100 py-5">
+        <h5 >Dashboard</h5>
+        <h6 class="mb-5 text-muted">Admin</h6>
+
+        <div class="d-flex flex-column justify-content-around" style="height: 300px">
+        <div>
+            <a class="btn btn-outline-primary btn-sm active" href="/CreateJob" style="padding: 15px; border-radius: 50px">
+            <span style="margin: 10px;">+ Create Job</span>
+            </a>
+        </div>
+        <div>
+            <a class="nav-link mb-3" href="/Admin">Active Job</a>
+            <a class="nav-link mb-3" href="/JobClosed">Closed Job</a>
+        </div>
+        </div>
+    </nav>
+    </aside>
+    <main class="p-5" style="height: 100vh; width: 80%">
+    <header class="mb-1">
+        <div class="d-flex justify-content-between align-items-center">
+        <div></div>
+        <div class="d-flex justify-content-around align-items-center" style="width: 150px">
+            <span>HR Name</span>
+            <div class="rounded-circle" style="width: 40px; height: 40px; background-color: #4CAF50"></div>
+        </div>
+        </div>
+    </header>
+        <div class="py-1">
+            <div class="my-1">
+
+            @using (Html.BeginForm("CreateJobs","Admin", FormMethod.Post))
+            {
+                <div class="mb-3">
+                    <label for="JobPosition" class="form-label">Job Position</label>
+                    @Html.TextBoxFor(m => m.JobTitle, new { @class="form-control"})
+                </div>
+                <div class="mb-3">
+                    <label for="JobDescription" class="form-label">Job Description</label>
+                    @Html.TextAreaFor(m => m.JobDescription, new { @class="form-control"})
+                </div>
+                <div class="mb-3">
+                    <label for="JobRequirement" class="form-label">Job Requirement</label>
+                    @Html.TextAreaFor(m => m.JobRequirement, new { @class="form-control"})
+                </div>
+                <div class="mb-3">
+                    <label for="JobExpiredDate" class="form-label">Job Expired Date</label>
+                    @Html.TextBoxFor(m => m.JobExpiredDate, new { @class="form-control"})
+                </div>
+
+                <div class="mb-3">
+                    <label for="JobRequirement" class="form-label">Office Location</label>  
+                    @Html.DropDownListFor(m => m.Location, new SelectList(dropdownOptions, "Value", "Text"), "Select an option", new { @class = "form-control" })
+                </div>
+
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                </div>
+            }
+
+            </div>
+        </div>
+    </main>
+</div>

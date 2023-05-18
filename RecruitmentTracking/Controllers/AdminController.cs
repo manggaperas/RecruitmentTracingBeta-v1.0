@@ -1,9 +1,14 @@
+using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using log4net;
 
 using RecruitmentTracking.Models;
 using IndexDb;
 using System.Data.Entity;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 
 namespace RecruitmentTracking.Controllers;
 
@@ -11,32 +16,60 @@ public class AdminController : Controller
 {
     private readonly DataContex _db = new();
     private readonly ILog _log;
+    private readonly IConfiguration _configuration;
 
-    public AdminController()
+    public AdminController(IConfiguration configuration)
     {
         _log = LogManager.GetLogger(typeof(AdminController));
+        _configuration = configuration;
     }
 
     [HttpGet]
     public IActionResult Index()
     {
+        ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
+
+        List<JobData> listJob = new();
+        foreach (Job job in _db.Jobs!.ToList())
+        {
+            JobData data = new()
+            {
+                JobTitle = job.JobTitle,
+                JobDescription = job.JobDescription,
+                JobRequirement = job.JobRequirement,
+                Location = job.Location,
+                JobPostedDate = job.JobPostedDate,
+                JobExpiredDate = job.JobExpiredDate,
+            };
+            listJob.Add(data);
+        }
+
+        return View(listJob);
+    }
+
+    [HttpGet("/JobClosed")]
+    public IActionResult JobClosed()
+    {
+        ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
+
         return View();
     }
 
-    // [HttpGet("/NotAvailableJobs")]
-    // public async Task<IEnumerable<Job>> NotAvailableJob()
-    // {
-    //     return await _db.Jobs!.Where(Job => !Job.IsJobAvailable).ToListAsync();
-    // }
-
-    [HttpPost("/CreateJob")]
-    public async Task<IActionResult> CreateJob(JobCreate objJob)
+    [HttpGet("/CreateJob")]
+    public IActionResult CreateJob()
     {
-        // Admin admin = new()
-        // {
-        //     AdminId = objJob.AdminId,
-        // };
+        ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
 
+        return View();
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> CreateJobs(JobCreate objJob)
+    {
+        string token = Request.Cookies["ActionLogin"]!;
+        string email = GetEmail(token);
+
+        Admin admin = _db.Admins!.FirstOrDefault(a => a.Email == email)!;
         Job newJob = new()
         {
             JobTitle = objJob.JobTitle,
@@ -44,15 +77,32 @@ public class AdminController : Controller
             JobExpiredDate = objJob.JobExpiredDate,
             JobRequirement = objJob.JobRequirement,
             JobPostedDate = DateTime.Now,
+            Location = objJob.Location,
             IsJobAvailable = true,
-            //Admin = admin,
+            Admin = admin,
         };
         _db.Jobs!.Add(newJob);
         await _db.SaveChangesAsync();
 
         _log.Info("Job Added.");
 
-        return Ok(newJob);
+        return Redirect("/Admin");
+    }
+
+    private string GetEmail(string token)
+    {
+        ClaimsPrincipal claimsPrincipal = new JwtSecurityTokenHandler()
+            .ValidateToken(token, new TokenValidationParameters
+            {
+                ValidateIssuerSigningKey = true,
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(
+                                    _configuration.GetSection("AppSettings:TokenAdmin").Value!
+                                    )),
+                ValidateIssuer = false,
+                ValidateAudience = false,
+            }, out _);
+
+        return claimsPrincipal.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Email)!.Value!;
     }
 
     // [HttpPatch("/Update/{id}")]

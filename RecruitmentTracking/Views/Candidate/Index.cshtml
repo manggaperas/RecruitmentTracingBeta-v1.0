@@ -1,4 +1,4 @@
-@model AuthStatus;
+@model List<JobData>;
 
 @{
   ViewData["Title"] = "Formulatrix Career";
@@ -25,12 +25,14 @@
     <div class="container">
       <h4 class="form-label mt-5">Top Jobs</h4>
       <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+
+        @foreach (var job in Model){
         <div class="col mt">
-          <div class="card h-100 ">
+          <div class="card w-100 max-w-100">
             <div class="card-body">
-              <h5 class="card-title">Software Engineer</h5>
+              <h5 class="card-title">@job.JobTitle</h5>
               <p class="card-text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, consequuntur expedita unde animi, mollitia et modi quaerat eligendi facilis commodi dolor, voluptates veritatis! Reiciendis assumenda sequi dolore dicta consequatur reprehenderit!
+                @job.JobDescription
               </p>
               <div>
                 <a type="button" class="btn btn-primary" href="/Apply">Apply</a>
@@ -39,31 +41,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">Business Analyst</h5>
-              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae qui dicta atque? Iure, at ea reprehenderit optio odit cumque tempora voluptatibus error praesentium quia beatae esse suscipit quasi laborum. Dolorem!</p>
-              <div>
-                <a type="button" class="btn btn-primary" href="/Apply">Apply</a>
-                    <a type="button" class="btn btn-outline-primary" href="/Jobs" >Details</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">System Analyst</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, hic. Sit, officiis aut quasi nemo ipsa ex, velit adipisci illo nesciunt sed in voluptates inventore doloribus nihil, ipsam deleniti illum!
-              </p>
-              <div>
-                <a type="button" class="btn btn-primary" href="/Apply">Apply</a>
-                <a type="button" class="btn btn-outline-primary" href="/Jobs" >Details</a>
-              </div>
-            </div>
-          </div>
-        </div>
+        }
+
       </div>
     </div>

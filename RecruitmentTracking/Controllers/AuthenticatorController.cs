@@ -70,23 +70,6 @@ public class AuthenticatorController : Controller
     [HttpPost]
     public async Task<IActionResult> Logins(LoginRequest request)
     {
-        Admin objAdmin = (await _db.Admins!.FirstOrDefaultAsync(a => a.Email == request.Email))!;
-        if (objAdmin != null && BCrypt.Net.BCrypt.Verify(request.Password, objAdmin.Password))
-        {
-            string token = CreateTokenAdmin(objAdmin!);
-
-            CookieOptions Options = new()
-            {
-                HttpOnly = true,
-                Secure = true,
-                Expires = DateTimeOffset.Now.AddHours(1),
-            };
-
-            Response.Cookies.Append("ActionLogin", token, Options);
-
-            return RedirectToAction("Index", "Candidate");
-        }
-
         Candidate objCandidate = (await _db.Candidates!.FirstOrDefaultAsync(a => a.Email == request.Email))!;
         if (objCandidate != null && BCrypt.Net.BCrypt.Verify(request.Password, objCandidate.Password))
         {
@@ -102,6 +85,23 @@ public class AuthenticatorController : Controller
             Response.Cookies.Append("ActionLogin", token, Options);
 
             return RedirectToAction("Index", "Candidate");
+        }
+
+        Admin objAdmin = (await _db.Admins!.FirstOrDefaultAsync(a => a.Email == request.Email))!;
+        if (objAdmin != null && BCrypt.Net.BCrypt.Verify(request.Password, objAdmin.Password))
+        {
+            string token = CreateTokenAdmin(objAdmin!);
+
+            CookieOptions Options = new()
+            {
+                HttpOnly = true,
+                Secure = true,
+                Expires = DateTimeOffset.Now.AddHours(1),
+            };
+
+            Response.Cookies.Append("ActionLogin", token, Options);
+
+            return RedirectToAction("Index", "Admin");
         }
 
         return BadRequest("User not found.");
@@ -149,12 +149,23 @@ public class AuthenticatorController : Controller
         return new JwtSecurityTokenHandler().WriteToken(token);
     }
 
-    // [HttpPost("/signup")]
-    // public async Task<IActionResult> Signup(Candidate objCandidate)
-    // {
-    //     _db.Candidates!.Add(objCandidate);
-    //     await _db.SaveChangesAsync();
+    [HttpPost("admin/signup")]
+    public async Task<IActionResult> SignupAdmin(Admin request)
+    {
+        if (_db.Admins!.Any(a => a.Email == request.Email))
+            return BadRequest("Email is already in use.");
 
-    //     return Ok(objCandidate);
-    // }
+        string HassedPassword = BCrypt.Net.BCrypt.HashPassword(request.Password);
+        Admin objAdmin = new()
+        {
+            Name = request.Name,
+            Email = request.Email,
+            Password = HassedPassword,
+        };
+
+        _db.Admins!.Add(objAdmin);
+        await _db.SaveChangesAsync();
+
+        return Ok(objAdmin);
+    }
 }
