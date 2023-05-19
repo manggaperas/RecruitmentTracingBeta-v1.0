@@ -28,12 +28,14 @@ public class AdminController : Controller
     public IActionResult Index()
     {
         ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
+        ViewBag.IsAdmin = "admin";
 
         List<JobData> listJob = new();
-        foreach (Job job in _db.Jobs!.ToList())
+        foreach (Job job in _db.Jobs!.Where(j => j.IsJobAvailable).ToList())
         {
             JobData data = new()
             {
+                JobId = job.JobId,
                 JobTitle = job.JobTitle,
                 JobDescription = job.JobDescription,
                 JobRequirement = job.JobRequirement,
@@ -51,14 +53,65 @@ public class AdminController : Controller
     public IActionResult JobClosed()
     {
         ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
+        ViewBag.IsAdmin = "admin";
 
-        return View();
+        List<JobData> listJob = new();
+        foreach (Job job in _db.Jobs!.Where(j => !j.IsJobAvailable).ToList())
+        {
+            JobData data = new()
+            {
+                JobId = job.JobId,
+                JobTitle = job.JobTitle,
+                JobDescription = job.JobDescription,
+                JobRequirement = job.JobRequirement,
+                Location = job.Location,
+                JobPostedDate = job.JobPostedDate,
+                JobExpiredDate = job.JobExpiredDate,
+            };
+            listJob.Add(data);
+        }
+
+        return View(listJob);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> CloseTheJob(int id)
+    {
+        Job objJob = _db.Jobs!.Find(id)!;
+
+        objJob.IsJobAvailable = false;
+        await _db.SaveChangesAsync();
+
+        return Redirect("/Admin");
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> ActivateTheJob(int id)
+    {
+        Job objJob = _db.Jobs!.Find(id)!;
+
+        objJob.IsJobAvailable = true;
+        await _db.SaveChangesAsync();
+
+        return Redirect("/JobClosed");
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> DeleteJob(int id)
+    {
+        Job objJob = _db.Jobs!.Find(id)!;
+
+        _db.Jobs.Remove(objJob);
+        await _db.SaveChangesAsync();
+
+        return Redirect("/JobClosed");
     }
 
     [HttpGet("/CreateJob")]
     public IActionResult CreateJob()
     {
         ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
+        ViewBag.IsAdmin = "admin";
 
         return View();
     }
@@ -88,6 +141,46 @@ public class AdminController : Controller
 
         return Redirect("/Admin");
     }
+    [HttpGet("Admin/EditJob/{id}")]
+    public IActionResult EditJob(int id)
+    {
+        ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
+        ViewBag.IsAdmin = "admin";
+
+        Job objJob = _db.Jobs!.FirstOrDefault(j => j.JobId == id)!;
+
+        JobData data = new()
+        {
+            JobId = objJob.JobId,
+            JobTitle = objJob.JobTitle,
+            JobDescription = objJob.JobDescription,
+            JobRequirement = objJob.JobRequirement,
+            Location = objJob.Location,
+            JobPostedDate = objJob.JobPostedDate,
+            JobExpiredDate = objJob.JobExpiredDate,
+        };
+
+        return View(data);
+    }
+
+    [HttpPost("Admin/EditJobs/{id}")]
+    public async Task<IActionResult> EditJobs(int id, JobCreate objJob)
+    {
+        string token = Request.Cookies["ActionLogin"]!;
+        string email = GetEmail(token);
+
+        Job updateJob = _db.Jobs!.FirstOrDefault(j => j.JobId == id)!;
+        updateJob.JobTitle = objJob.JobTitle;
+        updateJob.JobDescription = objJob.JobDescription;
+        updateJob.JobExpiredDate = objJob.JobExpiredDate;
+        updateJob.JobRequirement = objJob.JobRequirement;
+        updateJob.Location = objJob.Location;
+
+        await _db.SaveChangesAsync();
+        _log.Info("Job Updated.");
+
+        return Redirect("/Admin");
+    }
 
     private string GetEmail(string token)
     {
@@ -103,6 +196,51 @@ public class AdminController : Controller
             }, out _);
 
         return claimsPrincipal.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Email)!.Value!;
+    }
+
+    [HttpGet("Admin/Administration/{id}")]
+    public IActionResult Administration(int id)
+    {
+        ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
+        ViewBag.IsAdmin = "admin";
+
+        Job objJob = _db.Jobs!.FirstOrDefault(j => j.JobId == id)!;
+        JobData data = new()
+        {
+            JobId = objJob.JobId,
+            JobTitle = objJob.JobTitle,
+            JobDescription = objJob.JobDescription,
+            JobRequirement = objJob.JobRequirement,
+            Location = objJob.Location,
+            JobPostedDate = objJob.JobPostedDate,
+            JobExpiredDate = objJob.JobExpiredDate,
+        };
+
+        return View(data);
+    }
+
+    [HttpGet]
+    public IActionResult HRInterview()
+    {
+        ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
+
+        return View();
+    }
+
+    [HttpGet]
+    public IActionResult UserInterview()
+    {
+        ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
+
+        return View();
+    }
+
+    [HttpGet]
+    public IActionResult Offering()
+    {
+        ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
+
+        return View();
     }
 
     // [HttpPatch("/Update/{id}")]

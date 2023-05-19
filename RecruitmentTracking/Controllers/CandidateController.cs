@@ -29,10 +29,11 @@ public class CandidateController : Controller
         ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
 
         List<JobData> listJob = new();
-        foreach (Job job in _db.Jobs!.ToList())
+        foreach (Job job in _db.Jobs!.Where(j => j.IsJobAvailable).ToList())
         {
             JobData data = new()
             {
+                JobId = job.JobId,
                 JobTitle = job.JobTitle,
                 JobDescription = job.JobDescription,
                 JobRequirement = job.JobRequirement,
@@ -44,14 +45,6 @@ public class CandidateController : Controller
             listJob.Add(data);
         }
         return View(listJob);
-    }
-
-    [HttpGet("/Job")]
-    public IActionResult DetailJob()
-    {
-        ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
-
-        return View();
     }
 
     [HttpGet("/Profile")]
@@ -110,20 +103,49 @@ public class CandidateController : Controller
         return claimsPrincipal.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Email)!.Value!;
     }
 
-    [HttpGet("/Jobs")]
-    public IActionResult Jobs()
+    [HttpGet("/DetailJob/{id}")]
+    public IActionResult DetailJob(int id)
     {
         ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
 
-        return View();
+        Job objJob = _db.Jobs!.Find(id)!;
+
+        JobData data = new()
+        {
+            JobId = objJob.JobId,
+            JobTitle = objJob.JobTitle,
+            JobDescription = objJob.JobDescription,
+            JobRequirement = objJob.JobRequirement,
+            Location = objJob.Location,
+            JobPostedDate = objJob.JobPostedDate,
+            JobExpiredDate = objJob.JobExpiredDate,
+        };
+
+        return View(data);
     }
 
-    [HttpGet("/Apply")]
-    public IActionResult ApplyJob()
+    [HttpGet("/ApplyJob/{id}")]
+    public IActionResult ApplyJob(int id)
     {
         ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
 
-        return View();
+        Job objJob = _db.Jobs!.Find(id)!;
+        ViewBag.JobTitle = objJob.JobTitle;
+
+        string token = Request.Cookies["ActionLogin"]!;
+        string email = GetEmail(token);
+
+        Candidate objCandidate = _db.Candidates!.FirstOrDefault(c => c.Email == email)!;
+
+        CandidateEditProfile dataCandidate = new()
+        {
+            Name = objCandidate.Name,
+            Phone = objCandidate.Phone,
+            LastEducation = objCandidate.LastEducation,
+            GPA = objCandidate.GPA,
+        };
+
+        return View(dataCandidate);
     }
 
     // [HttpGet("/Jobs")]

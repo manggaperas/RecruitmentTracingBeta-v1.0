@@ -1,4 +1,4 @@
-@model JobCreate;
+@model JobData;
 
 @{
     ViewData["Title"] = "Admin";
@@ -21,7 +21,7 @@
 
         <div class="d-flex flex-column justify-content-around" style="height: 300px">
         <div>
-            <a class="btn btn-outline-primary btn-sm active" href="/CreateJob" style="padding: 15px; border-radius: 50px">
+            <a class="btn btn-outline-primary btn-sm" href="/CreateJob" style="padding: 15px; border-radius: 50px">
             <span style="margin: 10px;">+ Create Job</span>
             </a>
         </div>
@@ -45,7 +45,7 @@
         <div class="py-1">
             <div class="my-1">
 
-            @using (Html.BeginForm("CreateJobs","Admin", FormMethod.Post))
+            @using (Html.BeginForm("EditJobs","Admin", FormMethod.Post))
             {
                 <div class="mb-3">
                     <label for="JobPosition" class="form-label">Job Position</label>
@@ -70,7 +70,7 @@
                 </div>
 
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                    <button class="btn btn-primary" type="submit">Create</button>
+                    <button class="btn btn-primary" type="submit">Save Update</button>
                 </div>
             }
 

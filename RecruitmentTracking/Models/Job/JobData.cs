@@ -2,6 +2,7 @@ namespace RecruitmentTracking.Models;
 
 public class JobData
 {
+    public int JobId { get; set; }
     public string? JobTitle { get; set; }
     public string? JobDescription { get; set; }
     public string? JobRequirement { get; set; }

@@ -27,11 +27,16 @@
                 </div>
                 <div class="d-flex">
                 @if(!ViewBag.IsAuth)
-                {
+                {   
+                   
                     <a class="btn btn-outline-primary me-2" href="/Login">Sign in</a>
                     <a class="btn btn-primary" href="/Signup">Sign up</a>
+                    
                 } else {
-                    <a class="btn btn-primary" href="/Profile">Edit Profile</a>
+                     @if(ViewBag.IsAdmin == null) 
+                    {
+                        <a class="btn btn-primary" href="/Profile">Edit Profile</a>
+                    }
                     <form id="logoutForm" method="post" asp-action="Logout" asp-controller="Authenticator">
                     <button type="submit" class="btn btn-link nav-link">Logout</button>
                     </form>

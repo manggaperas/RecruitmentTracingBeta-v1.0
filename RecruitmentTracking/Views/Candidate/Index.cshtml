@@ -5,7 +5,7 @@
 }
     <!-- image with search job and location search inside -->
 
-    <div class="p-5 " style="background-color: lightgray; justify-content: center;">
+    <div class="p-5 bg-light" style="justify-content: center;">
         <div class="container">
           <div class="row g-3">
             <div class="col-sm-6">
@@ -35,8 +35,8 @@
                 @job.JobDescription
               </p>
               <div>
-                <a type="button" class="btn btn-primary" href="/Apply">Apply</a>
-                <a type="button" class="btn btn-outline-primary" href="/Jobs" >Details</a>
+                <a type="button" class="btn btn-primary" href="@Url.Action("ApplyJob", new { id =job.JobId })">Apply</a>
+                <a type="button" class="btn btn-outline-primary" href="@Url.Action("DetailJob", new { id = job.JobId })" >Details</a>
               </div>
             </div>
           </div>
