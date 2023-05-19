@@ -1,3 +1,5 @@
+@model List<JobData>;
+
 @{
   ViewData["Title"] = "Admin";
 }
@@ -37,23 +39,45 @@
         </header>
         <div class="py-2">
           <div class="my-4">
-            <div class="card">
-              <div class="card-body d-flex justify-content-between align-items-center">
-                <div class="rounded flex-grow-1 bg-light" style="height: 70px; padding: 10px;">
-                  <p class="card-title h6">Software Engineer</p>
-                  <div class="d-flex card-text justify-content-between align-items-center text-muted" style="font-size: .875em;">
-                    <p class="list-inline-item">Post : May 15, 2023</p>
-                    <p class="list-inline-item">Location : Salatiga</p>
-                  </div>
-              
-                </div>
-                <div class="d-flex" style="padding-left: 10px;">
-                  <button class="btn btn-warning btn-sm me-2">Edit</button>
-                  <button class="btn btn-danger btn-sm me-2">Delete</button>
-                  <button class="btn btn-primary btn-sm me-2">ON/OFF</button>
-                </div>
-              </div>
-            </div>
+            @foreach (var item in Model)
+            {
+                <div class="card">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                      <div class="rounded flex-grow-1 bg-light" style="height: 80px; padding: 10px;">
+                          <div class="d-flex justify-content-between align-items-center">
+                            <a class="card-title btn btn-outline-primary list-inline-item" style="border: none; padding: 2px; border-radius: 5px"
+                                href="@Url.Action("Administration", "Admin", new { id = item.JobId })">
+                                @item.JobTitle
+                            </a>
+                            <p class="list-inline-item text-muted h3">9</p>
+                          </div>
+                          
+                          <div class="d-flex card-text justify-content-between align-items-center text-muted" style="font-size: .875em;">
+                              <p class="list-inline-item" style="padding-left: 2px;">Post : @item.JobPostedDate</p>
+                              <p class="list-inline-item">@item.Location</p>
+                          </div>
+                      
+                      </div>
+                      <div>
+                        <div class="d-flex my-2" style="padding-left: 10px;">
+                          <a class="btn btn-warning btn-sm me-2" href="@Url.Action("EditJob", "Admin", new { id = item.JobId })">Edit</a>
+                          <form action="/Admin/DeleteJob" method="post" onsubmit="return confirm('Are you sure you want delete the Job?')">
+                              <input type="hidden" name="id" value= @item.JobId />
+                              <button class="btn btn-danger btn-sm me-2" type="submit" >Delete</button>
+                          </form>
+                          <form action="/Admin/ActivateTheJob" method="post">
+                              <input type="hidden" name="id" value= @item.JobId />
+                              <button class="btn btn-success btn-sm me-2" type="submit">Activate</button>
+                          </form>
+                        </div>
+                        <div class="container d-flex align-items-center p-2">
+                          <span class="text-center align-bottom text-muted" style="font-size: .875em; margin: auto;">Administration</span>
+                        </div>
+                      </div>
+                      
+                    </div>
+             </div>
+            }
           </div>
       </main>
     </div>
