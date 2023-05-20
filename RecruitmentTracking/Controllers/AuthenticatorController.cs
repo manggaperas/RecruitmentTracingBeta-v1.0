@@ -36,6 +36,7 @@ public class AuthenticatorController : Controller
     {
         Response.Cookies.Delete("ActionLogin");
 
+        TempData["success"] = "Successfully Logout";
         return RedirectToAction("Index", "Candidate");
     }
 
@@ -64,6 +65,7 @@ public class AuthenticatorController : Controller
         _db.Candidates!.Add(objCandidate);
         await _db.SaveChangesAsync();
 
+        TempData["success"] = "Successfully Sign Up";
         return RedirectToAction("Login");
     }
 
@@ -84,6 +86,7 @@ public class AuthenticatorController : Controller
 
             Response.Cookies.Append("ActionLogin", token, Options);
 
+            TempData["success"] = "Successfully Login";
             return RedirectToAction("Index", "Candidate");
         }
 
@@ -101,6 +104,7 @@ public class AuthenticatorController : Controller
 
             Response.Cookies.Append("ActionLogin", token, Options);
 
+            TempData["success"] = "Successfully Login";
             return RedirectToAction("Index", "Admin");
         }
 
@@ -153,6 +157,7 @@ public class AuthenticatorController : Controller
     public async Task<IActionResult> SignupAdmin(Admin request)
     {
         if (_db.Admins!.Any(a => a.Email == request.Email))
+            TempData["warning"] = "Email is already in use";
             return BadRequest("Email is already in use.");
 
         string HassedPassword = BCrypt.Net.BCrypt.HashPassword(request.Password);
