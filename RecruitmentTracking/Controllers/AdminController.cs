@@ -96,6 +96,7 @@ public class AdminController : Controller
         objJob.IsJobAvailable = false;
         await _db.SaveChangesAsync();
 
+        TempData["success"] = "Successfully Close a Job";
         return Redirect("/Admin");
     }
 
@@ -107,6 +108,7 @@ public class AdminController : Controller
         objJob.IsJobAvailable = true;
         await _db.SaveChangesAsync();
 
+        TempData["success"] = "Successfully Activate a Job";
         return Redirect("/JobClosed");
     }
 
@@ -118,6 +120,7 @@ public class AdminController : Controller
         _db.Jobs.Remove(objJob);
         await _db.SaveChangesAsync();
 
+        TempData["success"] = "Successfully Delete a Job";
         return Redirect("/JobClosed");
     }
 
@@ -158,8 +161,10 @@ public class AdminController : Controller
 
         _log.Info("Job Added.");
 
+        TempData["success"] = "Successfully Created a Job";
         return Redirect("/Admin");
     }
+
     [HttpGet("Admin/EditJob/{id}")]
     public IActionResult EditJob(int id)
     {
@@ -203,6 +208,7 @@ public class AdminController : Controller
         await _db.SaveChangesAsync();
         _log.Info("Job Updated.");
 
+        TempData["success"] = "Successfully Edit a Job";
         return Redirect("/Admin");
     }
 
