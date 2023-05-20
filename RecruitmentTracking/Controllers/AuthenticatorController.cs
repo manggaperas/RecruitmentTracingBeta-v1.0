@@ -107,7 +107,7 @@ public class AuthenticatorController : Controller
             TempData["success"] = "Successfully Login";
             return RedirectToAction("Index", "Admin");
         }
-
+        TempData["warning"] = "User not found";
         return BadRequest("User not found.");
     }
 
@@ -157,7 +157,6 @@ public class AuthenticatorController : Controller
     public async Task<IActionResult> SignupAdmin(Admin request)
     {
         if (_db.Admins!.Any(a => a.Email == request.Email))
-            TempData["warning"] = "Email is already in use";
             return BadRequest("Email is already in use.");
 
         string HassedPassword = BCrypt.Net.BCrypt.HashPassword(request.Password);
