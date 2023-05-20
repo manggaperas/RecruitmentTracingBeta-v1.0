@@ -164,6 +164,14 @@ public class CandidateController : Controller
         return View(dataCandidate);
     }
 
+    [HttpGet("/TrackJob")]
+    public IActionResult TrackJob()
+    {
+        ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
+
+        return View();
+    }
+
     // [HttpGet("/Jobs")]
     // public async Task<IEnumerable<Job>> Job()
     // {

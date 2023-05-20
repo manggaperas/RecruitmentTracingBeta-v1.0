@@ -52,7 +52,10 @@ public class AuthenticatorController : Controller
     public async Task<IActionResult> Signups(CandidateSignup request)
     {
         if (_db.Candidates!.Any(a => a.Email == request.Email))
-            return BadRequest("Email is already in use.");
+        {
+            TempData["warning"] = "Email is already in use.";
+            return Redirect("/Signup");
+        }
 
         string HassedPassword = BCrypt.Net.BCrypt.HashPassword(request.Password);
         Candidate objCandidate = new()
@@ -159,7 +162,10 @@ public class AuthenticatorController : Controller
     public async Task<IActionResult> SignupAdmin(Admin request)
     {
         if (_db.Admins!.Any(a => a.Email == request.Email))
-            return BadRequest("Email is already in use.");
+        {
+            TempData["warning"] = "Email is already in use.";
+            return Redirect("/Signup");
+        }
 
         string HassedPassword = BCrypt.Net.BCrypt.HashPassword(request.Password);
         Admin objAdmin = new()
