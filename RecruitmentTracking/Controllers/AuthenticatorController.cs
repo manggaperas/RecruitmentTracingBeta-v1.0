@@ -107,8 +107,9 @@ public class AuthenticatorController : Controller
             TempData["success"] = "Successfully Login";
             return RedirectToAction("Index", "Admin");
         }
+
         TempData["warning"] = "User not found";
-        return BadRequest("User not found.");
+        return Redirect("/Login");
     }
 
     private string CreateTokenAdmin(Admin objAdmin)

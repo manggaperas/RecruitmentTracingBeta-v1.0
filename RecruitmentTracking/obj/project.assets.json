@@ -2903,30 +2903,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ACER\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/home/ignatius/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "e:\\bootcamp_formulatrix\\Project_Recruitment_Tracking\\RecruitmentTracking2\\RecruitmentTracking\\RecruitmentTracking\\RecruitmentTracking.csproj",
+      "projectUniqueName": "/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/RecruitmentTracking.csproj",
       "projectName": "RecruitmentTracking",
-      "projectPath": "e:\\bootcamp_formulatrix\\Project_Recruitment_Tracking\\RecruitmentTracking2\\RecruitmentTracking\\RecruitmentTracking\\RecruitmentTracking.csproj",
-      "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-      "outputPath": "e:\\bootcamp_formulatrix\\Project_Recruitment_Tracking\\RecruitmentTracking2\\RecruitmentTracking\\RecruitmentTracking\\obj\\",
+      "projectPath": "/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/RecruitmentTracking.csproj",
+      "packagesPath": "/home/ignatius/.nuget/packages/",
+      "outputPath": "/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/ignatius/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "/usr/share/dotnet/sdk/7.0.302/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2993,7 +2988,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.302/RuntimeIdentifierGraph.json"
       }
     }
   },
