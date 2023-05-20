@@ -36,6 +36,7 @@ public class AuthenticatorController : Controller
     {
         Response.Cookies.Delete("ActionLogin");
 
+        TempData["success"] = "Successfully Logout";
         return RedirectToAction("Index", "Candidate");
     }
 
@@ -64,6 +65,7 @@ public class AuthenticatorController : Controller
         _db.Candidates!.Add(objCandidate);
         await _db.SaveChangesAsync();
 
+        TempData["success"] = "Successfully Sign Up";
         return RedirectToAction("Login");
     }
 
@@ -84,6 +86,7 @@ public class AuthenticatorController : Controller
 
             Response.Cookies.Append("ActionLogin", token, Options);
 
+            TempData["success"] = "Successfully Login";
             return RedirectToAction("Index", "Candidate");
         }
 
@@ -101,9 +104,10 @@ public class AuthenticatorController : Controller
 
             Response.Cookies.Append("ActionLogin", token, Options);
 
+            TempData["success"] = "Successfully Login";
             return RedirectToAction("Index", "Admin");
         }
-
+        TempData["warning"] = "User not found";
         return BadRequest("User not found.");
     }
 

@@ -84,6 +84,7 @@ public class CandidateController : Controller
 
         await _db.SaveChangesAsync();
 
+        TempData["success"] = "Successfully Update Profile";
         return Redirect("/Profile");
     }
 
