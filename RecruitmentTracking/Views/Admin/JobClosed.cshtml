@@ -32,7 +32,7 @@
           <div class="d-flex justify-content-between align-items-center">
             <input type="text" class="rounded" />
             <div class="d-flex justify-content-around align-items-center" style="width: 150px">
-              <span>HR Name</span>
+              <span class="px-2">@ViewBag.AdminName</span>
               <div class="rounded-circle" style="width: 40px; height: 40px; background-color: #4CAF50"></div>
             </div>
           </div>
@@ -49,7 +49,7 @@
                                 href="@Url.Action("Administration", "Admin", new { id = item.JobId })">
                                 @item.JobTitle
                             </a>
-                            <p class="list-inline-item text-muted h3">9</p>
+                            <p class="list-inline-item text-muted h3">@item.CandidateCout</p>
                           </div>
                           
                           <div class="d-flex card-text justify-content-between align-items-center text-muted" style="font-size: .875em;">
@@ -67,7 +67,7 @@
                           </form>
                           <form action="/Admin/ActivateTheJob" method="post">
                               <input type="hidden" name="id" value= @item.JobId />
-                              <button class="btn btn-success btn-sm me-2" type="submit">Activate</button>
+                              <button class="btn btn-light btn-sm me-2" type="submit">Activate</button>
                           </form>
                         </div>
                         <div class="container d-flex align-items-center p-2">

@@ -25,6 +25,8 @@ public class Job
     [DataType(DataType.Date)]
     public DateTime? JobExpiredDate { get; set; }
 
+    public string? ProcessStatus { get; set; }
+
     public string? EmailHR { get; set; }
     public string? EmailUser { get; set; }
     public string? EmailOffering { get; set; }

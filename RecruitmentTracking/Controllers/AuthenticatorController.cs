@@ -111,6 +111,7 @@ public class AuthenticatorController : Controller
     {
         List<Claim> claims = new(){
             new Claim(ClaimTypes.Email, objAdmin.Email!),
+            new Claim(ClaimTypes.Name, objAdmin.Name!),
         };
 
         SymmetricSecurityKey key = new(Encoding.UTF8.GetBytes(

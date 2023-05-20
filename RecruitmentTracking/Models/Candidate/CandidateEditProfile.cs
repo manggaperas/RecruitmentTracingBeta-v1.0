@@ -6,5 +6,5 @@ public class CandidateEditProfile
     public string? Email { get; set; }
     public string? Phone { get; set; }
     public string? LastEducation { get; set; }
-    public int GPA { get; set; }
+    public double GPA { get; set; }
 }

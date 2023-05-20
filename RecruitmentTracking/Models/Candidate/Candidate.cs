@@ -17,7 +17,7 @@ public class Candidate
     public string? Password { get; set; }
 
     public string? Phone { get; set; }
-    public int GPA { get; set; }
+    public double GPA { get; set; }
     public string? LastEducation { get; set; }
 
     public string? Schedule { get; set; }

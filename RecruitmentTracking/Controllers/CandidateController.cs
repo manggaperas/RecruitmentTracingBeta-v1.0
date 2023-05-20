@@ -28,6 +28,13 @@ public class CandidateController : Controller
     {
         ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
 
+        if (ViewBag.IsAuth)
+        {
+            string token = Request.Cookies["ActionLogin"]!;
+            JwtSecurityToken dataJwt = new JwtSecurityTokenHandler().ReadJwtToken(token);
+            ViewBag.IsAdmin = dataJwt.Claims.Count() != 2 ? "admin" : null;
+        }
+
         List<JobData> listJob = new();
         foreach (Job job in _db.Jobs!.Where(j => j.IsJobAvailable).ToList())
         {
@@ -81,6 +88,7 @@ public class CandidateController : Controller
         candidate.Name = profile.Name;
         candidate.Phone = profile.Phone;
         candidate.LastEducation = profile.LastEducation;
+        candidate.GPA = profile.GPA;
 
         await _db.SaveChangesAsync();
 
@@ -107,6 +115,13 @@ public class CandidateController : Controller
     public IActionResult DetailJob(int id)
     {
         ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
+
+        if (ViewBag.IsAuth)
+        {
+            string token = Request.Cookies["ActionLogin"]!;
+            JwtSecurityToken dataJwt = new JwtSecurityTokenHandler().ReadJwtToken(token);
+            ViewBag.IsAdmin = dataJwt.Claims.Count() != 2 ? "admin" : null;
+        }
 
         Job objJob = _db.Jobs!.Find(id)!;
 

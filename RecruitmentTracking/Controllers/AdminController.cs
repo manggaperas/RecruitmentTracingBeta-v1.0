@@ -30,9 +30,15 @@ public class AdminController : Controller
         ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
         ViewBag.IsAdmin = "admin";
 
+        string token = Request.Cookies["ActionLogin"]!;
+        GetDataAdmin(token, out _, out string adminName);
+
+        ViewBag.AdminName = adminName;
+
         List<JobData> listJob = new();
         foreach (Job job in _db.Jobs!.Where(j => j.IsJobAvailable).ToList())
         {
+            int candidateCout = _db.CandidateJobs!.Where(c => c.Id == job.JobId).Count();
             JobData data = new()
             {
                 JobId = job.JobId,
@@ -42,6 +48,7 @@ public class AdminController : Controller
                 Location = job.Location,
                 JobPostedDate = job.JobPostedDate,
                 JobExpiredDate = job.JobExpiredDate,
+                CandidateCout = candidateCout,
             };
             listJob.Add(data);
         }
@@ -55,9 +62,15 @@ public class AdminController : Controller
         ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
         ViewBag.IsAdmin = "admin";
 
+        string token = Request.Cookies["ActionLogin"]!;
+        GetDataAdmin(token, out _, out string adminName);
+
+        ViewBag.AdminName = adminName;
+
         List<JobData> listJob = new();
         foreach (Job job in _db.Jobs!.Where(j => !j.IsJobAvailable).ToList())
         {
+            int candidateCout = _db.CandidateJobs!.Where(c => c.Id == job.JobId).Count();
             JobData data = new()
             {
                 JobId = job.JobId,
@@ -67,6 +80,7 @@ public class AdminController : Controller
                 Location = job.Location,
                 JobPostedDate = job.JobPostedDate,
                 JobExpiredDate = job.JobExpiredDate,
+                CandidateCout = candidateCout,
             };
             listJob.Add(data);
         }
@@ -113,6 +127,11 @@ public class AdminController : Controller
         ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
         ViewBag.IsAdmin = "admin";
 
+        string token = Request.Cookies["ActionLogin"]!;
+        GetDataAdmin(token, out _, out string adminName);
+
+        ViewBag.AdminName = adminName;
+
         return View();
     }
 
@@ -120,7 +139,7 @@ public class AdminController : Controller
     public async Task<IActionResult> CreateJobs(JobCreate objJob)
     {
         string token = Request.Cookies["ActionLogin"]!;
-        string email = GetEmail(token);
+        GetDataAdmin(token, out string email, out _);
 
         Admin admin = _db.Admins!.FirstOrDefault(a => a.Email == email)!;
         Job newJob = new()
@@ -128,7 +147,7 @@ public class AdminController : Controller
             JobTitle = objJob.JobTitle,
             JobDescription = objJob.JobDescription,
             JobExpiredDate = objJob.JobExpiredDate,
-            JobRequirement = objJob.JobRequirement,
+            JobRequirement = objJob.JobRequirement!.Replace("\r\n", "\n"),
             JobPostedDate = DateTime.Now,
             Location = objJob.Location,
             IsJobAvailable = true,
@@ -147,6 +166,11 @@ public class AdminController : Controller
         ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
         ViewBag.IsAdmin = "admin";
 
+        string token = Request.Cookies["ActionLogin"]!;
+        GetDataAdmin(token, out _, out string adminName);
+
+        ViewBag.AdminName = adminName;
+
         Job objJob = _db.Jobs!.FirstOrDefault(j => j.JobId == id)!;
 
         JobData data = new()
@@ -154,7 +178,7 @@ public class AdminController : Controller
             JobId = objJob.JobId,
             JobTitle = objJob.JobTitle,
             JobDescription = objJob.JobDescription,
-            JobRequirement = objJob.JobRequirement,
+            JobRequirement = objJob.JobRequirement!.Replace("\r\n", "\n"),
             Location = objJob.Location,
             JobPostedDate = objJob.JobPostedDate,
             JobExpiredDate = objJob.JobExpiredDate,
@@ -163,13 +187,13 @@ public class AdminController : Controller
         return View(data);
     }
 
-    [HttpPost("Admin/EditJobs/{id}")]
-    public async Task<IActionResult> EditJobs(int id, JobCreate objJob)
+    [HttpPost]
+    public async Task<IActionResult> EditJobs(JobCreate objJob)
     {
         string token = Request.Cookies["ActionLogin"]!;
-        string email = GetEmail(token);
+        GetDataAdmin(token, out string email, out _);
 
-        Job updateJob = _db.Jobs!.FirstOrDefault(j => j.JobId == id)!;
+        Job updateJob = _db.Jobs!.FirstOrDefault(j => j.JobId == objJob.JobId)!;
         updateJob.JobTitle = objJob.JobTitle;
         updateJob.JobDescription = objJob.JobDescription;
         updateJob.JobExpiredDate = objJob.JobExpiredDate;
@@ -182,7 +206,7 @@ public class AdminController : Controller
         return Redirect("/Admin");
     }
 
-    private string GetEmail(string token)
+    private void GetDataAdmin(string token, out string email, out string name)
     {
         ClaimsPrincipal claimsPrincipal = new JwtSecurityTokenHandler()
             .ValidateToken(token, new TokenValidationParameters
@@ -195,7 +219,8 @@ public class AdminController : Controller
                 ValidateAudience = false,
             }, out _);
 
-        return claimsPrincipal.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Email)!.Value!;
+        email = claimsPrincipal.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Email)!.Value!;
+        name = claimsPrincipal.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Name)!.Value!;
     }
 
     [HttpGet("Admin/Administration/{id}")]

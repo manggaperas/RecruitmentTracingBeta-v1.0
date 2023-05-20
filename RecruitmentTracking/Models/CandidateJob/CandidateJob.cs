@@ -13,6 +13,7 @@ public class CandidateJob
     [Required]
     [ForeignKey("Candidate")]
     public int CandidateId { get; set; }
+    public string? CV { get; set; }
 
     public Job? Job { get; set; }
     public Candidate? Candidate { get; set; }
