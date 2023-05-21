@@ -25,6 +25,11 @@
                         @Html.PasswordFor(m => m.Password, new { @class="form-control"})
                     </div>
 
+                     <div class="mb-3">
+                        <label for="password" class="form-label">Confirm password</label>
+                        @Html.PasswordFor(m => m.ConfirmPassword, new { @class="form-control"})
+                    </div>
+
                     <div class="mb-3">
                         <a href = "forgot-password.php" style="text-decoration: none">Forgot password?</a>
                     </div>

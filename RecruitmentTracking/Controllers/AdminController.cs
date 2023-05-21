@@ -25,7 +25,7 @@ public class AdminController : Controller
     }
 
     [HttpGet]
-    public IActionResult Index()
+    public async Task<IActionResult> Index()
     {
         ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
         ViewBag.IsAdmin = "admin";
@@ -38,7 +38,8 @@ public class AdminController : Controller
         List<JobData> listJob = new();
         foreach (Job job in _db.Jobs!.Where(j => j.IsJobAvailable).ToList())
         {
-            int candidateCout = _db.CandidateJobs!.Where(c => c.Id == job.JobId).Count();
+            int candidateCount = _db.CandidateJobs!.Where(c => c.JobId == job.JobId).Count();
+
             JobData data = new()
             {
                 JobId = job.JobId,
@@ -48,7 +49,7 @@ public class AdminController : Controller
                 Location = job.Location,
                 JobPostedDate = job.JobPostedDate,
                 JobExpiredDate = job.JobExpiredDate,
-                CandidateCout = candidateCout,
+                CandidateCout = candidateCount,
             };
             listJob.Add(data);
         }
@@ -57,7 +58,7 @@ public class AdminController : Controller
     }
 
     [HttpGet("/JobClosed")]
-    public IActionResult JobClosed()
+    public async Task<IActionResult> JobClosed()
     {
         ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
         ViewBag.IsAdmin = "admin";
@@ -70,7 +71,7 @@ public class AdminController : Controller
         List<JobData> listJob = new();
         foreach (Job job in _db.Jobs!.Where(j => !j.IsJobAvailable).ToList())
         {
-            int candidateCout = _db.CandidateJobs!.Where(c => c.Id == job.JobId).Count();
+            int candidateCout = _db.CandidateJobs!.Where(c => c.JobId == job.JobId).Count();
             JobData data = new()
             {
                 JobId = job.JobId,
@@ -230,24 +231,41 @@ public class AdminController : Controller
     }
 
     [HttpGet("Admin/Administration/{id}")]
-    public IActionResult Administration(int id)
+    public async Task<IActionResult> Administration(int id)
     {
         ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
         ViewBag.IsAdmin = "admin";
 
-        Job objJob = _db.Jobs!.FirstOrDefault(j => j.JobId == id)!;
-        JobData data = new()
-        {
-            JobId = objJob.JobId,
-            JobTitle = objJob.JobTitle,
-            JobDescription = objJob.JobDescription,
-            JobRequirement = objJob.JobRequirement,
-            Location = objJob.Location,
-            JobPostedDate = objJob.JobPostedDate,
-            JobExpiredDate = objJob.JobExpiredDate,
-        };
+        string token = Request.Cookies["ActionLogin"]!;
+        GetDataAdmin(token, out _, out string name);
 
-        return View(data);
+        ViewBag.AdminName = name;
+
+        Job objJob = _db.Jobs!.FirstOrDefault(j => j.JobId == id)!;
+        ViewBag.JobTitle = objJob.JobTitle;
+
+        List<Candidate> listCandidates = _db.CandidateJobs!
+                                        .Where(cj => cj.JobId == id)
+                                        .Select(cj => cj.Candidate)
+                                        .ToList()!;
+
+        List<DataCandidateJobs> listDataCandidates = new();
+        foreach (Candidate candidate in listCandidates)
+        {
+            CandidateJob cj = _db.CandidateJobs!.FirstOrDefault(cj => cj.CandidateId == candidate.CandidateId)!;
+            DataCandidateJobs dataCandidate = new()
+            {
+                CandidateId = candidate.CandidateId,
+                Name = candidate.Name,
+                Email = candidate.Email,
+                LastEducation = candidate.LastEducation,
+                GPA = candidate.GPA,
+                CV = cj.CV,
+            };
+            listDataCandidates.Add(dataCandidate);
+        }
+
+        return View(listDataCandidates);
     }
 
     [HttpGet]

@@ -11,34 +11,37 @@
               <p class="h6">Apply Job : </p>
               <p class="h4 text-muted text-body-secondary">@ViewBag.JobTitle</p>
               <hr/>
-              @using(Html.BeginForm("ApplyJob", "Candidate", FormMethod.Post))
+              @using(Html.BeginForm("ApplyJobs", "Candidate", FormMethod.Post, new { enctype = "multipart/form-data"}))
               {
-                    <div>
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Full Name</label>
-                        @Html.TextBoxFor(m => m.Name, new { @class = "form-control"})
-                    </div>
+                 <input type="hidden" name="JobId" value="@ViewBag.JobId" />
 
-                    <div class="mb-3">
-                        <label for="phone" class="form-label">Phone Number</label>
-                        @Html.TextBoxFor(m => m.Phone, new { @class = "form-control"})
-                    </div>
+                <div>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    @Html.TextBoxFor(m => m.Name, new { @class = "form-control"})
+                </div>
 
-                    <div class="mb-3">
-                        <label for="education" class="form-label">Last Education</label>
-                        @Html.TextBoxFor(m => m.LastEducation, new { @class = "form-control"})
-                    </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    @Html.TextBoxFor(m => m.Phone, new { @class = "form-control"})
+                </div>
 
-                    <div class="mb-3">
-                        <label for="GPA" class="form-label">GPA</label>
-                        @Html.TextBoxFor(m => m.GPA, new { @class = "form-control"})
-                    </div>
+                <div class="mb-3">
+                    <label for="education" class="form-label">Last Education</label>
+                    @Html.TextBoxFor(m => m.LastEducation, new { @class = "form-control"})
+                </div>
 
-                    <label for="file" class="form-label mt-3">Upload CV/Resume</label>
-                    <input type="file" class="form-control" id="file" name="file">
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                      <button type="submit" class="btn btn-primary mt-3">Submit</button>
-                    </div>
+                <div class="mb-3">
+                    <label for="GPA" class="form-label">GPA</label>
+                    @Html.TextBoxFor(m => m.GPA, new { @class = "form-control"})
+                </div>
+
+                <label for="file" class="form-label mt-3">Upload CV/Resume</label>
+                  @Html.TextBoxFor(m => m.FileCV, new { @class = "form-control" ,@type = "file"})
+                @* <input type="file" class="form-control" id="file" name="file"> *@
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                  <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                </div>
                     
                 </div>
               }
