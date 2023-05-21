@@ -1,63 +1,51 @@
+@model List<CandidateJobStatus>
+
 @{
     ViewData["Title"] = "My Application";
+
+    
 } 
     <div class="container mt-5"  ">
-      <p class="h6 fw-medium" style="padding-right: 50px;">My Application</p>
-      <p class="h4 fw-medium text-muted">Hardware Engineer</p>
-      <section class="step-wizard mt-3"> 
-        
-        <div class="container">
-            <ul class="step-wizard-list d-flex justify-content-center justify-content-between">
-                <li class="step-wizard-item current-item">
-                    <span class="progress-count">1</span>
-                    <span class="progress-label fw-normal">Administration</span>
-                </li>
-                <li class="step-wizard-item">
-                    <span class="progress-count">2</span>
-                    <span class="progress-label fw-normal">HR Interview</span>
-                </li>
-                <li class="step-wizard-item">
-                    <span class="progress-count">3</span>
-                    <span class="progress-label fw-normal">User Interview</span>
-                </li>
-                <li class="step-wizard-item">
-                    <span class="progress-count">4</span>
-                    <span class="progress-label fw-normal">Offering</span>
-                </li>
-            </ul>
-        </div>
-        
-    </section>
-    </div>
+      <p class="h6 fw-medium" style="padding-right: 50px;">My Application Status :</p>
 
-    <div class="container mt-5"  ">
-      @* <p class="h6 fw-medium" style="padding-right: 50px;">My Application</p> *@
-      <p class="h4 fw-medium text-muted">Software Engineer</p>
-      <section class="step-wizard mt-3"> 
-        
-        <div class="container">
-            <ul class="step-wizard-list d-flex justify-content-center justify-content-between">
-                <li class="step-wizard-item">
-                    <span class="progress-count">1</span>
-                    <span class="progress-label fw-normal">Administration</span>
-                </li>
-                <li class="step-wizard-item current-item">
-                    <span class="progress-count">2</span>
-                    <span class="progress-label fw-normal">HR Interview</span>
-                </li>
-                <li class="step-wizard-item">
-                    <span class="progress-count">3</span>
-                    <span class="progress-label fw-normal">User Interview</span>
-                </li>
-                <li class="step-wizard-item">
-                    <span class="progress-count">4</span>
-                    <span class="progress-label fw-normal">Offering</span>
-                </li>
-            </ul>
+      @foreach (var status in Model)
+      {
+        string style_1 = status.CandidateStatus![0];
+        string style_2 = status.CandidateStatus![1];
+        string style_3 = status.CandidateStatus![2];
+        string style_4 = status.CandidateStatus![3];
+      
+      <div>
+        <p class="h4 fw-medium text-muted">@status.JobTitle</p>
+          <section class="step-wizard mt-3"> 
+            
+            <div class="container">
+                <ul class="step-wizard-list d-flex justify-content-center justify-content-between">
+                    <li class="step-wizard-item @style_1">
+                        <span class="progress-count">1</span>
+                        <span class="progress-label fw-normal">Administration</span>
+                    </li>
+                    <li class="step-wizard-item @style_2">
+                        <span class="progress-count">2</span>
+                        <span class="progress-label fw-normal">HR Interview</span>
+                    </li>
+                    <li class="step-wizard-item @style_3">
+                        <span class="progress-count">3</span>
+                        <span class="progress-label fw-normal">User Interview</span>
+                    </li>
+                    <li class="step-wizard-item @style_4">
+                        <span class="progress-count">4</span>
+                        <span class="progress-label fw-normal">Offering</span>
+                    </li>
+                </ul>
+            </div>
+      
+        </section>
         </div>
-        
-    </section>
-    </div>
+      }
+      </div>
+      
+
 
 <style>
     

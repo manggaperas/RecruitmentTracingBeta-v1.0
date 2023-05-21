@@ -1,7 +1,9 @@
-@model JobData;
+@model List<DataCandidateJobs>;
 
 @{
   ViewData["Title"] = "Admin";
+
+  int counter = 1;
 }
 
 <div class="d-flex w-100">
@@ -37,11 +39,11 @@
       <main class="p-5" style="height: 100vh; width: 80%">
         <header class="mb-5">
           <div class="d-flex justify-content-between">
-            <h4>@Model.JobTitle</h4>
+            <h4>@ViewBag.JobTitle</h4>
             <div
               class="d-flex justify-content-around align-items-center"
               style="width: 150px">
-              <span>HR Name</span>
+              <span>@ViewBag.AdminName</span>
               <div
                 class="rounded-circle"
                 style="
@@ -59,42 +61,46 @@
               <th scope="col">No</th>
               <th scope="col">Name</th>
               <th scope="col">Education</th>
-              <th scope="col">IPK</th>
-              <th scope="col">Experience</th>
+              <th scope="col">GPA</th>
+              <th scope="col">Phone</th>
               <th scope="col">Email</th>
               <th scope="col">Action</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td class="fs-6">Uzumaki Naruto S</td>
-              <td>S1</td>
-              <td>4.0</td>
-              <td>Fresh Graduate</td>
-              <td>admin@company.com</td>
-              <td class="d-flex">
-                <button
-                  type="button"
-                  class="btn btn-primary btn-sm"
-                  style="margin-left: 5px">
-                  Accept
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-danger btn-sm"
-                  style="margin-left: 5px">
-                  Reject
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-light btn-sm"
-                  style="margin-left: 25px">
-                  Download CV
-                </button>
-              </td>
-            </tr>
-          </tbody>
+          @foreach (var candidate in Model)
+          {
+            <tbody>
+              <tr>
+                <th scope="row">@counter</th>
+                <td class="fs-6">@candidate.Name</td>
+                <td>@candidate.LastEducation</td>
+                <td>@candidate.GPA</td>
+                <td>@candidate.Phone</td>
+                <td>@candidate.Email</td>
+                <td class="d-flex">
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-sm"
+                    style="margin-left: 5px">
+                    Accept
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-danger btn-sm"
+                    style="margin-left: 5px">
+                    Reject
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-light btn-sm"
+                    style="margin-left: 25px">
+                    Download CV
+                  </button>
+                </td>
+              </tr>
+            </tbody> 
+          }
+
         </table>
         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
           <a class="btn btn-primary" type="button" href="hr_interview.html"

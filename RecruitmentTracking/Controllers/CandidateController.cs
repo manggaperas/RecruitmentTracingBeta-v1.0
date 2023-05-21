@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using log4net;
 
@@ -16,10 +17,12 @@ public class CandidateController : Controller
     private readonly DataContex _db = new();
     private readonly ILog _log;
     private readonly IConfiguration _configuration;
+    private readonly IWebHostEnvironment _server;
 
-    public CandidateController(IConfiguration configuration)
+    public CandidateController(IWebHostEnvironment server, IConfiguration configuration)
     {
         _log = LogManager.GetLogger(typeof(CandidateController));
+        _server = server;
         _configuration = configuration;
     }
 
@@ -161,15 +164,98 @@ public class CandidateController : Controller
             GPA = objCandidate.GPA,
         };
 
+        ViewBag.JobId = id;
         return View(dataCandidate);
     }
 
+    [HttpPost]
+    public async Task<IActionResult> ApplyJobs(int JobId, CandidateEditProfile updateCandidate)
+    {
+        if (updateCandidate.FileCV?.Length < 0)
+        {
+            TempData["warning"] = "Please select a CV file";
+            return Redirect($"/ApplyJob/{JobId}");
+        }
+
+        string email = GetEmail(Request.Cookies["ActionLogin"]!);
+
+        string fileName = Guid.NewGuid().ToString() + Path.GetExtension(updateCandidate.FileCV!.FileName);
+
+        string uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "Data", "DataCV");
+
+        Directory.CreateDirectory(uploadsFolder);
+
+        string filePath = Path.Combine(uploadsFolder, fileName);
+
+        Candidate objCandidate = (await _db.Candidates!.FirstOrDefaultAsync(c => c.Email == email))!;
+        objCandidate.Name = updateCandidate.Name;
+        objCandidate.Phone = updateCandidate.Phone;
+        objCandidate.LastEducation = updateCandidate.LastEducation;
+        objCandidate.GPA = updateCandidate.GPA;
+        objCandidate.StatusInJob = $"{ProcessType.Administration}";
+
+        Job objJob = (await _db.Jobs!.FindAsync(JobId))!;
+
+        CandidateJob objCJ = new()
+        {
+            Candidate = objCandidate,
+            Job = objJob,
+            CV = fileName,
+        };
+
+        await _db.CandidateJobs!.AddAsync(objCJ);
+        await _db.SaveChangesAsync();
+
+        using (var stream = new FileStream(filePath, FileMode.Create))
+        {
+            updateCandidate.FileCV.CopyTo(stream);
+        }
+
+        TempData["success"] = "Application Successfully Sent";
+        return Redirect("/TrackJob");
+    }
+
     [HttpGet("/TrackJob")]
-    public IActionResult TrackJob()
+    public async Task<IActionResult> TrackJob()
     {
         ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
 
-        return View();
+        string email = GetEmail(Request.Cookies["ActionLogin"]!);
+
+        Candidate objCandidate = (await _db.Candidates!.FirstOrDefaultAsync(c => c.Email == email))!;
+        List<Job> listJobCandidate = _db.CandidateJobs!
+                            .Where(c => c.CandidateId == objCandidate.CandidateId)!
+                            .Select(c => c.Job)
+                            .ToList()!;
+
+        List<CandidateJobStatus> listData = new();
+        foreach (Job job in listJobCandidate)
+        {
+            CandidateJobStatus status = new()
+            {
+                CandidateStatus = GetStatusApplication(objCandidate.StatusInJob!).Split(' '), // need migrate db to CandidateJobStatus for status in Job
+                JobTitle = job.JobTitle,
+            };
+            listData.Add(status);
+        }
+
+
+        return View(listData);
+    }
+
+    private string GetStatusApplication(string status)
+    {
+        List<string> process = new()
+        {
+            "current-item none none none",
+            "none current-item none none",
+            "none none current-item none",
+            "none none none current-item",
+        };
+
+        int step = (int)Enum.Parse(typeof(ProcessType), status);
+
+        return process[step - 1];
     }
 
     // [HttpGet("/Jobs")]

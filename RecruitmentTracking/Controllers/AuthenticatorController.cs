@@ -51,6 +51,17 @@ public class AuthenticatorController : Controller
     [HttpPost]
     public async Task<IActionResult> Signups(CandidateSignup request)
     {
+        if (request.Password != request.ConfirmPassword)
+        {
+            TempData["warning"] = "passwords you entered do not match. ";
+            return Redirect("/Signup");
+        }
+        if (request.Password!.Length < 6 || request.Password! == null)
+        {
+            TempData["warning"] = "Password must be at least 6 characters";
+            return Redirect("/Signup");
+        }
+
         if (_db.Candidates!.Any(a => a.Email == request.Email))
         {
             TempData["warning"] = "Email is already in use.";

@@ -10,6 +10,9 @@
     };
 }
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
 <div class="d-flex w-100">
     <aside
     class="d-flex justify-content-center py-5 align-items-center vh-100"
@@ -62,8 +65,17 @@
                     @Html.TextAreaFor(m => m.JobRequirement, new { @class="form-control"})
                 </div>
                 <div class="mb-3">
-                    <label for="JobExpiredDate" class="form-label">Job Expired Date</label>
-                    @Html.TextBoxFor(m => m.JobExpiredDate, new { @class="form-control"})
+
+                     <div class="form-group">
+                            <label for="JobExpiredDate" class="form-label">Job Expired Date</label>
+                            <div>
+                                @Html.TextBoxFor(model => model.JobExpiredDate, new { @class = "form-control", @readonly = "readonly", placeholder = "Select Date", id = "datepicker" })
+                                @Html.ValidationMessageFor(model => model.JobExpiredDate, "", new { @class = "text-danger" })
+                            </div>
+                    </div>
+
+                    @* <label for="JobExpiredDate" class="form-label">Job Expired Date</label>
+                    @Html.TextBoxFor(m => m.JobExpiredDate, new { @class="form-control"}) *@
                 </div>
 
                 <div class="mb-3">
@@ -80,3 +92,13 @@
         </div>
     </main>
 </div>
+
+<script>
+    flatpickr('#datepicker', {
+        dateFormat: 'Y-m-d',
+        allowInput: true,
+        onClose: function (selectedDates) {
+            // Optional code to perform actions when the date is selected or the picker is closed
+        }
+    });
+</script>
