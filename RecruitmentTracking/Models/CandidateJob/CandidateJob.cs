@@ -7,9 +7,11 @@ public class CandidateJob
 {
     [Key]
     public int Id { get; set; }
+    
     [Required]
     [ForeignKey("Job")]
     public int JobId { get; set; }
+    
     [Required]
     [ForeignKey("Candidate")]
     public int CandidateId { get; set; }

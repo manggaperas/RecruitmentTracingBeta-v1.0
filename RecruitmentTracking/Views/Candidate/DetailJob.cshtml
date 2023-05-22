@@ -21,7 +21,8 @@
             <p class="h4 card-title">Job description</p>
             <p>@Model.JobDescription</p>
             <p class="h4 card-title mt-2">Job requirements</p>
-            <p>@Model.JobRequirement</p>
+            <p>@Html.Raw(Model.JobRequirement.Replace(Environment.NewLine, "<br />"))</p>
+            
             <div class="d-grid gap-2">
                 <a class="btn btn-primary mt-3" href="@Url.Action("ApplyJob", new { id = Model.JobId })">Apply</a>
               </div>

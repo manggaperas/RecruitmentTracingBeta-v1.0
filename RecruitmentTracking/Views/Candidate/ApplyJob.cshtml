@@ -36,8 +36,10 @@
                     @Html.TextBoxFor(m => m.GPA, new { @class = "form-control"})
                 </div>
 
-                <label for="file" class="form-label mt-3">Upload CV/Resume</label>
-                  @Html.TextBoxFor(m => m.FileCV, new { @class = "form-control" ,@type = "file"})
+                @* <label for="file" class="form-label mt-3">Upload CV/Resume</label>
+                  @Html.TextBoxFor(m => m.FileCV, new { @class = "form-control" ,@type = "file"}) *@
+                <label for="file" class="form-label mt-3">Upload CV/Resume (PDF, maks. 1MB)</label>
+                @Html.TextBoxFor(m => m.FileCV, new { @class = "form-control", @type = "file", @id = "file-input", @required = "required" })
                 @* <input type="file" class="form-control" id="file" name="file"> *@
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                   <button type="submit" class="btn btn-primary mt-3">Submit</button>
@@ -59,3 +61,29 @@
             </div>
         </footer> *@
       </body>
+
+<script>
+  // Ambil elemen input file
+  var fileInput = document.getElementById("file-input");
+
+  // Tambahkan event listener untuk memvalidasi file saat dipilih
+  fileInput.addEventListener("change", function() {
+    var file = fileInput.files[0]; // Ambil file yang dipilih
+    var maxSize = 1048576; // Ukuran maksimal file dalam byte (1 MB = 1,048,576 bytes)
+
+    // Validasi format file
+    var fileType = file.type.toLowerCase();
+    if (fileType !== "application/pdf") {
+      alert("Mohon pilih file dalam format PDF.");
+      fileInput.value = ""; // Reset nilai input file
+      return;
+    }
+
+    // Validasi ukuran file
+    if (file.size > maxSize) {
+      alert("Ukuran file terlalu besar. Maksimal 1MB.");
+      fileInput.value = ""; // Reset nilai input file
+      return;
+    }
+  });
+</script>
