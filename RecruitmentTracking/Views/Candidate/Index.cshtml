@@ -12,7 +12,13 @@
               <input type="text" class="form-control" placeholder="Search Job" aria-label="City"/>
             </div>
             <div class="col-sm-5">
-              <input type="text" class="form-control" placeholder="Location" aria-label="State"/>
+              @* <input type="text" class="form-control" placeholder="Location" aria-label="State"/> *@
+              <select class="form-control" aria-label="State" name="searchLocation">
+                <option value="">All Location</option>
+                <option value="Salatiga">Salatiga</option>
+                <option value="Semarang">Semarang</option>
+                <option value="Bandung">Bandung</option>
+              </select>
             </div>
             <div class="col-sm mb-3">
               <button type="button" class="btn btn-primary">Search</button>
@@ -31,6 +37,8 @@
           <div class="card w-100 max-w-100">
             <div class="card-body">
               <h5 class="card-title">@job.JobTitle</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Location: @job.Location</h6>
+              @* <h6>Employee count: @job.CandidateCout</h6> *@
               <p class="card-text">
                 @job.JobDescription
               </p>
