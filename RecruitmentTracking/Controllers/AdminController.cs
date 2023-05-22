@@ -89,9 +89,16 @@ public class AdminController : Controller
         return View(listJob);
     }
 
+    // Add Feature, if candidate apply job > 1, job can't be closed
     [HttpPost]
     public async Task<IActionResult> CloseTheJob(int id)
     {
+        if(_db.CandidateJobs!.Where(cj => cj.JobId == id).Count() > 0)
+        {
+            TempData["warning"] = "Job can't be closed because there are candidates who have applied for this job.";
+            return Redirect("/Admin");
+            //return View();
+        }
         Job objJob = _db.Jobs!.Find(id)!;
 
         objJob.IsJobAvailable = false;
