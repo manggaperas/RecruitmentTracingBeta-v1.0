@@ -174,8 +174,7 @@ public class AuthenticatorController : Controller
     {
         if (_db.Admins!.Any(a => a.Email == request.Email))
         {
-            TempData["warning"] = "Email is already in use.";
-            return Redirect("/Signup");
+            return BadRequest("Email is already in use.");
         }
 
         string HassedPassword = BCrypt.Net.BCrypt.HashPassword(request.Password);
