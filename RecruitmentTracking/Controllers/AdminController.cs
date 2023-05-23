@@ -231,6 +231,7 @@ public class AdminController : Controller
         GetDataAdmin(token, out _, out string name);
 
         ViewBag.AdminName = name;
+        ViewBag.JobId = id;
 
         Job objJob = _db.Jobs!.FirstOrDefault(j => j.JobId == id)!;
         ViewBag.JobTitle = objJob.JobTitle;
@@ -243,20 +244,73 @@ public class AdminController : Controller
         List<DataCandidateJobs> listDataCandidates = new();
         foreach (Candidate candidate in listCandidates)
         {
-            CandidateJob cj = _db.CandidateJobs!.FirstOrDefault(cj => cj.CandidateId == candidate.CandidateId)!;
-            DataCandidateJobs dataCandidate = new()
+            if (candidate.StatusInJob == "Administration")
             {
-                CandidateId = candidate.CandidateId,
-                Name = candidate.Name,
-                Email = candidate.Email,
-                LastEducation = candidate.LastEducation,
-                GPA = candidate.GPA,
-                CV = cj.CV,
-            };
-            listDataCandidates.Add(dataCandidate);
+                CandidateJob cj = _db.CandidateJobs!.FirstOrDefault(cj => cj.CandidateId == candidate.CandidateId)!;
+                DataCandidateJobs dataCandidate = new()
+                {
+                    CandidateId = candidate.CandidateId,
+                    Name = candidate.Name,
+                    Email = candidate.Email,
+                    LastEducation = candidate.LastEducation,
+                    GPA = candidate.GPA,
+                    CV = cj.CV,
+                };
+                listDataCandidates.Add(dataCandidate);
+            }
         }
 
         return View(listDataCandidates);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> DownloadCV(int CandidateId, int JobId)
+    {
+        CandidateJob CJ = _db.CandidateJobs!
+                            .FirstOrDefault(cj => cj.JobId == JobId && cj.CandidateId == CandidateId)!;
+
+        string filePath = Path.Combine(Directory.GetCurrentDirectory(), "Data", "DataCV", CJ.CV!);
+
+        return PhysicalFile(filePath, "application/force-download", Path.GetFileName(filePath));
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Accept(int CandidateId, int JobId)
+    {
+
+        Candidate objCandidate = _db.Candidates!.Find(CandidateId)!;
+        int statusInJob = (int)Enum.Parse(typeof(ProcessType), objCandidate.StatusInJob!);
+
+        //Console.WriteLine($"{statusInJob}");
+        statusInJob++;
+        objCandidate.StatusInJob = $"{(ProcessType)statusInJob}";
+
+        //Console.WriteLine(objCandidate.StatusInJob);
+
+        await _db.SaveChangesAsync();
+
+        TempData["success"] = "Candidate Accepted";
+        return Redirect($"/Admin/Administration/{JobId}");
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> SendEmailHRInterview(int JobId, int CandidateId)
+    {
+        Job objJob = (await _db.Jobs!.FindAsync(JobId))!;
+        string bodyEmail = objJob.EmailHR!;
+
+        return default;
+    }
+
+
+    [HttpPost]
+    public async Task<IActionResult> TemplateEmail(EmailTemplate email)
+    {
+        Job objJob = (await _db.Jobs!.FindAsync(email.JobId))!;
+        objJob.EmailHR = email.EmailHR;
+        await _db.SaveChangesAsync();
+
+        return View(email);
     }
 
     [HttpGet]
@@ -267,6 +321,20 @@ public class AdminController : Controller
 
         return View();
     }
+
+    [HttpPost]
+    public async Task<IActionResult> Rejected(int CandidateId, int JobId)
+    {
+        Candidate objCandidate = _db.Candidates!.Find(CandidateId)!;
+
+        objCandidate.StatusInJob = $"{ProcessType.Rejected}";
+
+        await _db.SaveChangesAsync();
+
+        TempData["success"] = "Candidate Rejected";
+        return Redirect($"/Admin/Administration/{JobId}");
+    }
+
 
     [HttpGet]
     public IActionResult UserInterview()
@@ -283,6 +351,9 @@ public class AdminController : Controller
 
         return View();
     }
+
+
+
 
     private void GetDataAdmin(string token, out string email, out string name)
     {
@@ -301,30 +372,7 @@ public class AdminController : Controller
         name = claimsPrincipal.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Name)!.Value!;
     }
 
-    // [HttpPatch("/Update/{id}")]
-    // public async Task<IActionResult> UpdateJob(JobCreate objJob)
-    // {
-    //     _db.Entry(objJob).State = (Microsoft.EntityFrameworkCore.EntityState)EntityState.Modified;
-    //     await _db.SaveChangesAsync();
 
-    //     _log.Info("Job Updated.");
 
-    //     return Ok(objJob);
-    // }
 
-    // [HttpDelete("/Delete/{id}")]
-    // public async Task<IActionResult> DeleteJob(int id)
-    // {
-    //     Job job = _db.Jobs!.Find(id)!;
-    //     if (job != null)
-    //     {
-    //         _db.Jobs.Remove(job);
-    //         await _db.SaveChangesAsync();
-
-    //         _log.Info("Job deleted.");
-
-    //         return Ok(true);
-    //     }
-    //     return BadRequest(false);
-    // }
 }

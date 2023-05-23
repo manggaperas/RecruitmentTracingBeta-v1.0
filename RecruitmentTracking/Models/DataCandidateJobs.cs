@@ -9,4 +9,6 @@ public class DataCandidateJobs
     public string? LastEducation { get; set; }
     public double GPA { get; set; }
     public string? CV { get; set; }
+
+    public int CandidateJobId { get; set; }
 }
