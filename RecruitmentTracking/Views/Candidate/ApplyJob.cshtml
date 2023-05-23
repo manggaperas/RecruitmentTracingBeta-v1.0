@@ -1,4 +1,4 @@
-@model CandidateEditProfile
+@model UserEditProfile
 
 @{
     ViewData["Title"] = "Apply Job";
@@ -11,7 +11,7 @@
               <p class="h6">Apply Job : </p>
               <p class="h4 text-muted text-body-secondary">@ViewBag.JobTitle</p>
               <hr/>
-              @using(Html.BeginForm("ApplyJobs", "Candidate", FormMethod.Post, new { enctype = "multipart/form-data"}))
+              @* @using(Html.BeginForm("ApplyJobs", "Candidate", FormMethod.Post, new { enctype = "multipart/form-data"}))
               {
                  <input type="hidden" name="JobId" value="@ViewBag.JobId" />
 
@@ -36,17 +36,16 @@
                     @Html.TextBoxFor(m => m.GPA, new { @class = "form-control"})
                 </div>
 
-                @* <label for="file" class="form-label mt-3">Upload CV/Resume</label>
-                  @Html.TextBoxFor(m => m.FileCV, new { @class = "form-control" ,@type = "file"}) *@
+               
                 <label for="file" class="form-label mt-3">Upload CV/Resume (PDF, maks. 1MB)</label>
                 @Html.TextBoxFor(m => m.FileCV, new { @class = "form-control", @type = "file", @id = "file-input", @required = "required" })
-                @* <input type="file" class="form-control" id="file" name="file"> *@
+                
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                   <button type="submit" class="btn btn-primary mt-3">Submit</button>
                 </div>
                     
                 </div>
-              }
+              } *@
             </div>
 
 
