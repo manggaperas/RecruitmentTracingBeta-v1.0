@@ -23,14 +23,6 @@ public class AuthenticatorController : Controller
         _configuration = configuration;
     }
 
-    [HttpGet("/Login")]
-    public IActionResult Login()
-    {
-        ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
-
-        return View();
-    }
-
     [HttpPost]
     public IActionResult Logout()
     {
@@ -81,6 +73,14 @@ public class AuthenticatorController : Controller
 
         TempData["success"] = "Successfully Sign Up";
         return RedirectToAction("Login");
+    }
+
+    [HttpGet("/Login")]
+    public IActionResult Login()
+    {
+        ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
+
+        return View();
     }
 
     [HttpPost]
