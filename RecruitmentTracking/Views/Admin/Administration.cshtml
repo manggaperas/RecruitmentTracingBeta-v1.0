@@ -78,24 +78,28 @@
                 <td>@candidate.Phone</td>
                 <td>@candidate.Email</td>
                 <td class="d-flex">
-                  <button
+                  <form action="/Admin/Accept" method="post">
+                    <input type="hidden" name="CandidateId" value= @candidate.CandidateId />
+                    <input type="hidden" name="JobId" value= @ViewBag.JobId />
+                    <button class="btn btn-primary btn-sm" type="submit">Accept</button>
+                  </form>
+                  @* <button
                     type="button"
                     class="btn btn-primary btn-sm"
                     style="margin-left: 5px">
                     Accept
-                  </button>
+                  </button> *@
                   <button
                     type="button"
                     class="btn btn-danger btn-sm"
                     style="margin-left: 5px">
                     Reject
                   </button>
-                  <button
-                    type="button"
-                    class="btn btn-light btn-sm"
-                    style="margin-left: 25px">
-                    Download CV
-                  </button>
+                  <form action="/Admin/DownloadCV" method="post">
+                    <input type="hidden" name="CandidateId" value= @candidate.CandidateId />
+                    <input type="hidden" name="JobId" value= @ViewBag.JobId />
+                    <button class="btn btn-light btn-sm" type="submit">Download CV</button>
+                  </form>
                 </td>
               </tr>
             </tbody> 
