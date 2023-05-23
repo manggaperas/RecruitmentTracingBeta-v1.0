@@ -99,22 +99,6 @@ public class CandidateController : Controller
         return Redirect("/Profile");
     }
 
-    private string GetEmail(string token)
-    {
-        ClaimsPrincipal claimsPrincipal = new JwtSecurityTokenHandler()
-            .ValidateToken(token, new TokenValidationParameters
-            {
-                ValidateIssuerSigningKey = true,
-                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(
-                                    _configuration.GetSection("AppSettings:TokenCandidate").Value!
-                                    )),
-                ValidateIssuer = false,
-                ValidateAudience = false,
-            }, out _);
-
-        return claimsPrincipal.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Email)!.Value!;
-    }
-
     [HttpGet("/DetailJob/{id}")]
     public IActionResult DetailJob(int id)
     {
@@ -238,9 +222,24 @@ public class CandidateController : Controller
             };
             listData.Add(status);
         }
-
-
         return View(listData);
+    }
+
+
+    private string GetEmail(string token)
+    {
+        ClaimsPrincipal claimsPrincipal = new JwtSecurityTokenHandler()
+            .ValidateToken(token, new TokenValidationParameters
+            {
+                ValidateIssuerSigningKey = true,
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(
+                                    _configuration.GetSection("AppSettings:TokenCandidate").Value!
+                                    )),
+                ValidateIssuer = false,
+                ValidateAudience = false,
+            }, out _);
+
+        return claimsPrincipal.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Email)!.Value!;
     }
 
     private string GetStatusApplication(string status)

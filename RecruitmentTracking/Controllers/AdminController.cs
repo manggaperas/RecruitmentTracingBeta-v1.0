@@ -24,7 +24,7 @@ public class AdminController : Controller
         _configuration = configuration;
     }
 
-    [HttpGet]
+    [HttpGet("/Admin")]
     public async Task<IActionResult> Index()
     {
         ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
@@ -57,7 +57,8 @@ public class AdminController : Controller
         return View(listJob);
     }
 
-    [HttpGet("/JobClosed")]
+    // Admin/JobClosed
+    [HttpGet]
     public async Task<IActionResult> JobClosed()
     {
         ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
@@ -89,7 +90,6 @@ public class AdminController : Controller
         return View(listJob);
     }
 
-    
     [HttpPost]
     public async Task<IActionResult> CloseTheJob(int id)
     {
@@ -111,19 +111,18 @@ public class AdminController : Controller
         await _db.SaveChangesAsync();
 
         TempData["success"] = "Successfully Activate a Job";
-        return Redirect("/JobClosed");
+        return Redirect("/Admin/JobClosed");
     }
-
 
     // Add Feature, if candidate apply job > 0, job can't be closed
     [HttpPost]
     public async Task<IActionResult> DeleteJob(int id)
     {
-        if(_db.CandidateJobs!.Where(cj => cj.JobId == id).Count() > 0)
+        if (_db.CandidateJobs!.Where(cj => cj.JobId == id).Any())
         {
             TempData["warning"] = "Job can't be closed because there are candidates who have applied for this job.";
             //return Redirect("/Admin");
-            return Redirect("/JobClosed");
+            return Redirect("/Admin/JobClosed");
         }
 
         Job objJob = _db.Jobs!.Find(id)!;
@@ -131,10 +130,10 @@ public class AdminController : Controller
         await _db.SaveChangesAsync();
 
         TempData["success"] = "Successfully Delete a Job";
-        return Redirect("/JobClosed");
+        return Redirect("/Admin/JobClosed");
     }
 
-    [HttpGet("/CreateJob")]
+    [HttpGet]
     public IActionResult CreateJob()
     {
         ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
@@ -175,7 +174,7 @@ public class AdminController : Controller
         return Redirect("/Admin");
     }
 
-    [HttpGet("Admin/EditJob/{id}")]
+    [HttpGet]
     public IActionResult EditJob(int id)
     {
         ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
@@ -222,24 +221,7 @@ public class AdminController : Controller
         return Redirect("/Admin");
     }
 
-    private void GetDataAdmin(string token, out string email, out string name)
-    {
-        ClaimsPrincipal claimsPrincipal = new JwtSecurityTokenHandler()
-            .ValidateToken(token, new TokenValidationParameters
-            {
-                ValidateIssuerSigningKey = true,
-                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(
-                                    _configuration.GetSection("AppSettings:TokenAdmin").Value!
-                                    )),
-                ValidateIssuer = false,
-                ValidateAudience = false,
-            }, out _);
-
-        email = claimsPrincipal.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Email)!.Value!;
-        name = claimsPrincipal.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Name)!.Value!;
-    }
-
-    [HttpGet("Admin/Administration/{id}")]
+    [HttpGet]
     public async Task<IActionResult> Administration(int id)
     {
         ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
@@ -281,6 +263,7 @@ public class AdminController : Controller
     public IActionResult HRInterview()
     {
         ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
+        ViewBag.IsAdmin = "admin";
 
         return View();
     }
@@ -299,6 +282,23 @@ public class AdminController : Controller
         ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
 
         return View();
+    }
+
+    private void GetDataAdmin(string token, out string email, out string name)
+    {
+        ClaimsPrincipal claimsPrincipal = new JwtSecurityTokenHandler()
+            .ValidateToken(token, new TokenValidationParameters
+            {
+                ValidateIssuerSigningKey = true,
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(
+                                    _configuration.GetSection("AppSettings:TokenAdmin").Value!
+                                    )),
+                ValidateIssuer = false,
+                ValidateAudience = false,
+            }, out _);
+
+        email = claimsPrincipal.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Email)!.Value!;
+        name = claimsPrincipal.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Name)!.Value!;
     }
 
     // [HttpPatch("/Update/{id}")]

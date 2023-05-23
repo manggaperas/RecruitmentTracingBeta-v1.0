@@ -43,14 +43,14 @@
                 @job.JobDescription
               </p>
               <div>
-                @if(User.Identity.IsAuthenticated)
-                {
+                @* @if(User.Identity.IsAuthenticated)
+                { *@
                   <a type="button" class="btn btn-primary" href="@Url.Action("ApplyJob", new { id =job.JobId })">Apply</a>
-                }
+                @* }
                 else
                 {
                   <a type="button" class="btn btn-primary" href="/Login">Apply</a>
-                }
+                } *@
                 <a type="button" class="btn btn-outline-primary" href="@Url.Action("DetailJob", new { id = job.JobId })" >Details</a>
               </div>
             </div>
