@@ -31,7 +31,7 @@ public class Job
     public string? EmailUser { get; set; }
     public string? EmailOffering { get; set; }
 
-    [ForeignKey("Admin")]
-    public int AdminId { get; set; }
-    public Admin? Admin { get; set; }
+    [ForeignKey("User")]
+    public string? AdminId { get; set; }
+    public User? User { get; set; }
 }

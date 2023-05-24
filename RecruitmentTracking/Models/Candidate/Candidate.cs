@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace RecruitmentTracking.Models;
 
@@ -6,16 +7,6 @@ public class Candidate
 {
     [Key]
     public int CandidateId { get; set; }
-
-    [Required]
-    public string? Name { get; set; }
-
-    [Required, EmailAddress]
-    public string? Email { get; set; }
-
-    [Required]
-    public string? Password { get; set; }
-
     public string? Phone { get; set; }
     public double GPA { get; set; }
     public string? LastEducation { get; set; }
@@ -24,4 +15,8 @@ public class Candidate
     public string? Salary { get; set; }
 
     public string? StatusInJob { get; set; }
+
+    [ForeignKey("User")]
+    public string? UserId { get; set; }
+    public User? User { get; set; }
 }

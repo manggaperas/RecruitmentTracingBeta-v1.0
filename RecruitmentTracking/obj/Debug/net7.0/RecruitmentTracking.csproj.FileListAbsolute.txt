@@ -1,5 +1,633 @@
-/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Helpers/Logger/Log4net.config
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/appsettings.Development.json
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/appsettings.json
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/RecruitmentTracking.staticwebassets.runtime.json
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/app.db
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/RecruitmentTracking.exe
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/RecruitmentTracking.deps.json
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/RecruitmentTracking.runtimeconfig.json
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/RecruitmentTracking.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/RecruitmentTracking.pdb
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Humanizer.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.AspNetCore.Identity.UI.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.Data.Sqlite.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Design.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Relational.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Sqlite.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.Extensions.FileProviders.Embedded.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.Extensions.Identity.Core.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.Extensions.Identity.Stores.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.Extensions.Options.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Mono.TextTemplating.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/SQLitePCLRaw.batteries_v2.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/SQLitePCLRaw.core.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/SQLitePCLRaw.provider.e_sqlite3.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/System.CodeDom.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/alpine-arm/native/libe_sqlite3.so
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/alpine-arm64/native/libe_sqlite3.so
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/alpine-x64/native/libe_sqlite3.so
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/browser-wasm/nativeassets/net7.0/e_sqlite3.a
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/linux-arm/native/libe_sqlite3.so
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/linux-arm64/native/libe_sqlite3.so
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/linux-armel/native/libe_sqlite3.so
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/linux-mips64/native/libe_sqlite3.so
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/linux-musl-arm/native/libe_sqlite3.so
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/linux-musl-arm64/native/libe_sqlite3.so
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/linux-musl-x64/native/libe_sqlite3.so
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/linux-ppc64le/native/libe_sqlite3.so
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/linux-s390x/native/libe_sqlite3.so
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/linux-x64/native/libe_sqlite3.so
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/linux-x86/native/libe_sqlite3.so
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/maccatalyst-arm64/native/libe_sqlite3.dylib
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/maccatalyst-x64/native/libe_sqlite3.dylib
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/osx-arm64/native/libe_sqlite3.dylib
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/osx-x64/native/libe_sqlite3.dylib
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/win-arm/native/e_sqlite3.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/win-arm64/native/e_sqlite3.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/win-x64/native/e_sqlite3.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/win-x86/native/e_sqlite3.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.csproj.AssemblyReference.cache
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.AssemblyInfoInputs.cache
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.AssemblyInfo.cs
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.csproj.CoreCompileInputs.cache
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.MvcApplicationPartsAssemblyInfo.cs
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.MvcApplicationPartsAssemblyInfo.cache
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.RazorAssemblyInfo.cache
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.RazorAssemblyInfo.cs
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/obj/Debug/net7.0/staticwebassets/msbuild.RecruitmentTracking.Microsoft.AspNetCore.StaticWebAssets.props
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/obj/Debug/net7.0/staticwebassets/msbuild.build.RecruitmentTracking.props
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.RecruitmentTracking.props
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.RecruitmentTracking.props
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/obj/Debug/net7.0/staticwebassets.pack.json
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/obj/Debug/net7.0/staticwebassets.build.json
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/obj/Debug/net7.0/staticwebassets.development.json
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/obj/Debug/net7.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/obj/Debug/net7.0/scopedcss/bundle/RecruitmentTracking.styles.css
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/obj/Debug/net7.0/scopedcss/projectbundle/RecruitmentTracking.bundle.scp.css
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.csproj.CopyComplete
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/obj/Debug/net7.0/refint/RecruitmentTracking.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.pdb
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.genruntimeconfig.cache
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/obj/Debug/net7.0/ref/RecruitmentTracking.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Azure.Core.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Azure.Identity.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.AspNetCore.Razor.Language.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.Bcl.AsyncInterfaces.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.Build.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.Build.Framework.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.CSharp.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.CSharp.Features.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.Elfie.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.Features.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.Razor.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.Scripting.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.VisualBasic.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.VisualBasic.Features.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.Workspaces.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.Data.SqlClient.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.DiaSymReader.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.DotNet.Scaffolding.Shared.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.Identity.Client.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.Identity.Client.Extensions.Msal.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.IdentityModel.Abstractions.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.NET.StringTools.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.SqlServer.Server.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/dotnet-aspnet-codegenerator-design.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.Win32.SystemEvents.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/Newtonsoft.Json.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/NuGet.Common.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/NuGet.Configuration.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/NuGet.DependencyResolver.Core.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/NuGet.Frameworks.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/NuGet.LibraryModel.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/NuGet.Packaging.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/NuGet.ProjectModel.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/NuGet.Protocol.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/NuGet.Versioning.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/System.Composition.AttributedModel.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/System.Composition.Convention.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/System.Composition.Hosting.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/System.Composition.Runtime.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/System.Composition.TypedParts.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/System.Configuration.ConfigurationManager.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/System.Drawing.Common.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/System.Memory.Data.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/System.Reflection.MetadataLoadContext.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/System.Runtime.Caching.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/System.Security.Cryptography.ProtectedData.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/System.Security.Permissions.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/System.Windows.Extensions.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.Features.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.Features.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.Features.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.Features.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.Features.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.Features.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.Features.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.Features.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.Features.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.Features.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.Features.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.Features.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.Features.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.Scripting.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.Scripting.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.Scripting.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.Scripting.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.Scripting.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.Scripting.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.Scripting.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.Scripting.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.Scripting.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.Scripting.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.Scripting.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.Scripting.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.Scripting.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/unix/lib/net6.0/System.Drawing.Common.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Drawing.Common.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll
+C:/Users/Mike/Downloads/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/appsettings.Development.json
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/app.db
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/appsettings.json
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/RecruitmentTracking.staticwebassets.runtime.json
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/RecruitmentTracking
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/RecruitmentTracking.deps.json
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/RecruitmentTracking.runtimeconfig.json
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/RecruitmentTracking.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/RecruitmentTracking.pdb
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Azure.Core.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Azure.Identity.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Humanizer.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.AspNetCore.Identity.UI.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.AspNetCore.Razor.Language.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.Bcl.AsyncInterfaces.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.Build.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.Build.Framework.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.CSharp.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.CSharp.Features.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.CSharp.Scripting.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.Elfie.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.Features.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.Razor.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.Scripting.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.VisualBasic.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.VisualBasic.Features.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.Workspaces.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.Data.SqlClient.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.Data.Sqlite.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.DiaSymReader.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.DotNet.Scaffolding.Shared.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Design.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Relational.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Sqlite.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.Extensions.FileProviders.Embedded.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.Extensions.Identity.Core.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.Extensions.Identity.Stores.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.Extensions.Options.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.Identity.Client.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.Identity.Client.Extensions.Msal.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.IdentityModel.Abstractions.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.NET.StringTools.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.SqlServer.Server.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/dotnet-aspnet-codegenerator-design.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Microsoft.Win32.SystemEvents.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Mono.TextTemplating.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/Newtonsoft.Json.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/NuGet.Common.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/NuGet.Configuration.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/NuGet.DependencyResolver.Core.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/NuGet.Frameworks.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/NuGet.LibraryModel.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/NuGet.Packaging.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/NuGet.ProjectModel.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/NuGet.Protocol.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/NuGet.Versioning.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/SQLitePCLRaw.batteries_v2.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/SQLitePCLRaw.core.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/SQLitePCLRaw.provider.e_sqlite3.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/System.CodeDom.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/System.Composition.AttributedModel.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/System.Composition.Convention.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/System.Composition.Hosting.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/System.Composition.Runtime.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/System.Composition.TypedParts.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/System.Configuration.ConfigurationManager.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/System.Drawing.Common.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/System.Memory.Data.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/System.Reflection.MetadataLoadContext.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/System.Runtime.Caching.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/System.Security.Cryptography.ProtectedData.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/System.Security.Permissions.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/System.Windows.Extensions.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.Features.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.Features.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.Features.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.Features.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.Features.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.Features.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.Features.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.Features.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.Features.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.Features.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.Features.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.Features.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.Features.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/alpine-arm/native/libe_sqlite3.so
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/alpine-arm64/native/libe_sqlite3.so
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/alpine-x64/native/libe_sqlite3.so
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/browser-wasm/nativeassets/net7.0/e_sqlite3.a
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/linux-arm/native/libe_sqlite3.so
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/linux-arm64/native/libe_sqlite3.so
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/linux-armel/native/libe_sqlite3.so
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/linux-mips64/native/libe_sqlite3.so
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/linux-musl-arm/native/libe_sqlite3.so
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/linux-musl-arm64/native/libe_sqlite3.so
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/linux-musl-x64/native/libe_sqlite3.so
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/linux-ppc64le/native/libe_sqlite3.so
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/linux-s390x/native/libe_sqlite3.so
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/linux-x64/native/libe_sqlite3.so
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/linux-x86/native/libe_sqlite3.so
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/maccatalyst-arm64/native/libe_sqlite3.dylib
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/maccatalyst-x64/native/libe_sqlite3.dylib
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/osx-arm64/native/libe_sqlite3.dylib
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/osx-x64/native/libe_sqlite3.dylib
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/win-arm/native/e_sqlite3.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/win-arm64/native/e_sqlite3.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/win-x64/native/e_sqlite3.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/win-x86/native/e_sqlite3.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/unix/lib/net6.0/System.Drawing.Common.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Drawing.Common.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.csproj.AssemblyReference.cache
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.GeneratedMSBuildEditorConfig.editorconfig
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.AssemblyInfoInputs.cache
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.AssemblyInfo.cs
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.csproj.CoreCompileInputs.cache
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.MvcApplicationPartsAssemblyInfo.cs
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.MvcApplicationPartsAssemblyInfo.cache
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.RazorAssemblyInfo.cache
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.RazorAssemblyInfo.cs
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/obj/Debug/net7.0/staticwebassets/msbuild.RecruitmentTracking.Microsoft.AspNetCore.StaticWebAssets.props
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/obj/Debug/net7.0/staticwebassets/msbuild.build.RecruitmentTracking.props
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.RecruitmentTracking.props
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.RecruitmentTracking.props
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/obj/Debug/net7.0/staticwebassets.pack.json
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/obj/Debug/net7.0/staticwebassets.build.json
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/obj/Debug/net7.0/staticwebassets.development.json
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/obj/Debug/net7.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/obj/Debug/net7.0/scopedcss/bundle/RecruitmentTracking.styles.css
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/obj/Debug/net7.0/scopedcss/projectbundle/RecruitmentTracking.bundle.scp.css
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.csproj.CopyComplete
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/obj/Debug/net7.0/refint/RecruitmentTracking.dll
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.pdb
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.genruntimeconfig.cache
+/home/ignatius/Desktop/Project Team/New folder/RecruitmentTracking/obj/Debug/net7.0/ref/RecruitmentTracking.dll
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/appsettings.Development.json
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/app.db
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/appsettings.json
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/RecruitmentTracking.staticwebassets.runtime.json
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/RecruitmentTracking
@@ -7,38 +635,258 @@
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/RecruitmentTracking.runtimeconfig.json
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/RecruitmentTracking.dll
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/RecruitmentTracking.pdb
-/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/BCrypt.Net.dll
-/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/EntityFramework.SqlServer.dll
-/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/EntityFramework.dll
-/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/log4net.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Azure.Core.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Azure.Identity.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Humanizer.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.AspNetCore.Identity.UI.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.AspNetCore.Razor.Language.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.Bcl.AsyncInterfaces.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.Build.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.Build.Framework.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.CSharp.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.CSharp.Features.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.CSharp.Scripting.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.Elfie.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.Features.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.Razor.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.Scripting.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.VisualBasic.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.VisualBasic.Features.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.Workspaces.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.Data.SqlClient.dll
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.Data.Sqlite.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.DiaSymReader.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.DotNet.Scaffolding.Shared.dll
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.dll
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Design.dll
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Relational.dll
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Sqlite.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.SqlServer.dll
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.Extensions.FileProviders.Embedded.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.Extensions.Identity.Core.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.Extensions.Identity.Stores.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.Extensions.Options.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.Identity.Client.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.Identity.Client.Extensions.Msal.dll
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.IdentityModel.Abstractions.dll
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.NET.StringTools.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.SqlServer.Server.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/dotnet-aspnet-codegenerator-design.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.Win32.SystemEvents.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Mono.TextTemplating.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Newtonsoft.Json.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/NuGet.Common.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/NuGet.Configuration.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/NuGet.DependencyResolver.Core.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/NuGet.Frameworks.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/NuGet.LibraryModel.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/NuGet.Packaging.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/NuGet.ProjectModel.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/NuGet.Protocol.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/NuGet.Versioning.dll
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/SQLitePCLRaw.batteries_v2.dll
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/SQLitePCLRaw.core.dll
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/SQLitePCLRaw.provider.e_sqlite3.dll
-/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/System.Data.SQLite.dll
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/System.CodeDom.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/System.Composition.AttributedModel.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/System.Composition.Convention.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/System.Composition.Hosting.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/System.Composition.Runtime.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/System.Composition.TypedParts.dll
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/System.Configuration.ConfigurationManager.dll
-/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/System.Data.SqlClient.dll
-/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/System.Data.SQLite.EF6.dll
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/System.Drawing.Common.dll
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/System.Memory.Data.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/System.Reflection.MetadataLoadContext.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/System.Runtime.Caching.dll
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/System.Security.Cryptography.ProtectedData.dll
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/System.Security.Permissions.dll
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/System.Windows.Extensions.dll
-/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll
-/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/win-arm64/native/sni.dll
-/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/win-x64/native/sni.dll
-/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/win-x86/native/sni.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.Features.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.Features.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.Features.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.Features.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.Features.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.Features.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.Features.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.Features.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.Features.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.Features.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.Features.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.Features.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.Features.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.Scripting.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.VisualBasic.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/cs/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/de/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/es/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/fr/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/it/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/ja/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/ko/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/pl/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/ru/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/tr/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/alpine-arm/native/libe_sqlite3.so
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/alpine-arm64/native/libe_sqlite3.so
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/alpine-x64/native/libe_sqlite3.so
@@ -62,21 +910,17 @@
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/win-arm64/native/e_sqlite3.dll
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/win-x64/native/e_sqlite3.dll
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/win-x86/native/e_sqlite3.dll
-/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/linux-x64/native/SQLite.Interop.dll
-/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/osx-x64/native/SQLite.Interop.dll
-/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/win-x64/native/SQLite.Interop.dll
-/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/win-x86/native/SQLite.Interop.dll
-/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll
-/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll
-/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll
-/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll
-/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
-/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/unix/lib/net6.0/System.Drawing.Common.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Drawing.Common.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.csproj.AssemblyReference.cache
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.GeneratedMSBuildEditorConfig.editorconfig
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.AssemblyInfoInputs.cache
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.AssemblyInfo.cs
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.csproj.CoreCompileInputs.cache
+/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.MvcApplicationPartsAssemblyInfo.cs
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.MvcApplicationPartsAssemblyInfo.cache
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.RazorAssemblyInfo.cache
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.RazorAssemblyInfo.cs
@@ -96,254 +940,267 @@
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.pdb
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.genruntimeconfig.cache
 /home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/ref/RecruitmentTracking.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.csproj.AssemblyReference.cache
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.GeneratedMSBuildEditorConfig.editorconfig
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.AssemblyInfoInputs.cache
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.AssemblyInfo.cs
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.csproj.CoreCompileInputs.cache
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.MvcApplicationPartsAssemblyInfo.cache
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.RazorAssemblyInfo.cache
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.RazorAssemblyInfo.cs
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/refint/RecruitmentTracking.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.pdb
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Helpers/Logger/Log4net.config
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/appsettings.Development.json
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/appsettings.json
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/RecruitmentTracking.staticwebassets.runtime.json
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/RecruitmentTracking.exe
-e:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/RecruitmentTracking.deps.json
-e:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/RecruitmentTracking.runtimeconfig.json
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/RecruitmentTracking.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/RecruitmentTracking.pdb
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/BCrypt.Net.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/EntityFramework.SqlServer.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/EntityFramework.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/log4net.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.Data.Sqlite.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Abstractions.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Relational.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Sqlite.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.IdentityModel.Abstractions.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/Microsoft.Win32.SystemEvents.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/SQLitePCLRaw.batteries_v2.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/SQLitePCLRaw.core.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/SQLitePCLRaw.provider.e_sqlite3.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/System.Data.SQLite.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/System.CodeDom.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/System.Configuration.ConfigurationManager.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/System.Data.SqlClient.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/System.Data.SQLite.EF6.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/System.Drawing.Common.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/System.Security.Cryptography.ProtectedData.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/System.Security.Permissions.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/System.Windows.Extensions.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/win-arm64/native/sni.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/win-x64/native/sni.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/win-x86/native/sni.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/alpine-arm/native/libe_sqlite3.so
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/alpine-arm64/native/libe_sqlite3.so
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/alpine-x64/native/libe_sqlite3.so
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/browser-wasm/nativeassets/net7.0/e_sqlite3.a
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/linux-arm/native/libe_sqlite3.so
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/linux-arm64/native/libe_sqlite3.so
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/linux-armel/native/libe_sqlite3.so
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/linux-mips64/native/libe_sqlite3.so
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/linux-musl-arm/native/libe_sqlite3.so
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/linux-musl-arm64/native/libe_sqlite3.so
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/linux-musl-x64/native/libe_sqlite3.so
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/linux-ppc64le/native/libe_sqlite3.so
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/linux-s390x/native/libe_sqlite3.so
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/linux-x64/native/libe_sqlite3.so
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/linux-x86/native/libe_sqlite3.so
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/maccatalyst-arm64/native/libe_sqlite3.dylib
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/maccatalyst-x64/native/libe_sqlite3.dylib
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/osx-arm64/native/libe_sqlite3.dylib
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/osx-x64/native/libe_sqlite3.dylib
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/win-arm/native/e_sqlite3.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/win-arm64/native/e_sqlite3.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/win-x64/native/e_sqlite3.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/win-x86/native/e_sqlite3.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/linux-x64/native/SQLite.Interop.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/osx-x64/native/SQLite.Interop.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/win-x64/native/SQLite.Interop.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/win-x86/native/SQLite.Interop.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/bin/Debug/net7.0/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.csproj.AssemblyReference.cache
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.GeneratedMSBuildEditorConfig.editorconfig
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.AssemblyInfoInputs.cache
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.AssemblyInfo.cs
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.csproj.CoreCompileInputs.cache
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.MvcApplicationPartsAssemblyInfo.cache
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.RazorAssemblyInfo.cache
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.RazorAssemblyInfo.cs
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/staticwebassets/msbuild.RecruitmentTracking.Microsoft.AspNetCore.StaticWebAssets.props
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/staticwebassets/msbuild.build.RecruitmentTracking.props
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.RecruitmentTracking.props
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.RecruitmentTracking.props
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/staticwebassets.pack.json
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/staticwebassets.build.json
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/staticwebassets.development.json
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/scopedcss/bundle/RecruitmentTracking.styles.css
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/scopedcss/projectbundle/RecruitmentTracking.bundle.scp.css
-e:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.csproj.CopyComplete
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/refint/RecruitmentTracking.dll
-E:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.pdb
-e:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/RecruitmentTracking.genruntimeconfig.cache
-e:/bootcamp_formulatrix/Project_Recruitment_Tracking/RecruitmentTracking2/RecruitmentTracking/RecruitmentTracking/obj/Debug/net7.0/ref/RecruitmentTracking.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Helpers\Logger\Log4net.config
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\appsettings.Development.json
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\appsettings.json
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\RecruitmentTracking.staticwebassets.runtime.json
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\RecruitmentTracking.exe
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\RecruitmentTracking.deps.json
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\RecruitmentTracking.runtimeconfig.json
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\RecruitmentTracking.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\RecruitmentTracking.pdb
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\BCrypt.Net.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\EntityFramework.SqlServer.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\EntityFramework.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\log4net.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.Data.Sqlite.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Sqlite.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\SQLitePCLRaw.batteries_v2.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\SQLitePCLRaw.core.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\SQLitePCLRaw.provider.e_sqlite3.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\System.Data.SQLite.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\System.CodeDom.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\System.Data.SqlClient.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\System.Data.SQLite.EF6.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\System.Drawing.Common.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\System.Security.Permissions.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\System.Windows.Extensions.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\win-arm64\native\sni.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\win-x64\native\sni.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\win-x86\native\sni.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\alpine-arm\native\libe_sqlite3.so
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\alpine-arm64\native\libe_sqlite3.so
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\alpine-x64\native\libe_sqlite3.so
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\browser-wasm\nativeassets\net7.0\e_sqlite3.a
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\linux-arm\native\libe_sqlite3.so
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\linux-arm64\native\libe_sqlite3.so
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\linux-armel\native\libe_sqlite3.so
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\linux-mips64\native\libe_sqlite3.so
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\linux-musl-arm\native\libe_sqlite3.so
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\linux-musl-arm64\native\libe_sqlite3.so
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\linux-ppc64le\native\libe_sqlite3.so
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\linux-s390x\native\libe_sqlite3.so
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\linux-x64\native\libe_sqlite3.so
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\linux-x86\native\libe_sqlite3.so
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\osx-arm64\native\libe_sqlite3.dylib
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\osx-x64\native\libe_sqlite3.dylib
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\win-arm\native\e_sqlite3.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\win-arm64\native\e_sqlite3.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\win-x64\native\e_sqlite3.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\win-x86\native\e_sqlite3.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\linux-x64\native\SQLite.Interop.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\osx-x64\native\SQLite.Interop.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\win-x64\native\SQLite.Interop.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\win-x86\native\SQLite.Interop.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\RecruitmentTracking.csproj.AssemblyReference.cache
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\RecruitmentTracking.GeneratedMSBuildEditorConfig.editorconfig
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\RecruitmentTracking.AssemblyInfoInputs.cache
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\RecruitmentTracking.AssemblyInfo.cs
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\RecruitmentTracking.csproj.CoreCompileInputs.cache
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\RecruitmentTracking.MvcApplicationPartsAssemblyInfo.cache
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\RecruitmentTracking.RazorAssemblyInfo.cache
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\RecruitmentTracking.RazorAssemblyInfo.cs
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\staticwebassets\msbuild.RecruitmentTracking.Microsoft.AspNetCore.StaticWebAssets.props
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\staticwebassets\msbuild.build.RecruitmentTracking.props
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.RecruitmentTracking.props
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.RecruitmentTracking.props
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\staticwebassets.pack.json
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\staticwebassets.build.json
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\staticwebassets.development.json
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\scopedcss\bundle\RecruitmentTracking.styles.css
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\scopedcss\projectbundle\RecruitmentTracking.bundle.scp.css
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\RecruitmentTracking.csproj.CopyComplete
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\RecruitmentTracking.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\refint\RecruitmentTracking.dll
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\RecruitmentTracking.pdb
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\RecruitmentTracking.genruntimeconfig.cache
-e:\bootcamp_formulatrix\Project_Recruitment_Tracking\RecruitmentTracking2\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\ref\RecruitmentTracking.dll
-C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Helpers\Logger\Log4net.config
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\appsettings.json
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\RecruitmentTracking.staticwebassets.runtime.json
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\app.db
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\RecruitmentTracking.exe
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\RecruitmentTracking.deps.json
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\RecruitmentTracking.runtimeconfig.json
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\RecruitmentTracking.dll
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\RecruitmentTracking.pdb
-C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\BCrypt.Net.dll
-C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\EntityFramework.SqlServer.dll
-C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\EntityFramework.dll
-C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\log4net.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Azure.Core.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Azure.Identity.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Humanizer.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.Build.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.Build.Framework.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.CodeAnalysis.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Features.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.CodeAnalysis.Elfie.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.CodeAnalysis.Features.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.CodeAnalysis.VisualBasic.Features.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.Data.Sqlite.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.DiaSymReader.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.DotNet.Scaffolding.Shared.dll
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.NET.StringTools.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\dotnet-aspnet-codegenerator-design.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\NuGet.Common.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\NuGet.Configuration.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\NuGet.DependencyResolver.Core.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\NuGet.Frameworks.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\NuGet.LibraryModel.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\NuGet.Packaging.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\NuGet.ProjectModel.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\NuGet.Protocol.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\NuGet.Versioning.dll
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\SQLitePCLRaw.batteries_v2.dll
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\SQLitePCLRaw.core.dll
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\SQLitePCLRaw.provider.e_sqlite3.dll
-C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\System.Data.SQLite.dll
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\System.CodeDom.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\System.Composition.AttributedModel.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\System.Composition.Convention.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\System.Composition.Hosting.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\System.Composition.Runtime.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\System.Composition.TypedParts.dll
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
-C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\System.Data.SqlClient.dll
-C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\System.Data.SQLite.EF6.dll
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\System.Drawing.Common.dll
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\System.Memory.Data.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\System.Reflection.MetadataLoadContext.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\System.Runtime.Caching.dll
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\System.Security.Permissions.dll
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\System.Windows.Extensions.dll
-C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\win-arm64\native\sni.dll
-C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\win-x64\native\sni.dll
-C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\win-x86\native\sni.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\alpine-arm\native\libe_sqlite3.so
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\alpine-arm64\native\libe_sqlite3.so
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\alpine-x64\native\libe_sqlite3.so
@@ -367,21 +1224,17 @@ C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\n
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\win-x86\native\e_sqlite3.dll
-C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\linux-x64\native\SQLite.Interop.dll
-C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\osx-x64\native\SQLite.Interop.dll
-C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\win-x64\native\SQLite.Interop.dll
-C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\win-x86\native\SQLite.Interop.dll
-C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
-C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
-C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\RecruitmentTracking.csproj.AssemblyReference.cache
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\RecruitmentTracking.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\RecruitmentTracking.AssemblyInfoInputs.cache
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\RecruitmentTracking.AssemblyInfo.cs
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\RecruitmentTracking.csproj.CoreCompileInputs.cache
+C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\RecruitmentTracking.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\RecruitmentTracking.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\RecruitmentTracking.RazorAssemblyInfo.cache
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\RecruitmentTracking.RazorAssemblyInfo.cs
@@ -401,6 +1254,3 @@ C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\obj\Debug\n
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\RecruitmentTracking.pdb
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\RecruitmentTracking.genruntimeconfig.cache
 C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\obj\Debug\net7.0\ref\RecruitmentTracking.dll
-C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Humanizer.dll
-C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\FORMULATRIX\Desktop\RecruitmentTracking\RecruitmentTracking\bin\Debug\net7.0\Mono.TextTemplating.dll
