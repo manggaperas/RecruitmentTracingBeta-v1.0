@@ -19,4 +19,6 @@ public class UserJob
 
     public Job? Job { get; set; }
     public User? User { get; set; }
+
+    public string? StatusInJob { get; set; }
 }

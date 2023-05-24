@@ -17,4 +17,6 @@ public class UserEditProfile : IdentityUser
     public string? Salary { get; set; }
 
     public string? StatusInJob { get; set; }
+
+    public IFormFile? FileCV { get; set; }
 }

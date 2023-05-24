@@ -4,261 +4,228 @@ using RecruitmentTracking.Models;
 using RecruitmentTracking.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 
 namespace RecruitmentTracking.Controllers;
 
-[Authorize(Roles = "Candidate")]
+[Authorize]
 public class CandidateController : Controller
 {
     private readonly ApplicationDbContext _context;
     private readonly ILogger<HomeController> _logger;
     private readonly IConfiguration _configuration;
     private readonly IWebHostEnvironment _server;
+    private readonly UserManager<User> _userManager;
 
-    public CandidateController(ILogger<HomeController> logger, IWebHostEnvironment server, IConfiguration configuration, ApplicationDbContext context)
+    public CandidateController(ILogger<HomeController> logger, IWebHostEnvironment server, IConfiguration configuration, ApplicationDbContext context, UserManager<User> userManager)
     {
         _logger = logger;
         _server = server;
         _configuration = configuration;
         _context = context;
+        _userManager = userManager;
     }
 
-    [HttpGet]
-    public IActionResult Index()
+    [HttpGet("/Profile")]
+    public async Task<IActionResult> Profile()
     {
-        List<JobViewModel> listJob = new();
-        foreach (Job job in _context.Jobs!.Where(j => j.IsJobAvailable).ToList())
+        User user = (await _userManager.GetUserAsync(User))!;
+
+        if (user == null)
         {
-            JobViewModel data = new()
+            return RedirectToAction("Login");
+        }
+
+        Candidate objCandidate = (await _context.Candidates!.FirstOrDefaultAsync(c => c.UserId == user.Id))!;
+
+        if (objCandidate == null)
+        {
+            Candidate newCandidate = new()
             {
-                JobId = job.JobId,
-                JobTitle = job.JobTitle,
-                JobDescription = job.JobDescription,
-                JobRequirement = job.JobRequirement,
-                Location = job.Location,
-                JobPostedDate = job.JobPostedDate,
-                JobExpiredDate = job.JobExpiredDate,
+                User = user,
+            };
+            _context.Candidates?.Add(newCandidate);
+            await _context.SaveChangesAsync();
+
+            UserEditProfile newProfile = new UserEditProfile()
+            {
+                Name = user.Name,
+                Email = user.Name,
+                Phone = newCandidate.Phone,
+                LastEducation = newCandidate.LastEducation,
+                GPA = newCandidate.GPA,
             };
 
-            listJob.Add(data);
+            return View(newProfile);
         }
-        return View(listJob);
+
+        UserEditProfile profile = new UserEditProfile()
+        {
+            Name = user.Name,
+            Phone = objCandidate.Phone,
+            LastEducation = objCandidate.LastEducation,
+            GPA = objCandidate.GPA,
+        };
+
+        return View(profile);
     }
 
-    // [HttpGet("/Profile")]
-    // public async Task<IActionResult> Profile()
-    // {
-    //     ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
-    //     if (!ViewBag.IsAuth) return Redirect("/Login");
+    [HttpPost]
+    public async Task<IActionResult> EditProfile(UserEditProfile profile)
+    {
+        User user = (await _userManager.GetUserAsync(User))!;
 
-    //     string token = Request.Cookies["ActionLogin"]!;
-    //     string email = GetEmail(token);
+        if (user == null)
+        {
+            return RedirectToAction("Login");
+        }
 
-    //     Candidate candidate = (await _db.Candidates!.FirstOrDefaultAsync(c => c. == email))!;
-    //     UserEditProfile profile = new()
-    //     {
-    //         Name = candidate.Name,
-    //         Email = candidate.Email,
-    //         Phone = candidate.Phone,
-    //         LastEducation = candidate.LastEducation,
-    //         GPA = candidate.GPA,
-    //     };
+        Candidate candidate = (await _context.Candidates!.FirstOrDefaultAsync(c => c.UserId == user.Id))!;
+        user.Name = profile.Name;
+        candidate.Phone = profile.Phone;
+        candidate.LastEducation = profile.LastEducation;
+        candidate.GPA = profile.GPA;
 
-    //     return View(profile);
-    // }
+        await _context.SaveChangesAsync();
 
-    // [HttpPost]
-    // public async Task<IActionResult> EditProfile(CandidateEditProfile profile)
-    // {
-    //     if (Request.Cookies["ActionLogin"]! == null) return Redirect("/Login");
-
-    //     string token = Request.Cookies["ActionLogin"]!;
-
-    //     string email = GetEmail(token);
-    //     Candidate candidate = (await _db.Candidates!.FirstOrDefaultAsync(c => c.Email == email))!;
-    //     candidate.Name = profile.Name;
-    //     candidate.Phone = profile.Phone;
-    //     candidate.LastEducation = profile.LastEducation;
-    //     candidate.GPA = profile.GPA;
-
-    //     await _db.SaveChangesAsync();
-
-    //     TempData["success"] = "Successfully Update Profile";
-    //     return Redirect("/Profile");
-    // }
-
-    // [HttpGet("/DetailJob/{id}")]
-    // public IActionResult DetailJob(int id)
-    // {
-    //     ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
-
-    //     if (ViewBag.IsAuth)
-    //     {
-    //         string token = Request.Cookies["ActionLogin"]!;
-    //         JwtSecurityToken dataJwt = new JwtSecurityTokenHandler().ReadJwtToken(token);
-    //         ViewBag.IsAdmin = dataJwt.Claims.Count() != 2 ? "admin" : null;
-    //     }
-
-    //     Job objJob = _db.Jobs!.Find(id)!;
-
-    //     JobData data = new()
-    //     {
-    //         JobId = objJob.JobId,
-    //         JobTitle = objJob.JobTitle,
-    //         JobDescription = objJob.JobDescription,
-    //         JobRequirement = objJob.JobRequirement,
-    //         Location = objJob.Location,
-    //         JobPostedDate = objJob.JobPostedDate,
-    //         JobExpiredDate = objJob.JobExpiredDate,
-    //     };
-
-    //     return View(data);
-    // }
-
-    // [HttpGet("/ApplyJob/{id}")]
-    // public IActionResult ApplyJob(int id)
-    // {
-    //     ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
-
-    //     Job objJob = _db.Jobs!.Find(id)!;
-    //     ViewBag.JobTitle = objJob.JobTitle;
-
-    //     string token = Request.Cookies["ActionLogin"]!;
-    //     string email = GetEmail(token);
-
-    //     Candidate objCandidate = _db.Candidates!.FirstOrDefault(c => c.Email == email)!;
-
-    //     CandidateEditProfile dataCandidate = new()
-    //     {
-    //         Name = objCandidate.Name,
-    //         Phone = objCandidate.Phone,
-    //         LastEducation = objCandidate.LastEducation,
-    //         GPA = objCandidate.GPA,
-    //     };
-
-    //     ViewBag.JobId = id;
-    //     return View(dataCandidate);
-    // }
-
-    // [HttpPost]
-    // public async Task<IActionResult> ApplyJobs(int JobId, CandidateEditProfile updateCandidate)
-    // {
-    //     if (updateCandidate.FileCV?.Length < 0)
-    //     {
-    //         TempData["warning"] = "Please select a CV file";
-    //         return Redirect($"/ApplyJob/{JobId}");
-    //     }
-
-    //     string email = GetEmail(Request.Cookies["ActionLogin"]!);
-
-    //     string fileName = Guid.NewGuid().ToString() + Path.GetExtension(updateCandidate.FileCV!.FileName);
-
-    //     string uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "Data", "DataCV");
-
-    //     Directory.CreateDirectory(uploadsFolder);
-
-    //     string filePath = Path.Combine(uploadsFolder, fileName);
-
-    //     Candidate objCandidate = (await _db.Candidates!.FirstOrDefaultAsync(c => c.Email == email))!;
-    //     objCandidate.Name = updateCandidate.Name;
-    //     objCandidate.Phone = updateCandidate.Phone;
-    //     objCandidate.LastEducation = updateCandidate.LastEducation;
-    //     objCandidate.GPA = updateCandidate.GPA;
-    //     objCandidate.StatusInJob = $"{ProcessType.Administration}";
-
-    //     Job objJob = (await _db.Jobs!.FindAsync(JobId))!;
-
-    //     CandidateJob objCJ = new()
-    //     {
-    //         Candidate = objCandidate,
-    //         Job = objJob,
-    //         CV = fileName,
-    //     };
-
-    //     await _db.CandidateJobs!.AddAsync(objCJ);
-    //     await _db.SaveChangesAsync();
-
-    //     using (var stream = new FileStream(filePath, FileMode.Create))
-    //     {
-    //         updateCandidate.FileCV.CopyTo(stream);
-    //     }
-
-    //     TempData["success"] = "Application Successfully Sent";
-    //     return Redirect("/TrackJob");
-    // }
-
-    // [HttpGet("/TrackJob")]
-    // public async Task<IActionResult> TrackJob()
-    // {
-    //     ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
-
-    //     string email = GetEmail(Request.Cookies["ActionLogin"]!);
-
-    //     Candidate objCandidate = (await _db.Candidates!.FirstOrDefaultAsync(c => c.Email == email))!;
-    //     List<Job> listJobCandidate = _db.CandidateJobs!
-    //                         .Where(c => c.CandidateId == objCandidate.CandidateId)!
-    //                         .Select(c => c.Job)
-    //                         .ToList()!;
-
-    //     List<CandidateJobStatus> listData = new();
-    //     foreach (Job job in listJobCandidate)
-    //     {
-    //         CandidateJobStatus status = new()
-    //         {
-    //             CandidateStatus = GetStatusApplication(objCandidate.StatusInJob!).Split(' '), // need migrate db to CandidateJobStatus for status in Job
-    //             JobTitle = job.JobTitle,
-    //         };
-    //         listData.Add(status);
-    //     }
-    //     return View(listData);
-    // }
+        TempData["success"] = "Successfully Update Profile";
+        return Redirect("/Profile");
+    }
 
 
-    // private string GetEmail(string token)
-    // {
-    //     ClaimsPrincipal claimsPrincipal = new JwtSecurityTokenHandler()
-    //         .ValidateToken(token, new TokenValidationParameters
-    //         {
-    //             ValidateIssuerSigningKey = true,
-    //             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(
-    //                                 _configuration.GetSection("AppSettings:TokenCandidate").Value!
-    //                                 )),
-    //             ValidateIssuer = false,
-    //             ValidateAudience = false,
-    //         }, out _);
+    [HttpGet("/Home/ApplyJob/{id}")]
+    public async Task<IActionResult> ApplyJob(int id)
+    {
+        User user = (await _userManager.GetUserAsync(User))!;
 
-    //     return claimsPrincipal.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Email)!.Value!;
-    // }
+        if (user == null)
+        {
+            return RedirectToAction("Login");
+        }
 
-    // private string GetStatusApplication(string status)
-    // {
-    //     List<string> process = new()
-    //     {
-    //         "current-item none none none",
-    //         "none current-item none none",
-    //         "none none current-item none",
-    //         "none none none current-item",
-    //     };
+        Job objJob = (await _context.Jobs!.FindAsync(id))!;
 
-    //     int step = (int)Enum.Parse(typeof(ProcessType), status);
+        Candidate objCandidate = _context.Candidates!.FirstOrDefault(c => c.UserId == user.Id)!;
 
-    //     return process[step - 1];
-    // }
+        UserEditProfile data = new()
+        {
+            Name = user.Name,
+            Phone = objCandidate.Phone,
+            LastEducation = objCandidate.LastEducation,
+            GPA = objCandidate.GPA,
+        };
 
-    // [HttpGet("/Jobs")]
-    // public async Task<IEnumerable<Job>> Job()
-    // {
-    //     return await _db.Jobs!.Where(Job => Job.IsJobAvailable).ToListAsync();
-    // }
+        return View(data);
+    }
 
-    // [HttpPatch("/EditProfile")]
-    // public async Task<IActionResult> EditProfile(Candidate objCandidate)
-    // {
-    //     _db.Entry(objCandidate).State = EntityState.Modified;
-    //     await _db.SaveChangesAsync();
+    [HttpPost]
+    public async Task<IActionResult> ApplyJobs(int JobId, UserEditProfile updateCandidate)
+    {
+        if (updateCandidate.FileCV?.Length < 0)
+        {
+            TempData["warning"] = "Please select a CV file";
+            return Redirect($"/ApplyJob/{JobId}");
+        }
 
-    //     _log.Info("Job Updated.");
+        User user = (await _userManager.GetUserAsync(User))!;
 
-    //     return Ok(objCandidate);
-    // }
+        if (user == null)
+        {
+            return RedirectToAction("Login");
+        }
+
+        string fileName = Guid.NewGuid().ToString() + Path.GetExtension(updateCandidate.FileCV!.FileName);
+
+        string uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "Data", "DataCV");
+
+        Directory.CreateDirectory(uploadsFolder);
+
+        string filePath = Path.Combine(uploadsFolder, fileName);
+
+        Candidate objCandidate = (await _context.Candidates!.FirstOrDefaultAsync(c => c.UserId == user.Id))!;
+        user.Name = updateCandidate.Name;
+        objCandidate.Phone = updateCandidate.Phone;
+        objCandidate.LastEducation = updateCandidate.LastEducation;
+        objCandidate.GPA = updateCandidate.GPA;
+        objCandidate.StatusInJob = $"{ProcessType.Administration}";
+
+        Job objJob = (await _context.Jobs!.FindAsync(JobId))!;
+
+        UserJob objCJ = new()
+        {
+            User = user,
+            Job = objJob,
+            CV = fileName,
+        };
+
+        await _context.UserJobs!.AddAsync(objCJ);
+        await _context.SaveChangesAsync();
+
+        using (var stream = new FileStream(filePath, FileMode.Create))
+        {
+            updateCandidate.FileCV.CopyTo(stream);
+        }
+
+        TempData["success"] = "Application Successfully Sent";
+        return Redirect("/TrackJob");
+    }
+
+    [HttpGet("/TrackJob")]
+    public async Task<IActionResult> TrackJob()
+    {
+        User user = (await _userManager.GetUserAsync(User))!;
+
+        if (user == null)
+        {
+            return RedirectToAction("Login");
+        }
+
+        Candidate objCandidate = (await _context.Candidates!.FirstOrDefaultAsync(c => c.UserId == user.Id))!;
+        List<Job> listJobCandidate = _context.UserJobs!
+                            .Where(c => c.UserId == objCandidate.UserId)!
+                            .Select(c => c.Job)
+                            .ToList()!;
+
+        List<CandidateJobStatus> listData = new();
+        foreach (Job job in listJobCandidate)
+        {
+            CandidateJobStatus status = new()
+            {
+                CandidateStatus = GetStatusApplication(objCandidate.StatusInJob!).Split(' '), // need migrate db to CandidateJobStatus for status in Job
+                JobTitle = job.JobTitle,
+            };
+            listData.Add(status);
+        }
+        return View(listData);
+    }
+
+    [HttpGet("/Jobs")]
+    public async Task<IEnumerable<Job>> Job()
+    {
+        return await _context.Jobs!.Where(Job => Job.IsJobAvailable).ToListAsync();
+    }
+
+    [HttpPatch("/EditProfile")]
+    public async Task<IActionResult> EditProfile(Candidate objCandidate)
+    {
+        _context.Entry(objCandidate).State = EntityState.Modified;
+        await _context.SaveChangesAsync();
+
+        return Ok(objCandidate);
+    }
+
+    private string GetStatusApplication(string status)
+    {
+        List<string> process = new()
+        {
+            "current-item none none none",
+            "none current-item none none",
+            "none none current-item none",
+            "none none none current-item",
+        };
+
+        int step = (int)Enum.Parse(typeof(ProcessType), status);
+
+        return process[step - 1];
+    }
 }

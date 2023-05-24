@@ -17,14 +17,45 @@ public class HomeController : Controller
         _context = context;
     }
 
+    [HttpGet]
     public IActionResult Index()
     {
-        return View();
+        List<JobViewModel> listJob = new();
+        foreach (Job job in _context.Jobs!.Where(j => j.IsJobAvailable).ToList())
+        {
+            JobViewModel data = new()
+            {
+                JobId = job.JobId,
+                JobTitle = job.JobTitle,
+                JobDescription = job.JobDescription,
+                JobRequirement = job.JobRequirement,
+                Location = job.Location,
+                JobPostedDate = job.JobPostedDate,
+                JobExpiredDate = job.JobExpiredDate,
+            };
+
+            listJob.Add(data);
+        }
+        return View(listJob);
     }
 
-    public IActionResult Privacy()
+    [HttpGet("/DetailJob/{id}")]
+    public IActionResult DetailJob(int id)
     {
-        return View();
+        Job objJob = _context.Jobs!.Find(id)!;
+
+        JobViewModel data = new()
+        {
+            JobId = objJob.JobId,
+            JobTitle = objJob.JobTitle,
+            JobDescription = objJob.JobDescription,
+            JobRequirement = objJob.JobRequirement,
+            Location = objJob.Location,
+            JobPostedDate = objJob.JobPostedDate,
+            JobExpiredDate = objJob.JobExpiredDate,
+        };
+
+        return View(data);
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -4,6 +4,7 @@ using RecruitmentTracking.Models;
 using RecruitmentTracking.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 
 namespace RecruitmentTracking.Controllers;
 
@@ -13,15 +14,17 @@ public class AdminController : Controller
     private readonly ApplicationDbContext _context;
     private readonly ILogger<HomeController> _logger;
     private readonly IConfiguration _configuration;
+    private readonly UserManager<User> _userManager;
 
-    public AdminController(ILogger<HomeController> logger, IConfiguration configuration, ApplicationDbContext context)
+    public AdminController(ILogger<HomeController> logger, IConfiguration configuration, ApplicationDbContext context, UserManager<User> userManager)
     {
         _logger = logger;
         _configuration = configuration;
         _context = context;
+        _userManager = userManager;
     }
 
-    [HttpGet("/Admin")]
+    [HttpGet]
     public async Task<IActionResult> Index()
     {
         List<Job> listObjJob = await _context.Jobs!.Where(j => j.IsJobAvailable).ToListAsync();
@@ -50,270 +53,242 @@ public class AdminController : Controller
         return View(listJobModel);
     }
 
-    // // Admin/JobClosed
-    // [HttpGet]
-    // public async Task<IActionResult> JobClosed()
-    // {
-    //     ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
-    //     ViewBag.IsAdmin = "admin";
+    // Admin/JobClosed
+    [HttpGet]
+    public async Task<IActionResult> JobClosed()
+    {
+        User user = (await _userManager.GetUserAsync(User))!;
 
-    //     string token = Request.Cookies["ActionLogin"]!;
-    //     GetDataAdmin(token, out _, out string adminName);
+        if (user == null)
+        {
+            return RedirectToAction("Login");
+        }
 
-    //     ViewBag.AdminName = adminName;
+        List<JobViewModel> listJob = new();
+        foreach (Job job in _context.Jobs!.Where(j => !j.IsJobAvailable).ToList())
+        {
+            int candidateCout = _context.UserJobs!.Where(c => c.JobId == job.JobId).Count();
+            JobViewModel data = new()
+            {
+                JobId = job.JobId,
+                JobTitle = job.JobTitle,
+                JobDescription = job.JobDescription,
+                JobRequirement = job.JobRequirement,
+                Location = job.Location,
+                JobPostedDate = job.JobPostedDate,
+                JobExpiredDate = job.JobExpiredDate,
+                CandidateCout = candidateCout,
+            };
+            listJob.Add(data);
+        }
+        return View(listJob);
+    }
 
-    //     List<JobData> listJob = new();
-    //     foreach (Job job in _db.Jobs!.Where(j => !j.IsJobAvailable).ToList())
-    //     {
-    //         int candidateCout = _db.CandidateJobs!.Where(c => c.JobId == job.JobId).Count();
-    //         JobData data = new()
-    //         {
-    //             JobId = job.JobId,
-    //             JobTitle = job.JobTitle,
-    //             JobDescription = job.JobDescription,
-    //             JobRequirement = job.JobRequirement,
-    //             Location = job.Location,
-    //             JobPostedDate = job.JobPostedDate,
-    //             JobExpiredDate = job.JobExpiredDate,
-    //             CandidateCout = candidateCout,
-    //         };
-    //         listJob.Add(data);
-    //     }
+    [HttpPost]
+    public async Task<IActionResult> CloseTheJob(int id)
+    {
+        Job objJob = (await _context.Jobs!.FindAsync(id))!;
 
-    //     return View(listJob);
-    // }
+        objJob.IsJobAvailable = false;
+        await _context.SaveChangesAsync();
 
-    // [HttpPost]
-    // public async Task<IActionResult> CloseTheJob(int id)
-    // {
-    //     Job objJob = _db.Jobs!.Find(id)!;
+        TempData["success"] = "Successfully Close a Job";
+        return Redirect("/Admin");
+    }
 
-    //     objJob.IsJobAvailable = false;
-    //     await _db.SaveChangesAsync();
+    [HttpPost]
+    public async Task<IActionResult> ActivateTheJob(int id)
+    {
+        Job objJob = _context.Jobs!.Find(id)!;
 
-    //     TempData["success"] = "Successfully Close a Job";
-    //     return Redirect("/Admin");
-    // }
+        objJob.IsJobAvailable = true;
+        await _context.SaveChangesAsync();
 
-    // [HttpPost]
-    // public async Task<IActionResult> ActivateTheJob(int id)
-    // {
-    //     Job objJob = _db.Jobs!.Find(id)!;
+        TempData["success"] = "Successfully Activate a Job";
+        return Redirect("/Admin/JobClosed");
+    }
 
-    //     objJob.IsJobAvailable = true;
-    //     await _db.SaveChangesAsync();
+    // Add Feature, if candidate apply job > 0, job can't be closed
+    [HttpPost]
+    public async Task<IActionResult> DeleteJob(int id)
+    {
+        if ((await _context.UserJobs!.Where(cj => cj.JobId == id).AnyAsync())!)
+        {
+            TempData["warning"] = "Job can't be closed because there are candidates who have applied for this job.";
+            //return Redirect("/Admin");
+            return Redirect("/Admin/JobClosed");
+        }
 
-    //     TempData["success"] = "Successfully Activate a Job";
-    //     return Redirect("/Admin/JobClosed");
-    // }
+        Job objJob = _context.Jobs!.Find(id)!;
+        _context.Jobs.Remove(objJob);
+        await _context.SaveChangesAsync();
 
-    // // Add Feature, if candidate apply job > 0, job can't be closed
-    // [HttpPost]
-    // public async Task<IActionResult> DeleteJob(int id)
-    // {
-    //     if (_db.CandidateJobs!.Where(cj => cj.JobId == id).Any())
-    //     {
-    //         TempData["warning"] = "Job can't be closed because there are candidates who have applied for this job.";
-    //         //return Redirect("/Admin");
-    //         return Redirect("/Admin/JobClosed");
-    //     }
+        TempData["success"] = "Successfully Delete a Job";
+        return Redirect("/Admin/JobClosed");
+    }
 
-    //     Job objJob = _db.Jobs!.Find(id)!;
-    //     _db.Jobs.Remove(objJob);
-    //     await _db.SaveChangesAsync();
+    //UI added
+    [HttpGet]
+    public async Task<IActionResult> CreateJob()
+    {
+        User user = (await _userManager.GetUserAsync(User))!;
 
-    //     TempData["success"] = "Successfully Delete a Job";
-    //     return Redirect("/Admin/JobClosed");
-    // }
+        if (user == null)
+        {
+            return RedirectToAction("Login");
+        }
 
-    // [HttpGet]
-    // public IActionResult CreateJob()
-    // {
-    //     ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
-    //     ViewBag.IsAdmin = "admin";
+        ViewBag.AdminName = user.Name;
 
-    //     string token = Request.Cookies["ActionLogin"]!;
-    //     GetDataAdmin(token, out _, out string adminName);
+        return View();
+    }
 
-    //     ViewBag.AdminName = adminName;
+    [HttpPost]
+    public async Task<IActionResult> CreateJobs(JobCreate objJob)
+    {
+        User user = (await _userManager.GetUserAsync(User))!;
 
-    //     return View();
-    // }
+        if (user == null)
+        {
+            return RedirectToAction("Login");
+        }
 
-    // [HttpPost]
-    // public async Task<IActionResult> CreateJobs(JobCreate objJob)
-    // {
-    //     string token = Request.Cookies["ActionLogin"]!;
-    //     GetDataAdmin(token, out string email, out _);
+        Job newJob = new()
+        {
+            JobTitle = objJob.JobTitle,
+            JobDescription = objJob.JobDescription,
+            JobExpiredDate = objJob.JobExpiredDate,
+            JobRequirement = objJob.JobRequirement!.Replace("\r\n", "\n"),
+            JobPostedDate = DateTime.Now,
+            Location = objJob.Location,
+            IsJobAvailable = true,
+            User = user,
+        };
+        _context.Jobs!.Add(newJob);
+        await _context.SaveChangesAsync();
 
-    //     Admin admin = _db.Admins!.FirstOrDefault(a => a.Email == email)!;
-    //     Job newJob = new()
-    //     {
-    //         JobTitle = objJob.JobTitle,
-    //         JobDescription = objJob.JobDescription,
-    //         JobExpiredDate = objJob.JobExpiredDate,
-    //         JobRequirement = objJob.JobRequirement!.Replace("\r\n", "\n"),
-    //         JobPostedDate = DateTime.Now,
-    //         Location = objJob.Location,
-    //         IsJobAvailable = true,
-    //         Admin = admin,
-    //     };
-    //     _db.Jobs!.Add(newJob);
-    //     await _db.SaveChangesAsync();
+        TempData["success"] = "Successfully Created a Job";
+        return Redirect("/Admin");
+    }
 
-    //     _log.Info("Job Added.");
+    [HttpGet]
+    public async Task<IActionResult> EditJob(int id)
+    {
+        User user = (await _userManager.GetUserAsync(User))!;
 
-    //     TempData["success"] = "Successfully Created a Job";
-    //     return Redirect("/Admin");
-    // }
+        if (user == null)
+        {
+            return RedirectToAction("Login");
+        }
 
-    // [HttpGet]
-    // public IActionResult EditJob(int id)
-    // {
-    //     ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
-    //     ViewBag.IsAdmin = "admin";
+        ViewBag.AdminName = user.Name;
 
-    //     string token = Request.Cookies["ActionLogin"]!;
-    //     GetDataAdmin(token, out _, out string adminName);
+        Job objJob = (await _context.Jobs!.FindAsync(id))!;
 
-    //     ViewBag.AdminName = adminName;
+        JobViewModel data = new()
+        {
+            JobId = objJob.JobId,
+            JobTitle = objJob.JobTitle,
+            JobDescription = objJob.JobDescription,
+            JobRequirement = objJob.JobRequirement!.Replace("\r\n", "\n"),
+            Location = objJob.Location,
+            JobPostedDate = objJob.JobPostedDate,
+            JobExpiredDate = objJob.JobExpiredDate,
+        };
 
-    //     Job objJob = _db.Jobs!.FirstOrDefault(j => j.JobId == id)!;
+        return View(data);
+    }
 
-    //     JobData data = new()
-    //     {
-    //         JobId = objJob.JobId,
-    //         JobTitle = objJob.JobTitle,
-    //         JobDescription = objJob.JobDescription,
-    //         JobRequirement = objJob.JobRequirement!.Replace("\r\n", "\n"),
-    //         Location = objJob.Location,
-    //         JobPostedDate = objJob.JobPostedDate,
-    //         JobExpiredDate = objJob.JobExpiredDate,
-    //     };
+    [HttpPost]
+    public async Task<IActionResult> EditJobs(JobCreate objJob)
+    {
+        User user = (await _userManager.GetUserAsync(User))!;
 
-    //     return View(data);
-    // }
+        if (user == null)
+        {
+            return RedirectToAction("Login");
+        }
 
-    // [HttpPost]
-    // public async Task<IActionResult> EditJobs(JobCreate objJob)
-    // {
-    //     string token = Request.Cookies["ActionLogin"]!;
-    //     GetDataAdmin(token, out string email, out _);
+        Job updateJob = (await _context.Jobs!.FindAsync(objJob.JobId))!;
+        updateJob.JobTitle = objJob.JobTitle;
+        updateJob.JobDescription = objJob.JobDescription;
+        updateJob.JobExpiredDate = objJob.JobExpiredDate;
+        updateJob.JobRequirement = objJob.JobRequirement;
+        updateJob.Location = objJob.Location;
 
-    //     Job updateJob = _db.Jobs!.FirstOrDefault(j => j.JobId == objJob.JobId)!;
-    //     updateJob.JobTitle = objJob.JobTitle;
-    //     updateJob.JobDescription = objJob.JobDescription;
-    //     updateJob.JobExpiredDate = objJob.JobExpiredDate;
-    //     updateJob.JobRequirement = objJob.JobRequirement;
-    //     updateJob.Location = objJob.Location;
+        await _context.SaveChangesAsync();
 
-    //     await _db.SaveChangesAsync();
-    //     _log.Info("Job Updated.");
+        TempData["success"] = "Successfully Edit a Job";
+        return Redirect("/Admin");
+    }
 
-    //     TempData["success"] = "Successfully Edit a Job";
-    //     return Redirect("/Admin");
-    // }
+    [HttpGet]
+    public async Task<IActionResult> RecruitmentProcess(int id)
+    {
+        User user = (await _userManager.GetUserAsync(User))!;
 
-    // [HttpGet]
-    // public async Task<IActionResult> Administration(int id)
-    // {
-    //     ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
-    //     ViewBag.IsAdmin = "admin";
+        if (user == null)
+        {
+            return RedirectToAction("Login");
+        }
 
-    //     string token = Request.Cookies["ActionLogin"]!;
-    //     GetDataAdmin(token, out _, out string name);
+        ViewBag.AdminName = user.Name;
 
-    //     ViewBag.AdminName = name;
-    //     ViewBag.JobId = id;
+        Job objJob = (await _context.Jobs!.FindAsync(id))!;
+        ViewBag.JobTitle = objJob.JobTitle;
 
-    //     Job objJob = _db.Jobs!.FirstOrDefault(j => j.JobId == id)!;
-    //     ViewBag.JobTitle = objJob.JobTitle;
+        List<User> listCandidates = _context.UserJobs!
+                                        .Where(cj => cj.JobId == id)
+                                        .Select(cj => cj.User)
+                                        .ToList()!;
 
-    //     List<Candidate> listCandidates = _db.CandidateJobs!
-    //                                     .Where(cj => cj.JobId == id)
-    //                                     .Select(cj => cj.Candidate)
-    //                                     .ToList()!;
+        List<DataCandidateJobs> listDataCandidates = new();
+        foreach (User candidate in listCandidates)
+        {
+            string statusInJob = (await _context.UserJobs!.FirstOrDefaultAsync(uj => uj.JobId == id && uj.UserId == user.Id))!.StatusInJob!;
+            if (statusInJob == "Administration")
+            {
+                UserJob cj = _context.UserJobs!.FirstOrDefault(cj => cj.UserId == user.Id)!;
+                Candidate objCandidate = (await _context.Candidates.FirstOrDefaultAsync(c => c.UserId == user.Id))!;
+                DataCandidateJobs dataCandidate = new()
+                {
+                    CandidateId = user.Id,
+                    Name = user.Name,
+                    Email = user.Email,
+                    LastEducation = objCandidate.LastEducation,
+                    GPA = objCandidate.GPA,
+                    CV = cj.CV,
+                };
+                listDataCandidates.Add(dataCandidate);
+            }
+        }
+        return View(listDataCandidates);
+    }
 
-    //     List<DataCandidateJobs> listDataCandidates = new();
-    //     foreach (Candidate candidate in listCandidates)
-    //     {
-    //         if (candidate.StatusInJob == "Administration")
-    //         {
-    //             CandidateJob cj = _db.CandidateJobs!.FirstOrDefault(cj => cj.CandidateId == candidate.CandidateId)!;
-    //             DataCandidateJobs dataCandidate = new()
-    //             {
-    //                 CandidateId = candidate.CandidateId,
-    //                 Name = candidate.Name,
-    //                 Email = candidate.Email,
-    //                 LastEducation = candidate.LastEducation,
-    //                 GPA = candidate.GPA,
-    //                 CV = cj.CV,
-    //             };
-    //             listDataCandidates.Add(dataCandidate);
-    //         }
-    //     }
+    [HttpPost]
+    public async Task<IActionResult> DownloadCV(string UserId, int JobId)
+    {
+        UserJob CJ = (await _context.UserJobs!
+                            .FirstOrDefaultAsync(cj => cj.JobId == JobId && cj.UserId == UserId))!;
 
-    //     return View(listDataCandidates);
-    // }
+        string filePath = Path.Combine(Directory.GetCurrentDirectory(), "Data", "DataCV", CJ.CV!);
 
-    // [HttpPost]
-    // public async Task<IActionResult> DownloadCV(int CandidateId, int JobId)
-    // {
-    //     CandidateJob CJ = _db.CandidateJobs!
-    //                         .FirstOrDefault(cj => cj.JobId == JobId && cj.CandidateId == CandidateId)!;
+        return PhysicalFile(filePath, "application/force-download", Path.GetFileName(filePath));
+    }
 
-    //     string filePath = Path.Combine(Directory.GetCurrentDirectory(), "Data", "DataCV", CJ.CV!);
+    [HttpPost]
+    public async Task<IActionResult> Accept(int CandidateId, int JobId)
+    {
+        Candidate objCandidate = _context.Candidates!.Find(CandidateId)!;
+        int statusInJob = (int)Enum.Parse(typeof(ProcessType), objCandidate.StatusInJob!);
+        statusInJob++;
+        objCandidate.StatusInJob = $"{(ProcessType)statusInJob}";
 
-    //     return PhysicalFile(filePath, "application/force-download", Path.GetFileName(filePath));
-    // }
+        await _context.SaveChangesAsync();
 
-    // [HttpPost]
-    // public async Task<IActionResult> Accept(int CandidateId, int JobId)
-    // {
-
-    //     Candidate objCandidate = _db.Candidates!.Find(CandidateId)!;
-    //     int statusInJob = (int)Enum.Parse(typeof(ProcessType), objCandidate.StatusInJob!);
-
-    //     //Console.WriteLine($"{statusInJob}");
-    //     statusInJob++;
-    //     objCandidate.StatusInJob = $"{(ProcessType)statusInJob}";
-
-    //     //Console.WriteLine(objCandidate.StatusInJob);
-
-    //     await _db.SaveChangesAsync();
-
-    //     TempData["success"] = "Candidate Accepted";
-    //     return Redirect($"/Admin/Administration/{JobId}");
-    // }
-
-    // [HttpPost]
-    // public async Task<IActionResult> SendEmailHRInterview(int JobId, int CandidateId)
-    // {
-    //     Job objJob = (await _db.Jobs!.FindAsync(JobId))!;
-    //     string bodyEmail = objJob.EmailHR!;
-
-    //     return default;
-    // }
-
-
-    // [HttpPost]
-    // public async Task<IActionResult> TemplateEmail(EmailTemplate email)
-    // {
-    //     Job objJob = (await _db.Jobs!.FindAsync(email.JobId))!;
-    //     objJob.EmailHR = email.EmailHR;
-    //     await _db.SaveChangesAsync();
-
-    //     return View(email);
-    // }
-
-    // [HttpGet]
-    // public IActionResult HRInterview()
-    // {
-    //     ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
-    //     ViewBag.IsAdmin = "admin";
-
-    //     return View();
-    // }
+        TempData["success"] = "Candidate Accepted";
+        return Redirect($"/Admin/Administration/{JobId}");
+    }
 
     // [HttpPost]
     // public async Task<IActionResult> Rejected(int CandidateId, int JobId)
@@ -328,40 +303,23 @@ public class AdminController : Controller
     //     return Redirect($"/Admin/Administration/{JobId}");
     // }
 
-
-    // [HttpGet]
-    // public IActionResult UserInterview()
+    // [HttpPost]
+    // public async Task<IActionResult> SendEmailHRInterview(int JobId, int CandidateId)
     // {
-    //     ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
+    //     Job objJob = (await _db.Jobs!.FindAsync(JobId))!;
+    //     string bodyEmail = objJob.EmailHR!;
 
-    //     return View();
+    //     return default;
     // }
 
-    // [HttpGet]
-    // public IActionResult Offering()
+    // [HttpPost]
+    // public async Task<IActionResult> TemplateEmail(EmailTemplate email)
     // {
-    //     ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
+    //     Job objJob = (await _db.Jobs!.FindAsync(email.JobId))!;
+    //     objJob.EmailHR = email.EmailHR;
+    //     await _db.SaveChangesAsync();
 
-    //     return View();
+    //     return View(email);
     // }
 
-
-
-
-    // private void GetDataAdmin(string token, out string email, out string name)
-    // {
-    //     ClaimsPrincipal claimsPrincipal = new JwtSecurityTokenHandler()
-    //         .ValidateToken(token, new TokenValidationParameters
-    //         {
-    //             ValidateIssuerSigningKey = true,
-    //             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(
-    //                                 _configuration.GetSection("AppSettings:TokenAdmin").Value!
-    //                                 )),
-    //             ValidateIssuer = false,
-    //             ValidateAudience = false,
-    //         }, out _);
-
-    //     email = claimsPrincipal.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Email)!.Value!;
-    //     name = claimsPrincipal.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Name)!.Value!;
-    // }
 }

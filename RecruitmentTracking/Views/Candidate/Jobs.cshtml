@@ -1,11 +1,10 @@
-@model List<JobViewModel>;
 
 @{
-  ViewData["Title"] = "Formulatrix Career";
+    ViewData["Title"] = "Jobs";
 }
-    <!-- image with search job and location search inside -->
 
-     <div class="pt-32 pb-20 px-5 bg-zinc-600">
+     <!-- search bar -->
+    <div class="pt-32 pb-20 px-5 bg-zinc-600">
       <div class="w-full container flex justify-between space-y-3 flex-col lg:space-x-3 lg:space-y-0 lg:flex-row">
         <div class="w-full">
           <input type="text" class="form-control  rounded-lg" placeholder="Search Job" aria-label="City" />
@@ -23,11 +22,9 @@
       </div>
     </div>
 
-    <!-- top jobs -->
+    <!-- job list -->
     <div class="container mb-3">
-      <h4 class="font-medium text-2xl mt-5">List Jobs</h4>
       <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
-
         @foreach (var job in Model){
         <div class="col">
           <div class="card h-[350px] w-full">
@@ -35,7 +32,7 @@
               <h5 class="font-medium text-xl">@job.JobTitle</h5>
                 <span class="text-gray-600 flex items-center space-x-1">
                 <i class="bi bi-geo-alt"></i>
-                <h7 class="card-text text-sm">Location: @job.Location</h7>
+                <h7 class="card-text  text-sm">Location: @job.Location</h7>
               </span>
               </div>
               <div class="card-body flex flex-column justify-between">
@@ -68,7 +65,7 @@
             </div>
             <div class="mt-2">
               <i class="bi bi-clock"></i>
-              <h7 class="card-text">Posted Time : @job.JobPostedDate</h7>
+              <h7 class="card-text">Posted Time</h7>
             </div>
           </div>
           </div>

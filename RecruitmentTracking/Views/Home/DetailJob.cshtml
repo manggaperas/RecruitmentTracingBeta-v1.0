@@ -1,0 +1,28 @@
+@model JobViewModel;
+
+@{
+    ViewData["Title"] = "Detail Job";
+}
+
+<div class="pt-32 pb-20 px-5">
+    <div class="container shadow p-3 mb-5 bg-white rounded mt-5" style="background-color:#f8f9fa ">
+      <div>
+        <div class="my-2">
+          <h2 class="text-3xl mt-3 font-bold">@Model.JobTitle</h2>
+          <i class="bi bi-geo-alt text-muted"></i>
+          <h7 class="text-muted">@Model.Location</h7>
+        </div>
+        <hr/>
+        <i class="bi bi-clock text-muted"></i>
+        <h7 class="text-muted">@Model.JobPostedDate</h7>
+        <div class="my-3">
+          <p class="text-base font-bold">Job description</p>
+          <p>@Model.JobDescription</p>
+          <p class="text-base font-bold">Job requirements</p>
+          <p>@Html.Raw(Model.JobRequirement.Replace(Environment.NewLine, "<br />"))</p>
+        </div>
+        <a class="w-full btn bg-amber-500 text-white rounded-lg hover:bg-amber-600" href="@Url.Action("ApplyJob", new { id = Model.JobId })">Apply</a>
+      </div>
+    </div>
+
+  </div>

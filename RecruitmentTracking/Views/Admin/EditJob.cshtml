@@ -1,0 +1,89 @@
+@model JobViewModel;
+
+@{
+    ViewData["Title"] = "Admin";
+    var dropdownOptions = new List<SelectListItem>
+    {
+        new SelectListItem { Value = "Salatiga", Text = "Salatiga" },
+        new SelectListItem { Value = "Semarang", Text = "Semarang" },
+        new SelectListItem { Value = "Bandung", Text = "Bandung" }
+    };
+}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+ <div class="grid grid-cols-5 h-screen">
+    <!-- Sidebar -->
+    <div class="bg-zinc-900 col-span-1 opacity-90">
+      <!-- Sidebar content -->
+      <nav>
+        <ul class="flex flex-col py-4 mt-5">
+           <li class="px-4 py-2 text-white inline-block">
+            <div class="rounded-full w-20 h-20 bg-gray-300 flex items-center justify-center">
+                <svg class="text-gray-500 w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </div>
+            </li>
+            <li class="px-4 py-2 text-zinc-200 font-bold mb-3"> <a href="index.html">@ViewBag.AdminName</a></li>
+            <li class="px-4 py-2 text-zinc-200 border-t-2 border-zinc-700"><i class="bi bi-house mr-3"></i><a href="/Admin">Home</a></li>
+            <li class="px-4 py-2 text-zinc-200 border-t-2 border-zinc-700"><i class="bi bi-clock-history mr-3"></i><a href="recruitment_process.html">Recruitment Process</a></li>
+            <li class="px-4 py-2 text-zinc-200 border-t-2 border-zinc-700"><i class="bi bi-list-check mr-3"></i><a href="/Admin/CreateJob">Create Job</a></li>
+            <li class="btn bg-red-500 text-zinc-200 hover:bg-red-600 mt-5">Logout</li>
+        </ul>
+      </nav>
+    </div>
+    <div class="col-span-4">
+        <div class="d-flex">
+        <main class="p-5 mt-5" style="height: 100vh; width: 80%">
+            <div class="py-1">
+                <div class="my-1">
+
+                @using (Html.BeginForm("EditJobs","Admin", FormMethod.Post))
+                {
+                    @Html.HiddenFor(m => m.JobId)
+
+                    <div class="mb-3">
+                        <label for="JobPosition" class="form-label">Job Position</label>
+                        @Html.TextBoxFor(m => m.JobTitle, new { @class="form-control"})
+                    </div>
+                    <div class="mb-3">
+                        <label for="JobDescription" class="form-label">Job Description</label>
+                        @Html.TextAreaFor(m => m.JobDescription, new { @class="form-control"})
+                    </div>
+                    <div class="mb-3">
+                        <label for="JobRequirement" class="form-label">Job Requirement</label>
+                        @Html.TextAreaFor(m => m.JobRequirement, new { @class="form-control"})
+                    </div>
+                    <div class="mb-3">
+
+                        <div class="form-group">
+                                <label for="JobExpiredDate" class="form-label">Job Expired Date</label>
+                                <div>
+                                    @Html.TextBoxFor(model => model.JobExpiredDate, new { @class = "form-control", @readonly = "readonly", placeholder = "Select Date", id = "datepicker" })
+                                    @Html.ValidationMessageFor(model => model.JobExpiredDate, "", new { @class = "text-danger" })
+                                </div>
+                        </div>
+
+                        @* <label for="JobExpiredDate" class="form-label">Job Expired Date</label>
+                        @Html.TextBoxFor(m => m.JobExpiredDate, new { @class="form-control"}) *@
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="JobRequirement" class="form-label">Office Location</label>  
+                        @Html.DropDownListFor(m => m.Location, new SelectList(dropdownOptions, "Value", "Text"), "Select an option", new { @class = "form-control" })
+                    </div>
+
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <button class="btn bg-green-500 text-white hover:bg-green-600 rounded-lg" type="submit">Preview</button>
+                        <button class="btn bg-blue-500 text-white hover:bg-blue-600 rounded-lg" type="submit">Save Update</button>
+                    </div>
+                }
+
+                </div>
+            </div>
+        </main>
+        </div>
+    </div>
+</div>
