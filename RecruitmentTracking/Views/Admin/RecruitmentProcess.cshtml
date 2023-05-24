@@ -1,4 +1,4 @@
-@model List<DataCandidateJobs>;
+@model ProcessViewModel;
 
 @{
   ViewData["Title"] = "Admin";
@@ -13,7 +13,7 @@
 
   <div class="grid grid-cols-5 h-screen">
     <!-- Sidebar -->
-    <div class="bg-zinc-900 col-span-1 opacity-90">
+    @* <div class="bg-zinc-900 col-span-1 opacity-90">
       <!-- Sidebar content -->
       <nav>
         <ul class="flex flex-col py-4 mt-5">
@@ -31,7 +31,7 @@
             <li class="btn bg-red-500 text-zinc-200 hover:bg-red-600 mt-5 flex justify-center">Logout</li>
         </ul>
       </nav>
-    </div>
+    </div> *@
     <!-- Main content -->
     <div class="col-span-4">
       <!-- Main content goes here -->
@@ -86,7 +86,7 @@
                 <th scope="col" colspan="4">Action</th>
               </tr>
             </thead>
-            @foreach (var candidate in Model)
+            @foreach (var candidate in Model.Administration)
             {
             <tbody>
               <tr>
@@ -97,15 +97,21 @@
                 <td>@candidate.Email</td>
                 <td>@candidate.Phone</td>
                 <td>
-                  <button type="button" class="btn bg-amber-500 text-white hover:bg-amber-600 rounded-lg">Send</button>
-                  <button type="button"
-                    class="btn bg-green-600 text-white hover:bg-green-700 rounded-lg">Accept</button>
-                  <button type="button" class="btn bg-red-600 text-white hover:bg-red-700 rounded-lg">Reject</button>
-                   <form action="/Admin/DownloadCV" method="post">
-                   <button class="btn bg-blue-600 text-white hover:bg-blue-700 rounded-lg" type="submit"><i class="bi bi-download"></i></button>
-                    <input type="hidden" name="CandidateId" value= @candidate.CandidateId />
+                  @* <button type="button" class="btn btn-sm bg-amber-500 text-white hover:bg-amber-600 rounded-lg">Send</button> *@
+                  <form action="/Admin/Accept" class="btn bg-green-600 btn-sm text-white hover:bg-green-700 rounded-lg" method="post">
+                    <button class="" type="submit">Accept</button>
+                    <input type="hidden" name="UserId" value= @candidate.UserId />
                     <input type="hidden" name="JobId" value= @ViewBag.JobId />
-                    
+                  </form>
+                  <form action="/Admin/Rejected" class="btn-sm btn bg-red-600 text-white hover:bg-red-700 rounded-lg" method="post">
+                    <button class="" type="submit">Reject</button>
+                    <input type="hidden" name="UserId" value= @candidate.UserId />
+                    <input type="hidden" name="JobId" value= @ViewBag.JobId />
+                  </form>
+                  <form action="/Admin/DownloadCV" class="btn btn-sm bg-blue-600 text-white hover:bg-blue-700 rounded-lg" method="post">
+                    <button class="" type="submit"><i class="bi bi-download"></i></button>
+                    <input type="hidden" name="UserId" value= @candidate.UserId />
+                    <input type="hidden" name="JobId" value= @ViewBag.JobId />
                   </form>
                 </td>
               </tr>
@@ -142,15 +148,22 @@
                 <th scope="col">Action</th>
               </tr>
             </thead>
-            @* @using (Html.BeginForm("HRInterview", "Admin", FormMethod.Post))
-            {
-            @foreach (var m in Model)
+           
+            @foreach (var candidate in Model.HRInterview)
             {    
             <tbody>
               <tr>
                 <th scope="row">@counter</th>
-                <td>@Html.DisplayFor(m => m.Name, new { @class="form-control"})</td>
-                <td>@Html.DisplayFor(m => m.Schedule, new { @class="form-control"})</td>
+                <td>@candidate.Name</td>
+                <td>
+                   @* <div class="form-group">
+                        <label for="JobExpiredDate" class="form-label">Job Expired Date</label>
+                        <div>
+                            @Html.TextBoxFor(model => mod, new { @class = "form-control round-lg", @readonly = "readonly", placeholder = "Select Date", id = "datepicker" })
+                            @Html.ValidationMessageFor(model => model.JobExpiredDate, "", new { @class = "text-danger" })
+                        </div>
+                    </div> *@
+                </td>
                 <td>
                   <button type="button" class="btn bg-amber-500 text-white hover:bg-amber-600 rounded-lg">Send</button>
                   <button type="button"
@@ -159,9 +172,10 @@
                   <button type="button" class="btn bg-blue-700 text-white hover:bg-blue-800 rounded-lg"><i class="bi bi-download"></i></button>
                 </td>
               </tr>
-            }
+            
             </tbody>
-            } *@
+            }
+          
           </table>
           <div class="d-grid gap-2 d-md-flex justify-content-md-end">
             <a class="btn bg-blue-600 text-white hover:bg-blue-700 rounded-lg mr-8" type="button" href="#content3">Next
@@ -193,15 +207,14 @@
                 <th scope="col">Action</th>
               </tr>
             </thead>
-            @* @using (Html.BeginForm("UserInterview", "Admin", FormMethod.Post))
-            {
-            @foreach (var m in Model)
+
+            @foreach (var candidate in Model.UserInterview)
             {    
             <tbody>
               <tr>
                 <th scope="row">@counter</th>
-                <td>@Html.DisplayFor(m => m.Name, new { @class="form-control"})</td>
-                <td>@Html.DisplayFor(m => m.Schedule, new { @class="form-control"})</td>
+                <td>@candidate.Name</td>
+                <td></td>
                 <td>
                   <button type="button" class="btn bg-amber-500 text-white hover:bg-amber-600 rounded-lg">Send</button>
                   <button type="button"
@@ -210,9 +223,9 @@
                   <button type="button" class="btn bg-blue-700 text-white hover:bg-blue-800 rounded-lg"><i class="bi bi-download"></i></button>
                 </td>
               </tr>
-            }
+            
             </tbody>
-            } *@
+            }
           </table>
           <div class="d-grid gap-2 d-md-flex justify-content-md-end">
             <a class="btn bg-blue-600 text-white hover:bg-blue-700 rounded-lg mr-8" type="button" href="#content3">Next
@@ -245,11 +258,11 @@
                 <th scope="col" colspan="3">Action</th>
               </tr>
             </thead>
-            @using (Html.BeginForm("HRInterview", "Admin", FormMethod.Post))
+
+            @foreach (var m in Model.Offering)
             {
             <tbody>
-             @* @foreach (var m in Model)
-              { *@
+         
               <tr>
                 <th scope="row">1</th>
                  @* <td>@Html.DisplayFor(m => m.Name, new { @class="form-control"})</td>
@@ -261,7 +274,7 @@
                   <button type="button" class="btn bg-red-600 text-white hover:bg-red-700 rounded-lg">Reject</button>
                 </td>
               </tr>
-            @* } *@
+            
             </tbody>
             }
           </table>

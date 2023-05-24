@@ -29,6 +29,7 @@ public class HomeController : Controller
 
         if (user != null)
         {
+            if (await _userManager.IsInRoleAsync(user, "Admin")) return Redirect("/Admin");
             Candidate objCandidate = (await _context.Candidates.FirstOrDefaultAsync(c => c.UserId == user.Id))!;
             if (objCandidate == null)
             {
@@ -49,10 +50,44 @@ public class HomeController : Controller
                 Location = job.Location,
                 JobPostedDate = job.JobPostedDate,
                 JobExpiredDate = job.JobExpiredDate,
+                CandidateCout = job.candidateCount,
             };
 
             listJob.Add(data);
         }
+        return View(listJob);
+    }
+
+    [HttpPost("/Search")]
+    public async Task<IActionResult> Index(string searchString)
+    {
+        Console.WriteLine($"{searchString}");
+
+        if (_context.Jobs == null)
+        {
+            return Problem("not found");
+        }
+
+        var jobs = from m in _context.Jobs
+                   select m;
+
+        List<JobViewModel> listJob = new();
+        foreach (Job job in jobs.Where(s => s.JobTitle != null && s.JobTitle.Contains(searchString, StringComparison.OrdinalIgnoreCase)).ToList())
+        {
+            JobViewModel data = new()
+            {
+                JobId = job.JobId,
+                JobTitle = job.JobTitle,
+                JobDescription = job.JobDescription,
+                JobRequirement = job.JobRequirement,
+                Location = job.Location,
+                JobPostedDate = job.JobPostedDate,
+                JobExpiredDate = job.JobExpiredDate,
+                CandidateCout = job.candidateCount,
+            };
+            listJob.Add(data);
+        }
+
         return View(listJob);
     }
 

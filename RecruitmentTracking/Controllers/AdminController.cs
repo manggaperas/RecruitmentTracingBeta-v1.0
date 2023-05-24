@@ -33,7 +33,7 @@ public class AdminController : Controller
         foreach (Job job in listObjJob)
         {
             int candidateCount = _context.UserJobs!.Where(c => c.JobId == job.JobId).Count();
-
+            job.candidateCount = candidateCount;
             JobViewModel modelView = new()
             {
                 JobId = job.JobId,
@@ -47,6 +47,7 @@ public class AdminController : Controller
             };
             listJobModel.Add(modelView);
         }
+        await _context.SaveChangesAsync();
 
         return View(listJobModel);
     }
@@ -65,7 +66,6 @@ public class AdminController : Controller
         List<JobViewModel> listJob = new();
         foreach (Job job in _context.Jobs!.Where(j => !j.IsJobAvailable).ToList())
         {
-            int candidateCout = _context.UserJobs!.Where(c => c.JobId == job.JobId).Count();
             JobViewModel data = new()
             {
                 JobId = job.JobId,
@@ -75,7 +75,7 @@ public class AdminController : Controller
                 Location = job.Location,
                 JobPostedDate = job.JobPostedDate,
                 JobExpiredDate = job.JobExpiredDate,
-                CandidateCout = candidateCout,
+                CandidateCout = job.candidateCount,
             };
             listJob.Add(data);
         }
@@ -231,36 +231,109 @@ public class AdminController : Controller
         }
 
         ViewBag.AdminName = user.Name;
+        ViewBag.jobId = id;
 
         Job objJob = (await _context.Jobs!.FindAsync(id))!;
         ViewBag.JobTitle = objJob.JobTitle;
 
-        List<User> listCandidates = (await _context.UserJobs!
+        List<User> listObjUser = (await _context.UserJobs!
                                         .Where(cj => cj.JobId == id)
                                         .Select(cj => cj.User)
                                         .ToListAsync())!;
 
-        List<DataCandidateJobs> listDataCandidates = new();
-        foreach (User candidate in listCandidates)
+        List<DataCandidateJobs> listAdministration = new();
+        foreach (User objUser in listObjUser)
         {
-            string statusInJob = (await _context.UserJobs!.FirstOrDefaultAsync(uj => uj.JobId == id && uj.UserId == user.Id))!.StatusInJob!;
+            string statusInJob = (await _context.UserJobs!.FirstOrDefaultAsync(uj => uj.JobId == id && uj.UserId == objUser.Id))!.StatusInJob!;
             if (statusInJob == "Administration")
             {
-                UserJob cj = _context.UserJobs!.FirstOrDefault(cj => cj.UserId == user.Id)!;
-                Candidate objCandidate = (await _context.Candidates.FirstOrDefaultAsync(c => c.UserId == user.Id))!;
+                UserJob cj = _context.UserJobs!.FirstOrDefault(cj => cj.UserId == objUser.Id)!;
+                Candidate objCandidate = (await _context.Candidates.FirstOrDefaultAsync(c => c.UserId == objUser.Id))!;
                 DataCandidateJobs dataCandidate = new()
                 {
-                    CandidateId = user.Id,
-                    Name = user.Name,
-                    Email = user.Email,
+                    UserId = objUser.Id,
+                    Name = objUser.Name,
+                    Email = objUser.Email,
                     LastEducation = objCandidate.LastEducation,
                     GPA = objCandidate.GPA,
                     CV = cj.CV,
                 };
-                listDataCandidates.Add(dataCandidate);
+                listAdministration.Add(dataCandidate);
             }
         }
-        return View(listDataCandidates);
+
+        List<DataCandidateJobs> listHRInterview = new();
+        foreach (User objUser in listObjUser)
+        {
+            string statusInJob = (await _context.UserJobs!.FirstOrDefaultAsync(uj => uj.JobId == id && uj.UserId == objUser.Id))!.StatusInJob!;
+            if (statusInJob == "HRInterview")
+            {
+                UserJob cj = _context.UserJobs!.FirstOrDefault(cj => cj.UserId == objUser.Id)!;
+                Candidate objCandidate = (await _context.Candidates.FirstOrDefaultAsync(c => c.UserId == objUser.Id))!;
+                DataCandidateJobs dataCandidate = new()
+                {
+                    UserId = objUser.Id,
+                    Name = objUser.Name,
+                    Email = objUser.Email,
+                    LastEducation = objCandidate.LastEducation,
+                    GPA = objCandidate.GPA,
+                    CV = cj.CV,
+                };
+                listHRInterview.Add(dataCandidate);
+            }
+        }
+
+        List<DataCandidateJobs> listUserInterview = new();
+        foreach (User objUser in listObjUser)
+        {
+            string statusInJob = (await _context.UserJobs!.FirstOrDefaultAsync(uj => uj.JobId == id && uj.UserId == objUser.Id))!.StatusInJob!;
+            if (statusInJob == "UserInterview")
+            {
+                UserJob cj = _context.UserJobs!.FirstOrDefault(cj => cj.UserId == objUser.Id)!;
+                Candidate objCandidate = (await _context.Candidates.FirstOrDefaultAsync(c => c.UserId == objUser.Id))!;
+                DataCandidateJobs dataCandidate = new()
+                {
+                    UserId = objUser.Id,
+                    Name = objUser.Name,
+                    Email = objUser.Email,
+                    LastEducation = objCandidate.LastEducation,
+                    GPA = objCandidate.GPA,
+                    CV = cj.CV,
+                };
+                listUserInterview.Add(dataCandidate);
+            }
+        }
+
+        List<DataCandidateJobs> listOffering = new();
+        foreach (User objUser in listObjUser)
+        {
+            string statusInJob = (await _context.UserJobs!.FirstOrDefaultAsync(uj => uj.JobId == id && uj.UserId == objUser.Id))!.StatusInJob!;
+            if (statusInJob == "Offering")
+            {
+                UserJob cj = _context.UserJobs!.FirstOrDefault(cj => cj.UserId == objUser.Id)!;
+                Candidate objCandidate = (await _context.Candidates.FirstOrDefaultAsync(c => c.UserId == objUser.Id))!;
+                DataCandidateJobs dataCandidate = new()
+                {
+                    UserId = objUser.Id,
+                    Name = objUser.Name,
+                    Email = objUser.Email,
+                    LastEducation = objCandidate.LastEducation,
+                    GPA = objCandidate.GPA,
+                    CV = cj.CV,
+                };
+                listOffering.Add(dataCandidate);
+            }
+        }
+
+        ProcessViewModel viewModel = new()
+        {
+            Administration = listAdministration,
+            HRInterview = listHRInterview,
+            UserInterview = listUserInterview,
+            Offering = listOffering,
+        };
+
+        return View(viewModel);
     }
 
     [HttpPost]
@@ -274,32 +347,35 @@ public class AdminController : Controller
         return PhysicalFile(filePath, "application/force-download", Path.GetFileName(filePath));
     }
 
-    // [HttpPost]
-    // public async Task<IActionResult> Accept(int CandidateId, int JobId)
-    // {
-    //     Candidate objCandidate = _context.Candidates!.Find(CandidateId)!;
-    //     int statusInJob = (int)Enum.Parse(typeof(ProcessType), objCandidate.StatusInJob!);
-    //     statusInJob++;
-    //     objCandidate.StatusInJob = $"{(ProcessType)statusInJob}";
+    [HttpPost]
+    public async Task<IActionResult> Accept(string UserId, int JobId)
+    {
+        UserJob CJ = (await _context.UserJobs!
+                            .FirstOrDefaultAsync(cj => cj.JobId == JobId && cj.UserId == UserId))!;
 
-    //     await _context.SaveChangesAsync();
+        int statusInJob = (int)Enum.Parse(typeof(ProcessType), CJ.StatusInJob!);
+        statusInJob++;
+        CJ.StatusInJob = $"{(ProcessType)statusInJob}";
 
-    //     TempData["success"] = "Candidate Accepted";
-    //     return Redirect($"/Admin/Administration/{JobId}");
-    // }
+        await _context.SaveChangesAsync();
 
-    // [HttpPost]
-    // public async Task<IActionResult> Rejected(int CandidateId, int JobId)
-    // {
-    //     Candidate objCandidate = _db.Candidates!.Find(CandidateId)!;
+        TempData["success"] = "Candidate Accepted";
+        return Redirect($"/Admin/RecruitmentProcess/{JobId}");
+    }
 
-    //     objCandidate.StatusInJob = $"{ProcessType.Rejected}";
+    [HttpPost]
+    public async Task<IActionResult> Rejected(string UserId, int JobId)
+    {
+        UserJob CJ = (await _context.UserJobs!
+                             .FirstOrDefaultAsync(cj => cj.JobId == JobId && cj.UserId == UserId))!;
 
-    //     await _db.SaveChangesAsync();
+        CJ.StatusInJob = $"{ProcessType.Rejected}";
 
-    //     TempData["success"] = "Candidate Rejected";
-    //     return Redirect($"/Admin/Administration/{JobId}");
-    // }
+        await _context.SaveChangesAsync();
+
+        TempData["success"] = "Candidate Rejected";
+        return Redirect($"/Admin/RecruitmentProcess/{JobId}");
+    }
 
     // [HttpPost]
     // public async Task<IActionResult> SendEmailHRInterview(int JobId, int CandidateId)

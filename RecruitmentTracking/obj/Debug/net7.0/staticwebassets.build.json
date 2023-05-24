@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Q0/xw0rd+2PYr7KuiK5m+JY2v+khCA168lr8G/socO4=",
+  "Hash": "Ga/GGZZ7K1L7vmn0D1xpCvw8NGQJqbTOR+Qp9VXcVtU=",
   "Source": "RecruitmentTracking",
   "BasePath": "_content/RecruitmentTracking",
   "Mode": "Default",
@@ -1103,6 +1103,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/wwwroot/img/background.jpg",
+      "SourceId": "RecruitmentTracking",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/wwwroot/",
+      "BasePath": "_content/RecruitmentTracking",
+      "RelativePath": "img/background.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/background.jpg"
     },
     {
       "Identity": "/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/wwwroot/js/site.js",

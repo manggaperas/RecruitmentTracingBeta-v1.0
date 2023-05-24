@@ -50,7 +50,7 @@ public class CandidateController : Controller
             UserEditProfile newProfile = new UserEditProfile()
             {
                 Name = user.Name,
-                Email = User.Identity.Name,
+                Email = user.Name,
                 Phone = newCandidate.Phone,
                 LastEducation = newCandidate.LastEducation,
                 GPA = newCandidate.GPA,
@@ -70,7 +70,7 @@ public class CandidateController : Controller
         return View(profile);
     }
 
-    [HttpPost]
+    [HttpPost("/EditProfile")]
     public async Task<IActionResult> EditProfile(UserEditProfile profile)
     {
         User user = (await _userManager.GetUserAsync(User))!;
@@ -89,7 +89,7 @@ public class CandidateController : Controller
         await _context.SaveChangesAsync();
 
         TempData["success"] = "Successfully Update Profile";
-        return Redirect("/Profile");
+        return Redirect("/");
     }
 
 
@@ -127,10 +127,17 @@ public class CandidateController : Controller
         if (updateCandidate.FileCV?.Length < 0)
         {
             TempData["warning"] = "Please select a CV file";
-            return Redirect($"/ApplyJob/{JobId}");
+            return Redirect($"/Home/ApplyJob/{JobId}");
         }
 
         User user = (await _userManager.GetUserAsync(User))!;
+
+        UserJob UJ = (await _context.UserJobs!.FirstOrDefaultAsync(cj => cj.JobId == JobId && cj.UserId == user.Id))!;
+        if (UJ != null)
+        {
+            TempData["error"] = "You have applied for the job";
+            return Redirect($"/Home/ApplyJob/{JobId}");
+        }
 
         if (user == null)
         {
@@ -161,6 +168,7 @@ public class CandidateController : Controller
             StatusInJob = $"{ProcessType.Administration}",
         };
 
+        objJob.candidateCount++;
         await _context.UserJobs!.AddAsync(objCJ);
         await _context.SaveChangesAsync();
 

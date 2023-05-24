@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/wwwroot/img/background.jpg",
+      "PackagePath": "staticwebassets/img/background.jpg"
+    },
+    {
       "Id": "/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },
