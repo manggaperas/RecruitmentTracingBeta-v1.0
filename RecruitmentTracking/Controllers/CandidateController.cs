@@ -50,7 +50,7 @@ public class CandidateController : Controller
             UserEditProfile newProfile = new UserEditProfile()
             {
                 Name = user.Name,
-                Email = user.Name,
+                Email = User.Identity.Name,
                 Phone = newCandidate.Phone,
                 LastEducation = newCandidate.LastEducation,
                 GPA = newCandidate.GPA,
@@ -105,6 +105,8 @@ public class CandidateController : Controller
 
         Job objJob = (await _context.Jobs!.FindAsync(id))!;
 
+        ViewBag.JobId = id;
+
         Candidate objCandidate = _context.Candidates!.FirstOrDefault(c => c.UserId == user.Id)!;
 
         UserEditProfile data = new()
@@ -121,6 +123,7 @@ public class CandidateController : Controller
     [HttpPost]
     public async Task<IActionResult> ApplyJobs(int JobId, UserEditProfile updateCandidate)
     {
+
         if (updateCandidate.FileCV?.Length < 0)
         {
             TempData["warning"] = "Please select a CV file";
@@ -147,15 +150,15 @@ public class CandidateController : Controller
         objCandidate.Phone = updateCandidate.Phone;
         objCandidate.LastEducation = updateCandidate.LastEducation;
         objCandidate.GPA = updateCandidate.GPA;
-        objCandidate.StatusInJob = $"{ProcessType.Administration}";
 
         Job objJob = (await _context.Jobs!.FindAsync(JobId))!;
 
         UserJob objCJ = new()
         {
-            User = user,
+            UserId = user.Id,
             Job = objJob,
             CV = fileName,
+            StatusInJob = $"{ProcessType.Administration}",
         };
 
         await _context.UserJobs!.AddAsync(objCJ);
@@ -180,18 +183,18 @@ public class CandidateController : Controller
             return RedirectToAction("Login");
         }
 
-        Candidate objCandidate = (await _context.Candidates!.FirstOrDefaultAsync(c => c.UserId == user.Id))!;
         List<Job> listJobCandidate = _context.UserJobs!
-                            .Where(c => c.UserId == objCandidate.UserId)!
+                            .Where(c => c.UserId == user.Id)!
                             .Select(c => c.Job)
                             .ToList()!;
 
         List<CandidateJobStatus> listData = new();
         foreach (Job job in listJobCandidate)
         {
+            UserJob UJ = (await _context.UserJobs!.FirstOrDefaultAsync(cj => cj.JobId == job.JobId && cj.UserId == user.Id))!;
             CandidateJobStatus status = new()
             {
-                CandidateStatus = GetStatusApplication(objCandidate.StatusInJob!).Split(' '), // need migrate db to CandidateJobStatus for status in Job
+                CandidateStatus = GetStatusApplication(UJ.StatusInJob!).Split(' '), // need migrate db to CandidateJobStatus for status in Job
                 JobTitle = job.JobTitle,
             };
             listData.Add(status);

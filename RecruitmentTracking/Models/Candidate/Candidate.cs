@@ -14,8 +14,6 @@ public class Candidate
     public string? Schedule { get; set; }
     public string? Salary { get; set; }
 
-    public string? StatusInJob { get; set; }
-
     [ForeignKey("User")]
     public string? UserId { get; set; }
     public User? User { get; set; }

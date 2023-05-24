@@ -41,12 +41,13 @@
                 @if(User.Identity.IsAuthenticated)
                 {
                     <div class="dropdown">
+                        @* <p class="text-sm">@User.Identity.Name</p> *@
                         <button class="btn btn bg-amber-500 text-white hover:bg-amber-600 rounded-lg dropdown-toggle" type="button"
                             id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                            Name User
+                            <i class="bi bi-profile"></i>
                         </button>
                         
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <ul class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenuButton1">
                             <li><a class="dropdown-item hover:bg-amber-600 hover:text-white" href="/Profile">My Profile</a></li>
                             <li><a class="dropdown-item hover:bg-amber-600 hover:text-white" href="/TrackJob">My Application</a></li>
                             <li>

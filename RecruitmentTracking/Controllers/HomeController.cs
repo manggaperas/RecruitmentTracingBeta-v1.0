@@ -1,5 +1,7 @@
 ﻿using System.Diagnostics;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using RecruitmentTracking.Data;
 using RecruitmentTracking.Models;
 
@@ -10,16 +12,31 @@ public class HomeController : Controller
     private readonly ApplicationDbContext _context;
     private readonly ILogger<HomeController> _logger;
     private readonly IConfiguration _configuration;
+    private readonly UserManager<User> _userManager;
 
-    public HomeController(ILogger<HomeController> logger, IConfiguration configuration, ApplicationDbContext context)
+    public HomeController(ILogger<HomeController> logger, IConfiguration configuration, ApplicationDbContext context, UserManager<User> userManager)
     {
+        _logger = logger;
         _configuration = configuration;
         _context = context;
+        _userManager = userManager;
     }
 
     [HttpGet]
-    public IActionResult Index()
+    public async Task<IActionResult> Index()
     {
+        User user = (await _userManager.GetUserAsync(User))!;
+
+        if (user != null)
+        {
+            Candidate objCandidate = (await _context.Candidates.FirstOrDefaultAsync(c => c.UserId == user.Id))!;
+            if (objCandidate == null)
+            {
+                TempData["warning"] = "Please complete your data";
+                return Redirect("/Profile");
+            }
+        }
+
         List<JobViewModel> listJob = new();
         foreach (Job job in _context.Jobs!.Where(j => j.IsJobAvailable).ToList())
         {

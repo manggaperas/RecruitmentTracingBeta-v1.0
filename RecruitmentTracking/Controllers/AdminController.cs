@@ -29,8 +29,6 @@ public class AdminController : Controller
     {
         List<Job> listObjJob = await _context.Jobs!.Where(j => j.IsJobAvailable).ToListAsync();
 
-        if (listObjJob == null) return BadRequest("null Database");
-
         List<JobViewModel> listJobModel = new();
         foreach (Job job in listObjJob)
         {
@@ -237,10 +235,10 @@ public class AdminController : Controller
         Job objJob = (await _context.Jobs!.FindAsync(id))!;
         ViewBag.JobTitle = objJob.JobTitle;
 
-        List<User> listCandidates = _context.UserJobs!
+        List<User> listCandidates = (await _context.UserJobs!
                                         .Where(cj => cj.JobId == id)
                                         .Select(cj => cj.User)
-                                        .ToList()!;
+                                        .ToListAsync())!;
 
         List<DataCandidateJobs> listDataCandidates = new();
         foreach (User candidate in listCandidates)
@@ -276,19 +274,19 @@ public class AdminController : Controller
         return PhysicalFile(filePath, "application/force-download", Path.GetFileName(filePath));
     }
 
-    [HttpPost]
-    public async Task<IActionResult> Accept(int CandidateId, int JobId)
-    {
-        Candidate objCandidate = _context.Candidates!.Find(CandidateId)!;
-        int statusInJob = (int)Enum.Parse(typeof(ProcessType), objCandidate.StatusInJob!);
-        statusInJob++;
-        objCandidate.StatusInJob = $"{(ProcessType)statusInJob}";
+    // [HttpPost]
+    // public async Task<IActionResult> Accept(int CandidateId, int JobId)
+    // {
+    //     Candidate objCandidate = _context.Candidates!.Find(CandidateId)!;
+    //     int statusInJob = (int)Enum.Parse(typeof(ProcessType), objCandidate.StatusInJob!);
+    //     statusInJob++;
+    //     objCandidate.StatusInJob = $"{(ProcessType)statusInJob}";
 
-        await _context.SaveChangesAsync();
+    //     await _context.SaveChangesAsync();
 
-        TempData["success"] = "Candidate Accepted";
-        return Redirect($"/Admin/Administration/{JobId}");
-    }
+    //     TempData["success"] = "Candidate Accepted";
+    //     return Redirect($"/Admin/Administration/{JobId}");
+    // }
 
     // [HttpPost]
     // public async Task<IActionResult> Rejected(int CandidateId, int JobId)
