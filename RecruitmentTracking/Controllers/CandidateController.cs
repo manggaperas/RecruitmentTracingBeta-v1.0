@@ -3,32 +3,33 @@ using Microsoft.AspNetCore.Mvc;
 using RecruitmentTracking.Models;
 using RecruitmentTracking.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace RecruitmentTracking.Controllers;
 
+[Authorize(Roles = "Candidate")]
 public class CandidateController : Controller
 {
-    private readonly ApplicationDbContext _db = new();
-    //private readonly ILog _log;
+    private readonly ApplicationDbContext _context;
+    private readonly ILogger<HomeController> _logger;
     private readonly IConfiguration _configuration;
     private readonly IWebHostEnvironment _server;
 
-    public CandidateController(IWebHostEnvironment server, IConfiguration configuration)
+    public CandidateController(ILogger<HomeController> logger, IWebHostEnvironment server, IConfiguration configuration, ApplicationDbContext context)
     {
-        //_log = LogManager.GetLogger(typeof(CandidateController));
+        _logger = logger;
         _server = server;
         _configuration = configuration;
+        _context = context;
     }
 
     [HttpGet]
     public IActionResult Index()
     {
-        ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
-
-        List<JobData> listJob = new();
-        foreach (Job job in _db.Jobs!.Where(j => j.IsJobAvailable).ToList())
+        List<JobViewModel> listJob = new();
+        foreach (Job job in _context.Jobs!.Where(j => j.IsJobAvailable).ToList())
         {
-            JobData data = new()
+            JobViewModel data = new()
             {
                 JobId = job.JobId,
                 JobTitle = job.JobTitle,

@@ -3,53 +3,52 @@ using Microsoft.AspNetCore.Mvc;
 using RecruitmentTracking.Models;
 using RecruitmentTracking.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace RecruitmentTracking.Controllers;
 
+[Authorize(Roles = "Admin")]
 public class AdminController : Controller
 {
-    private readonly ApplicationDbContext _db = new();
-    //private readonly ILog _log;
+    private readonly ApplicationDbContext _context;
+    private readonly ILogger<HomeController> _logger;
     private readonly IConfiguration _configuration;
 
-    public AdminController(IConfiguration configuration)
+    public AdminController(ILogger<HomeController> logger, IConfiguration configuration, ApplicationDbContext context)
     {
-        //_log = LogManager.GetLogger(typeof(AdminController));
+        _logger = logger;
         _configuration = configuration;
+        _context = context;
     }
 
-    // [HttpGet("/Admin")]
-    // public async Task<IActionResult> Index()
-    // {
-    //     ViewBag.IsAuth = Request.Cookies["ActionLogin"]! != null;
-    //     ViewBag.IsAdmin = "admin";
+    [HttpGet("/Admin")]
+    public async Task<IActionResult> Index()
+    {
+        List<Job> listObjJob = await _context.Jobs!.Where(j => j.IsJobAvailable).ToListAsync();
 
-    //     string token = Request.Cookies["ActionLogin"]!;
-    //     GetDataAdmin(token, out _, out string adminName);
+        if (listObjJob == null) return BadRequest("null Database");
 
-    //     ViewBag.AdminName = adminName;
+        List<JobViewModel> listJobModel = new();
+        foreach (Job job in listObjJob)
+        {
+            int candidateCount = _context.UserJobs!.Where(c => c.JobId == job.JobId).Count();
 
-    //     List<JobData> listJob = new();
-    //     foreach (Job job in _db.Jobs!.Where(j => j.IsJobAvailable).ToList())
-    //     {
-    //         int candidateCount = _db.CandidateJobs!.Where(c => c.JobId == job.JobId).Count();
+            JobViewModel modelView = new()
+            {
+                JobId = job.JobId,
+                JobTitle = job.JobTitle,
+                JobDescription = job.JobDescription,
+                JobRequirement = job.JobRequirement,
+                Location = job.Location,
+                JobPostedDate = job.JobPostedDate,
+                JobExpiredDate = job.JobExpiredDate,
+                CandidateCout = candidateCount,
+            };
+            listJobModel.Add(modelView);
+        }
 
-    //         JobData data = new()
-    //         {
-    //             JobId = job.JobId,
-    //             JobTitle = job.JobTitle,
-    //             JobDescription = job.JobDescription,
-    //             JobRequirement = job.JobRequirement,
-    //             Location = job.Location,
-    //             JobPostedDate = job.JobPostedDate,
-    //             JobExpiredDate = job.JobExpiredDate,
-    //             CandidateCout = candidateCount,
-    //         };
-    //         listJob.Add(data);
-    //     }
-
-    //     return View(listJob);
-    // }
+        return View(listJobModel);
+    }
 
     // // Admin/JobClosed
     // [HttpGet]

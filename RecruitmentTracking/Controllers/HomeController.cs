@@ -1,16 +1,20 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using RecruitmentTracking.Data;
 using RecruitmentTracking.Models;
 
 namespace RecruitmentTracking.Controllers;
 
 public class HomeController : Controller
 {
+    private readonly ApplicationDbContext _context;
     private readonly ILogger<HomeController> _logger;
+    private readonly IConfiguration _configuration;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ILogger<HomeController> logger, IConfiguration configuration, ApplicationDbContext context)
     {
-        _logger = logger;
+        _configuration = configuration;
+        _context = context;
     }
 
     public IActionResult Index()

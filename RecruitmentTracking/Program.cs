@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using RecruitmentTracking.Data;
 using RecruitmentTracking.Models;
+using Microsoft.EntityFrameworkCore.Sqlite;
 //using RPauth.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -40,6 +41,7 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+app.UseAuthentication();
 
 app.MapControllerRoute(
     name: "default",

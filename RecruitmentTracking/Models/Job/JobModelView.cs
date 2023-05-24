@@ -1,6 +1,6 @@
 namespace RecruitmentTracking.Models;
 
-public class JobData
+public class JobViewModel
 {
     public int JobId { get; set; }
     public string? JobTitle { get; set; }
