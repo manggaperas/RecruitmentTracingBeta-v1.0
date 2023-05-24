@@ -13,4 +13,5 @@ public class ApplicationDbContext : IdentityDbContext
     //public DbSet<User>? Users { get; set; } = default;
     public DbSet<Job>? Jobs { get; set; } = default;
     public DbSet<UserJob>? UserJobs { get; set; } = default;
+    public DbSet<Candidate> Candidates { get; set; } = default;
 }
