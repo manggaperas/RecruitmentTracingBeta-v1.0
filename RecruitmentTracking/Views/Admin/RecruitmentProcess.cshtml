@@ -10,8 +10,11 @@
     };
   int counter = 1;
 }
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" rel="stylesheet">
 
-  <div class="grid grid-cols-5 h-screen">
+  <div class="container">
     <!-- Sidebar -->
     @* <div class="bg-zinc-900 col-span-1 opacity-90">
       <!-- Sidebar content -->
@@ -33,45 +36,82 @@
       </nav>
     </div> *@
     <!-- Main content -->
+    
     <div class="col-span-4">
       <!-- Main content goes here -->
-      <header class="mb-1">
-        <div class="d-flex justify-content-between align-items-center">
-          <input type="text" class="rounded" />
-          <div class="d-flex justify-content-around align-items-center" style="width: 150px">
-            <span class="mr-2">@ViewBag.AdminName</span>
-            <div class="rounded-circle" style="width: 40px; height: 40px; background-color: #4CAF50"></div>
-          </div>
-        </div>
-      </header>
-      <div class="flex justify-center mt-5">
-        <button id="btn1" class="btn bg-amber-500 text-white btn-sm rounded-pill"
-          style="width: 2rem; height: 2rem">1</button>
-        <span class="bg-amber-500 w-25 rounded mt-auto mb-auto me-1 ms-1" style="height: 0.2rem">
-        </span>
-        <button id="btn2" class="btn bg-amber-500 text-white btn-sm rounded-pill"
-          style="width: 2rem; height: 2rem">2</button>
-        <span class="bg-amber-500 w-25 rounded mt-auto mb-auto me-1 ms-1" style="height: 0.2rem">
-        </span>
-        <button id="btn3" class="btn bg-amber-500 text-white btn-sm rounded-pill"
-          style="width: 2rem; height: 2rem">3</button>
-        <span class="bg-amber-500 w-25 rounded mt-auto mb-auto me-1 ms-1" style="height: 0.2rem">
-        </span>
-        <button id="btn4" class="btn bg-amber-500 text-white btn-sm rounded-pill"
-          style="width: 2rem; height: 2rem">4</button>
+      <div class="flex justify-center mt-32">
+      <div class="flex flex-col justify-center items-center w-[200px]">
+        <button
+          id="btn1"
+          class="btn bg-amber-500 text-white btn-sm rounded-pill"
+          style="width: 2rem; height: 2rem"
+        >
+          1
+        </button>
+        <a class="font-bold">Administration</a>
       </div>
+      <span
+        class="bg-amber-500 w-25 rounded mt-auto mb-auto me-1 ms-1"
+        style="height: 0.2rem"
+      >
+      </span>
+      <div class="flex flex-col justify-center items-center w-[200px]">
+        <button
+          id="btn2"
+          class="btn bg-amber-500 text-white btn-sm rounded-pill"
+          style="width: 2rem; height: 2rem"
+        >
+          2
+        </button>
+        <a class="font-bold">HR Interview</a>
+      </div>
+      <span
+        class="bg-amber-500 w-25 rounded mt-auto mb-auto me-1 ms-1"
+        style="height: 0.2rem"
+      >
+      </span>
+      <div class="flex flex-col justify-center items-center w-[200px]">
+        <button
+          id="btn3"
+          class="btn bg-amber-500 text-white btn-sm rounded-pill"
+          style="width: 2rem; height: 2rem"
+        >
+          3
+        </button>
+        <a class="font-bold">User Interview</a>
+      </div>
+      <span
+        class="bg-amber-500 w-25 rounded mt-auto mb-auto me-1 ms-1"
+        style="height: 0.2rem"
+      >
+      </span>
+      <div class="flex flex-col justify-center items-center w-[200px]">
+        <button
+          id="btn4"
+          class="btn bg-amber-500 text-white btn-sm rounded-pill"
+          style="width: 2rem; height: 2rem"
+        >
+          4
+        </button>
+        <a class="font-bold">Offering</a>
+      </div>
+    </div>
       <div id="content1" class="py-4 show">
         <!-- Content for Button 1 -->`
         <div class="container ms-8 mt-3">
           <h2 class="text-3xl font-bold mb-3">@ViewBag.JobTitle</h2>
+          <p class="font-bold text-lg">Administration</p>
           <div class="d-grid gap-2 d-md-flex justify-content-end mr-8">
 
             <form>
               <input type="text" class="form-control rounded-lg" />
             </form>
             <button type="button" class=" btn bg-amber-500 text-white hover:bg-amber-600 rounded-lg">Search</button>
-            <a class="btn bg-green-600 text-white hover:bg-green-700 rounded-lg" type="button"
-              href="template_email.html">View Template</a>
+            <form action="/Admin/TemplateEmailHRInterview" class="btn bg-green-600 btn-sm text-white hover:bg-green-700 rounded-lg" method="post">
+              <button class="" type="submit">View Template</button>
+              <input type="hidden" name="JobId" value= @ViewBag.JobId />
+            </form>
+
           </div>
 
           <table class="table mr-8 mt-3">
@@ -129,6 +169,7 @@
         <!-- Content for Button 1 -->`
         <div class="container ms-8 mt-3">
           <h2 class="text-3xl font-bold mb-3">@ViewBag.JobTitle</h2>
+          <p class="font-bold text-lg">HR Interview</p>
           <div class="d-grid gap-2 d-md-flex justify-content-end mr-8">
 
             <form>
@@ -142,10 +183,10 @@
           <table class="table mr-8 mt-3">
             <thead>
               <tr>
-                <th scope="col">No</th>
-                <th scope="col">Name</th>
-                <th scope="col">Schedule</th>
-                <th scope="col">Action</th>
+                <th scope="col" class="align-midle">No</th>
+                <th scope="col" class="align-midle">Name</th>
+                <th scope="col" colspan="2" class="align-midle">Schedule</th>
+                <th scope="col" colspan="4">Action</th>
               </tr>
             </thead>
            
@@ -156,28 +197,34 @@
                 <th scope="row">@counter</th>
                 <td>@candidate.Name</td>
                 <td>
-                   @* <div class="form-group">
-                        <label for="JobExpiredDate" class="form-label">Job Expired Date</label>
-                        <div>
-                            @Html.TextBoxFor(model => mod, new { @class = "form-control round-lg", @readonly = "readonly", placeholder = "Select Date", id = "datepicker" })
-                            @Html.ValidationMessageFor(model => model.JobExpiredDate, "", new { @class = "text-danger" })
-                        </div>
-                    </div> *@
+                  <div class="d-flex justify-content-between">
+                  <input type="text" class="round-lg form-control btn-sm" id="datepicker" placeholder="Select Date" />
+                  <input type="time" id="time" name="time" class="px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500">
+
+                    </div>
                 </td>
                 <td>
-                  <button type="button" class="btn bg-amber-500 text-white hover:bg-amber-600 rounded-lg">Send</button>
-                  <button type="button"
-                    class="btn bg-green-600 text-white hover:bg-green-700 rounded-lg">Accept</button>
-                  <button type="button" class="btn bg-red-600 text-white hover:bg-red-700 rounded-lg">Reject</button>
-                  <button type="button" class="btn bg-blue-700 text-white hover:bg-blue-800 rounded-lg"><i class="bi bi-download"></i></button>
+                  <button type="button" class="btn bg-amber-500 text-white hover:bg-amber-600 rounded-lg btn-sm">Send</button>
+                   <form action="/Admin/Accept" class="btn bg-green-600 btn-sm text-white hover:bg-green-700 rounded-lg" method="post">
+                    <button class="" type="submit">Accept</button>
+                    <input type="hidden" name="UserId" value= @candidate.UserId />
+                    <input type="hidden" name="JobId" value= @ViewBag.JobId />
+                  </form>
+                  <form action="/Admin/Rejected" class="btn-sm btn bg-red-600 text-white hover:bg-red-700 rounded-lg" method="post">
+                    <button class="" type="submit">Reject</button>
+                    <input type="hidden" name="UserId" value= @candidate.UserId />
+                    <input type="hidden" name="JobId" value= @ViewBag.JobId />
+                  </form>
+                  <button type="button" class="btn bg-blue-700 text-white hover:bg-blue-800 rounded-lg btn-sm"><i class="bi bi-download"></i></button>
                 </td>
               </tr>
+              
             
             </tbody>
             }
           
           </table>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end btn-sm">
             <a class="btn bg-blue-600 text-white hover:bg-blue-700 rounded-lg mr-8" type="button" href="#content3">Next
               Process</a>
           </div>
@@ -188,6 +235,7 @@
         <!-- Content for Button 1 -->`
         <div class="container ms-8 mt-3">
           <h2 class="text-3xl font-bold mb-3">@ViewBag.JobTitle</h2>
+          <p class="font-bold text-lg">User Interview</p>
           <div class="d-grid gap-2 d-md-flex justify-content-end mr-8">
 
             <form>
@@ -216,11 +264,18 @@
                 <td>@candidate.Name</td>
                 <td></td>
                 <td>
-                  <button type="button" class="btn bg-amber-500 text-white hover:bg-amber-600 rounded-lg">Send</button>
-                  <button type="button"
-                    class="btn bg-green-600 text-white hover:bg-green-700 rounded-lg">Accept</button>
-                  <button type="button" class="btn bg-red-600 text-white hover:bg-red-700 rounded-lg">Reject</button>
-                  <button type="button" class="btn bg-blue-700 text-white hover:bg-blue-800 rounded-lg"><i class="bi bi-download"></i></button>
+                  <button type="button" class="btn bg-amber-500 text-white hover:bg-amber-600 rounded-lg btn-sm">Send</button>
+                   <form action="/Admin/Accept" class="btn bg-green-600 btn-sm text-white hover:bg-green-700 rounded-lg" method="post">
+                    <button class="" type="submit">Accept</button>
+                    <input type="hidden" name="UserId" value= @candidate.UserId />
+                    <input type="hidden" name="JobId" value= @ViewBag.JobId />
+                  </form>
+                  <form action="/Admin/Rejected" class="btn-sm btn bg-red-600 text-white hover:bg-red-700 rounded-lg" method="post">
+                    <button class="" type="submit">Reject</button>
+                    <input type="hidden" name="UserId" value= @candidate.UserId />
+                    <input type="hidden" name="JobId" value= @ViewBag.JobId />
+                  </form>
+                  <button type="button" class="btn bg-blue-700 text-white hover:bg-blue-800 rounded-lg btn-sm"><i class="bi bi-download"></i></button>
                 </td>
               </tr>
             
@@ -239,6 +294,7 @@
         <!-- Content for Button 1 -->`
         <div class="container ms-8 mt-3">
           <h2 class="text-3xl font-bold mb-3">@ViewBag.JobTitle</h2>
+          <p class="font-bold text-lg">Offering</p>
           <div class="d-grid gap-2 d-md-flex justify-content-end mr-8">
 
             <form>
@@ -268,10 +324,10 @@
                  @* <td>@Html.DisplayFor(m => m.Name, new { @class="form-control"})</td>
                 <td>@Html.DisplayFor(m => m.Salary, new { @class="form-control"})</td> *@
                 <td>
-                  <button type="button" class="btn bg-amber-500 text-white hover:bg-amber-600 rounded-lg">Send</button>
+                  <button type="button" class="btn bg-amber-500 text-white hover:bg-amber-600 rounded-lg btn-sm">Send</button>
                   <button type="button"
-                    class="btn bg-green-600 text-white hover:bg-green-700 rounded-lg">Accept</button>
-                  <button type="button" class="btn bg-red-600 text-white hover:bg-red-700 rounded-lg">Reject</button>
+                    class="btn bg-green-600 text-white hover:bg-green-700 rounded-lg btn-sm">Accept</button>
+                  <button type="button" class="btn bg-red-600 text-white hover:bg-red-700 rounded-lg btn-sm">Reject</button>
                 </td>
               </tr>
             

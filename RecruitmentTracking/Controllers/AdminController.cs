@@ -5,6 +5,8 @@ using RecruitmentTracking.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
+using System.Net.Mail;
+using System.Net;
 
 namespace RecruitmentTracking.Controllers;
 
@@ -157,7 +159,7 @@ public class AdminController : Controller
             JobDescription = objJob.JobDescription,
             JobExpiredDate = objJob.JobExpiredDate,
             JobRequirement = objJob.JobRequirement!.Replace("\r\n", "\n"),
-            JobPostedDate = DateTime.Now,
+            JobPostedDate = DateTime.Today,
             Location = objJob.Location,
             IsJobAvailable = true,
             User = user,
@@ -347,6 +349,13 @@ public class AdminController : Controller
         return PhysicalFile(filePath, "application/force-download", Path.GetFileName(filePath));
     }
 
+    [HttpGet]
+    public async Task<IActionResult> TemplateEmailHRInterview(int JobId)
+    {
+        ViewBag.JobTitle = "Data CV";
+        return View();
+    }
+
     [HttpPost]
     public async Task<IActionResult> Accept(string UserId, int JobId)
     {
@@ -370,7 +379,7 @@ public class AdminController : Controller
                              .FirstOrDefaultAsync(cj => cj.JobId == JobId && cj.UserId == UserId))!;
 
         CJ.StatusInJob = $"{ProcessType.Rejected}";
-
+        SendEmailRejection(CJ);
         await _context.SaveChangesAsync();
 
         TempData["success"] = "Candidate Rejected";
@@ -378,13 +387,70 @@ public class AdminController : Controller
     }
 
     // [HttpPost]
-    // public async Task<IActionResult> SendEmailHRInterview(int JobId, int CandidateId)
+    // public async Task SendEmailHRInterview(UserJob CJ)
     // {
-    //     Job objJob = (await _db.Jobs!.FindAsync(JobId))!;
-    //     string bodyEmail = objJob.EmailHR!;
+    //     string myEmailAccount = "projectadmreruiter@gmail.com";
+    //     string myEmailPassword = "qucnsmdddmobmnfo";
 
-    //     return default;
+
+    //     string emailTemplate = CJ.Job!.EmailHR!;
+    //     string emailBody = emailTemplate.Replace("[Candidate's Name]", CJ.User!.Name);
+
+    //     //make instance message
+    //     MailMessage message = new MailMessage();
+    //     message.From = new MailAddress(myEmailAccount);
+
+    //     //add recipient
+    //     message.To.Add(new MailAddress("nabilaaini18@gmail.com"));
+
+    //     // add subject and body
+    //     message.Subject = "Gilang Try Sending Gmail with C# Console";
+    //     message.Body = "Hello, this is my first time sending gmail with C# Console";
+
+    //     var SmtpClient = new SmtpClient("smtp.gmail.com")
+    //     {
+    //         Port = 587,
+    //         Credentials = new NetworkCredential(myEmailAccount, myEmailPassword),
+    //         EnableSsl = true,
+    //     };
+
+    //     //send message
+    //     SmtpClient.Send(message);
     // }
+
+    private async Task SendEmailRejection(UserJob CJ)
+    {
+        string myEmailAccount = "projectadmreruiter@gmail.com";
+        string myEmailPassword = "qucnsmdddmobmnfo";
+
+        string emailTemplate = CJ.Job!.EmailHR!;
+        string emailBody = emailTemplate.Replace("[Candidate's Name]", CJ.User!.Name);
+
+        //make instance message
+        MailMessage message = new MailMessage
+        {
+            From = new MailAddress(myEmailAccount)
+        };
+
+        //add recipient
+        message.To.Add(new MailAddress($"{CJ.User.Email}"));
+        Console.WriteLine($"email user : {CJ.User.Email}");
+
+
+        // add subject and body
+        message.Subject = $"UPDATE Recruitment for {CJ.Job.JobTitle}";
+        message.Body = emailBody;
+
+        var SmtpClient = new SmtpClient("smtp.gmail.com")
+        {
+            Port = 587,
+            Credentials = new NetworkCredential(myEmailAccount, myEmailPassword),
+            EnableSsl = true,
+        };
+
+        //send message
+        SmtpClient.Send(message);
+    }
 
     // [HttpPost]
     // public async Task<IActionResult> TemplateEmail(EmailTemplate email)

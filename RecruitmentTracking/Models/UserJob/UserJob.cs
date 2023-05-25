@@ -8,6 +8,18 @@ public class UserJob
     [Key]
     public int Id { get; set; }
 
+    [DataType(DataType.Date)]
+    public DateTime? DateHRInterview { get; set; }
+    [DataType(DataType.Date)]
+    public DateTime? TimeHRInterview { get; set; }
+
+    [DataType(DataType.Date)]
+    public DateTime? DateUserInterview { get; set; }
+    [DataType(DataType.Date)]
+    public DateTime? TimeUserInterview { get; set; }
+
+    public bool SendEmailStatus { get; set; }
+
     [Required]
     [ForeignKey("Job")]
     public int JobId { get; set; }

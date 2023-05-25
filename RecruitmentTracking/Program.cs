@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using RecruitmentTracking.Data;
 using RecruitmentTracking.Models;
 using Microsoft.EntityFrameworkCore.Sqlite;
+using System.Configuration;
 //using RPauth.Data;
 
 var builder = WebApplication.CreateBuilder(args);
