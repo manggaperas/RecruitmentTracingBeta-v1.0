@@ -37,6 +37,9 @@
                    <label for="GPA" class="form-label">GPA</label>
                     @Html.TextBoxFor(m => m.GPA, new { @class = "form-control rounded-lg", type = "number", step = "0.01", min = "0", max = "4" })
 
+                    <label for="phone" class="form-label">Expectation Salary</label>
+                    @Html.TextBoxFor(m => m.Salary, new { @class = "form-control", type = "number" })
+
                 @* <label for="file" class="form-label mt-3">Upload CV/Resume</label>
                   @Html.TextBoxFor(m => m.FileCV, new { @class = "form-control" ,@type = "file"}) *@
                 <label for="file" class="form-label mt-3">Upload CV/Resume (PDF, maks. 1MB)</label>

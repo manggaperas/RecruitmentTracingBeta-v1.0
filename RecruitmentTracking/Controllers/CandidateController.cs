@@ -237,6 +237,8 @@ public class CandidateController : Controller
 
         int step = (int)Enum.Parse(typeof(ProcessType), status);
 
+        if (step == 7) return "Rejected";
+
         return process[step - 1];
     }
 }

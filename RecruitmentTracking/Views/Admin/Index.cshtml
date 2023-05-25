@@ -7,12 +7,16 @@
 <main class="container flex-1 bg-gray-100 p-8 mt-5">
           <div class="mb-4">
             <div class="py-2">
+              <div>
+                <h5 class="text-2xl font-bold text-gray-800">Active Job</h5>
+              </div>
             <div class="d-grid gap-2 d-md-flex justify-content-md-end mb-3">
               <button type="button" class="btn bg-blue-500 text-white hover:bg-blue-600 rounded-lg"><a href="/Admin/CreateJob">Create Job</a></button>
-                <button type="button" class="btn bg-green-500 text-white hover:bg-green-600 rounded-lg " disabled><a href="/Admin">Active Jobs</a></button>
-                  <button type="button" class="btn bg-zinc-500 text-white hover:bg-zinc-600 rounded-lg " ><a href="">Archived Jobs</a></button>
-                <button type="button" class="btn bg-red-500 text-white hover:bg-red-600 rounded-lg "><a href="/Admin/JobCLosed">Closed Jobs</a></button>
+              <button type="button" class="btn bg-green-500 text-white hover:bg-green-600 rounded-lg "><a href="/Admin">Active Jobs</a></button>
+              @* <button type="button" class="btn bg-zinc-500 text-white hover:bg-zinc-600 rounded-lg " ><ahref="">Archived Jobs</a></button> *@
+              <button type="button" class="btn bg-red-500 text-white hover:bg-red-600 rounded-lg " ><a href="/Admin/JobCLosed">Closed Jobs</a></button>
             </div>
+
             <div class="card mt-2">
               <div class="card-body">
                 @foreach (var item in Model)

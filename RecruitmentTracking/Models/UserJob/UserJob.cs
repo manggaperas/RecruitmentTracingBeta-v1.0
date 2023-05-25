@@ -18,6 +18,7 @@ public class UserJob
     [DataType(DataType.Date)]
     public DateTime? TimeUserInterview { get; set; }
 
+    public string? EmailInterviewUser { get; set; }
     public bool SendEmailStatus { get; set; }
 
     [Required]

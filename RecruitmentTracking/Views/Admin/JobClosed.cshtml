@@ -4,72 +4,58 @@
   ViewData["Title"] = "Admin";
 }
 
-
-<div class="container me-5">
-    <!-- Main Content -->
-    <div class="col-span-4">
-      <!-- Main content goes here -->
-      <div class="d-flex ms-3">
-        <main class="p-5" style="height: 100vh; width: 80%">
-          @* <header class="mb-1">
-            <div class="d-flex justify-content-between align-items-center">
-              <input type="text" class="rounded" />
-              <div class="d-flex justify-content-around align-items-center" style="width: 150px">
-                <span class="mr-2">@ViewBag.AdminName</span>
-                <div class="rounded-circle" style="width: 40px; height: 40px; background-color: #4CAF50"></div>
+<main class="container flex-1 bg-gray-100 p-8 mt-5">
+          <div class="mb-4">
+            <div class="py-2">
+              <div>
+                <h5 class="text-2xl font-bold text-gray-800">Closed Job</h5>
               </div>
-            </div>
-          </header> *@
-          <div class="py-2 mt-5">
             <div class="d-grid gap-2 d-md-flex justify-content-md-end mb-3">
-               <button type="button" class="btn bg-blue-500 text-white hover:bg-blue-600 rounded-lg"><a href="/Admin/CreateJob">Create Job</a></button>
-                <button type="button" class="btn bg-green-500 text-white hover:bg-green-600 rounded-lg " ><a href="/Admin">Active Jobs</a></button>
-                  <button type="button" class="btn bg-zinc-500 text-white hover:bg-zinc-600 rounded-lg " ><a href="">Archived Jobs</a></button>
-                <button type="button" class="btn bg-red-500 text-white hover:bg-red-600 rounded-lg " disabled><a href="/Admin/JobCLosed">Closed Jobs</a></button>
+              <button type="button" class="btn bg-blue-500 text-white hover:bg-blue-600 rounded-lg"><a href="/Admin/CreateJob">Create Job</a></button>
+                <button type="button" class="btn bg-green-500 text-white hover:bg-green-600 rounded-lg "><a href="/Admin">Active Jobs</a></button>
+                  @* <button type="button" class="btn bg-zinc-500 text-white hover:bg-zinc-600 rounded-lg " ><ahref="">Archived Jobs</a></button> *@
+                <button type="button" class="btn bg-red-500 text-white hover:bg-red-600 rounded-lg " ><a href="/Admin/JobCLosed">Closed Jobs</a></button>
             </div>
-            <div class="my-4">
-              @foreach (var item in Model)
-              {
-              <div class="card">
-                <div class="card-body d-flex justify-content-between align-items-center">
-    
-                  <div class="rounded flex-grow-1 bg-light" style="height: 80px; padding: 10px;">
-    
-                    <div class="d-flex justify-content-between align-items-center">
-                      <a class="card-title btn btn-outline-primary font-bold text-xl" style="border: none; padding: 2px; border-radius: 5px"
-                        href="@Url.Action(" Administration", "Admin" , new { id=item.JobId })">
-                        @item.JobTitle
-                      </a>
-                      <p class="list-inline-item text-muted h3">@item.CandidateCout</p>
+            <div class="card mt-2">
+              <div class="card-body">
+                @foreach (var item in Model)
+                {
+                <div class="card mt-2">
+                    <div class="card-body d-flex justify-content-between align-items-center flex-grow">
+                      <div class="rounded flex-grow-1 bg-light" style="height: 80px; padding: 10px;">
+                          <div class="d-flex justify-content-between align-items-center">
+                            <a class="card-title btn btn-outline-primary list-inline-item font-bold text-xl" style="border: none; padding: 2px; border-radius: 5px"
+                                href="@Url.Action("RecruitmentProcess", "Admin", new { id = item.JobId })">
+                                @item.JobTitle
+                            </a>
+                            <p class="list-inline-item text-muted h3">@item.CandidateCout</p>
+                          </div>
+                          
+                          <div class="d-flex card-text justify-content-between align-items-center text-muted" style="font-size: .875em;">
+                              <p class="list-inline-item mx-1">Posted time : @item.JobPostedDate</p>
+                              <p class="list-inline-item" ><i class="bi bi-geo-alt"></i> @item.Location</p>
+                          </div>
+                      
+                      </div>
+                      <div>
+                        <div class="d-flex my-2" style="padding-left: 10px;">
+                          <a class="btn bg-amber-500 text-white hover:bg-amber-600 rounded-lg me-2" href="@Url.Action("EditJob", "Admin", new { id = item.JobId })">Edit</a>
+                            <form action="/Admin/ActivateTheJob" method="post" onsubmit="return confirm('Are you sure you want to activate the registration?')">
+                                <input type="hidden" name="id" value= @item.JobId />
+                                <button class="btn bg-blue-500 text-white hover:bg-blue-600 rounded-lg me-2" type="submit">Activate</button>
+                            </form>
+                        </div>
+                        <div class="container d-flex align-items-center p-2">
+                          <span class="text-center align-bottom text-muted" style="font-size: .875em; margin: auto;">Administration</span>
+                        </div>
+                      </div>
                     </div>
-                    <div class="d-flex card-text justify-content-between align-items-center text-muted"
-                      style="font-size: .875em;">
-                      <p class="list-inline-item mx-1">Posted Time : @item.JobPostedDate</p>
-                      <p class="list-inline-item"><i class="bi bi-geo-alt"></i> @item.Location</p>
-                    </div>
-    
-                  </div>
-                  <div>
-                    <div class="d-flex" style="padding-left: 10px;">
-                        <a class="btn bg-yellow-500 text-white hover:bg-yellow-600 rounded-lg me-2" href="@Url.Action("EditJob", "Admin", new { id = item.JobId })">Edit</a>
-
-                        <form action="/Admin/ActivateTheJob" method="post">
-                              <input type="hidden" name="id" value= @item.JobId />
-                              <button class="btn bg-green-500 text-white hover:bg-green-600 rounded-lg me-2" type="submit">Activate</button>
-                          </form>
-                     
-                    </div>
-                    <div class="container d-flex align-items-center p-2">
-                      <span class="text-center align-bottom text-muted"
-                        style="font-size: .875em; margin: auto;">Administration</span>
-                    </div>
-                  </div>
-    
-                </div>
-              </div>
+             </div>
             }
+              </div>
             </div>
+
+          </div>
         </main>
-      </div>
-    </div>
-  </div>
+ </div>
+

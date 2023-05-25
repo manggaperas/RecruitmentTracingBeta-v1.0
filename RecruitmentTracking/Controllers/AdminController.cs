@@ -322,6 +322,7 @@ public class AdminController : Controller
                     LastEducation = objCandidate.LastEducation,
                     GPA = objCandidate.GPA,
                     CV = cj.CV,
+                    Salary = objCandidate.Salary,
                 };
                 listOffering.Add(dataCandidate);
             }
@@ -338,6 +339,39 @@ public class AdminController : Controller
         return View(viewModel);
     }
 
+    [HttpGet("Admin/TemplateEmail/{id}")]
+    public async Task<IActionResult> TemplateEmail(int id)
+    {
+        ViewBag.JobId = id;
+
+        Job objJob = (await _context.Jobs!.FindAsync(id))!;
+        EmailTemplate email = new()
+        {
+            JobId = id,
+            EmailHR = objJob.EmailHR,
+            EmailUser = objJob.EmailUser,
+            EmailReject = objJob.EmailReject,
+            EmailOffering = objJob.EmailOffering,
+        };
+
+        return View(email);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> SaveTemplateEmail(EmailTemplate objEmailTemplate)
+    {
+        Job objJob = (await _context.Jobs!.FindAsync(objEmailTemplate.JobId))!;
+
+        objJob.EmailHR = objEmailTemplate.EmailHR;
+        objJob.EmailUser = objEmailTemplate.EmailUser;
+        objJob.EmailReject = objEmailTemplate.EmailReject;
+        objJob.EmailOffering = objEmailTemplate.EmailOffering;
+
+        await _context.SaveChangesAsync();
+
+        return Redirect($"/Admin/RecruitmentProcess/{objEmailTemplate.JobId}");
+    }
+
     [HttpPost]
     public async Task<IActionResult> DownloadCV(string UserId, int JobId)
     {
@@ -349,22 +383,19 @@ public class AdminController : Controller
         return PhysicalFile(filePath, "application/force-download", Path.GetFileName(filePath));
     }
 
-    [HttpGet]
-    public async Task<IActionResult> TemplateEmailHRInterview(int JobId)
-    {
-        ViewBag.JobTitle = "Data CV";
-        return View();
-    }
-
     [HttpPost]
     public async Task<IActionResult> Accept(string UserId, int JobId)
     {
-        UserJob CJ = (await _context.UserJobs!
+        UserJob UJ = (await _context.UserJobs!
                             .FirstOrDefaultAsync(cj => cj.JobId == JobId && cj.UserId == UserId))!;
 
-        int statusInJob = (int)Enum.Parse(typeof(ProcessType), CJ.StatusInJob!);
+        User objUser = (await _context.Users!.FindAsync(UJ.UserId))!;
+        Job objJob = (await _context.Jobs!.FindAsync(UJ.JobId))!;
+
+        int statusInJob = (int)Enum.Parse(typeof(ProcessType), UJ.StatusInJob!);
         statusInJob++;
-        CJ.StatusInJob = $"{(ProcessType)statusInJob}";
+        UJ.StatusInJob = $"{(ProcessType)statusInJob}";
+        // SendEmailRejection(objUser, UJ, objJob.JobTitle!);
 
         await _context.SaveChangesAsync();
 
@@ -375,11 +406,16 @@ public class AdminController : Controller
     [HttpPost]
     public async Task<IActionResult> Rejected(string UserId, int JobId)
     {
-        UserJob CJ = (await _context.UserJobs!
+        UserJob UJ = (await _context.UserJobs!
                              .FirstOrDefaultAsync(cj => cj.JobId == JobId && cj.UserId == UserId))!;
 
-        CJ.StatusInJob = $"{ProcessType.Rejected}";
-        SendEmailRejection(CJ);
+        User objUser = (await _context.Users!.FindAsync(UJ.UserId))!;
+        Job objJob = (await _context.Jobs!.FindAsync(UJ.JobId))!;
+
+        UJ.StatusInJob = $"{ProcessType.Rejected}";
+
+        SendEmailRejection(objUser, UJ, objJob.JobTitle!);
+
         await _context.SaveChangesAsync();
 
         TempData["success"] = "Candidate Rejected";
@@ -418,13 +454,15 @@ public class AdminController : Controller
     //     SmtpClient.Send(message);
     // }
 
-    private async Task SendEmailRejection(UserJob CJ)
+    private void SendEmailRejection(User objUser, UserJob UJ, string jobTitle)
     {
         string myEmailAccount = "projectadmreruiter@gmail.com";
         string myEmailPassword = "qucnsmdddmobmnfo";
 
-        string emailTemplate = CJ.Job!.EmailHR!;
-        string emailBody = emailTemplate.Replace("[Candidate's Name]", CJ.User!.Name);
+        string emailTemplate = UJ.Job!.EmailReject!;
+        string emailBody = emailTemplate
+                .Replace("[Applicant's Name]", objUser.Name)
+                .Replace("[Job Title]", jobTitle);
 
         //make instance message
         MailMessage message = new MailMessage
@@ -433,12 +471,10 @@ public class AdminController : Controller
         };
 
         //add recipient
-        message.To.Add(new MailAddress($"{CJ.User.Email}"));
-        Console.WriteLine($"email user : {CJ.User.Email}");
-
+        message.To.Add(new MailAddress($"{objUser.Email}"));
 
         // add subject and body
-        message.Subject = $"UPDATE Recruitment for {CJ.Job.JobTitle}";
+        message.Subject = $"UPDATE Recruitment for {jobTitle}";
         message.Body = emailBody;
 
         var SmtpClient = new SmtpClient("smtp.gmail.com")
