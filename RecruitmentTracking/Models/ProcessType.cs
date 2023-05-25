@@ -7,6 +7,6 @@ public enum ProcessType
     UserInterview = 3,
     Offering = 4,
 
-    Accepted = 6,
+    Accepted = 5,
     Rejected = 7,
 }

@@ -237,6 +237,7 @@ public class AdminController : Controller
 
         Job objJob = (await _context.Jobs!.FindAsync(id))!;
         ViewBag.JobTitle = objJob.JobTitle;
+        ViewBag.EmailUser = objJob.EmailUser;
 
         List<User> listObjUser = (await _context.UserJobs!
                                         .Where(cj => cj.JobId == id)
@@ -256,9 +257,13 @@ public class AdminController : Controller
                     UserId = objUser.Id,
                     Name = objUser.Name,
                     Email = objUser.Email,
+                    Phone = objCandidate.Phone,
                     LastEducation = objCandidate.LastEducation,
                     GPA = objCandidate.GPA,
                     CV = cj.CV,
+                    DateHRInterview = cj.DateHRInterview,
+                    TimeHRInterview = cj.TimeHRInterview,
+                    LocationHRInterview = cj.LocationHRInterview,
                 };
                 listAdministration.Add(dataCandidate);
             }
@@ -277,9 +282,13 @@ public class AdminController : Controller
                     UserId = objUser.Id,
                     Name = objUser.Name,
                     Email = objUser.Email,
+                    Phone = objCandidate.Phone,
                     LastEducation = objCandidate.LastEducation,
                     GPA = objCandidate.GPA,
                     CV = cj.CV,
+                    DateHRInterview = cj.DateHRInterview,
+                    TimeHRInterview = cj.TimeHRInterview,
+                    LocationHRInterview = cj.LocationHRInterview,
                 };
                 listHRInterview.Add(dataCandidate);
             }
@@ -298,9 +307,14 @@ public class AdminController : Controller
                     UserId = objUser.Id,
                     Name = objUser.Name,
                     Email = objUser.Email,
+                    Phone = objCandidate.Phone,
                     LastEducation = objCandidate.LastEducation,
                     GPA = objCandidate.GPA,
                     CV = cj.CV,
+                    Salary = objCandidate.Salary,
+                    DateHRInterview = cj.DateHRInterview,
+                    TimeHRInterview = cj.TimeHRInterview,
+                    LocationHRInterview = cj.LocationHRInterview,
                 };
                 listUserInterview.Add(dataCandidate);
             }
@@ -319,10 +333,14 @@ public class AdminController : Controller
                     UserId = objUser.Id,
                     Name = objUser.Name,
                     Email = objUser.Email,
+                    Phone = objCandidate.Phone,
                     LastEducation = objCandidate.LastEducation,
                     GPA = objCandidate.GPA,
                     CV = cj.CV,
                     Salary = objCandidate.Salary,
+                    DateHRInterview = cj.DateHRInterview,
+                    TimeHRInterview = cj.TimeHRInterview,
+                    LocationHRInterview = cj.LocationHRInterview,
                 };
                 listOffering.Add(dataCandidate);
             }
@@ -404,6 +422,17 @@ public class AdminController : Controller
     }
 
     [HttpPost]
+    public async Task<IActionResult> SaveEmailUser(int JobId, string emailUser)
+    {
+        Job objJob = (await _context.Jobs!.FindAsync(JobId))!;
+        objJob.UserEmailInterview = emailUser;
+        await _context.SaveChangesAsync();
+
+        TempData["success"] = "Email User Saved";
+        return Redirect($"/Admin/RecruitmentProcess/{JobId}");
+    }
+
+    [HttpPost]
     public async Task<IActionResult> Rejected(string UserId, int JobId)
     {
         UserJob UJ = (await _context.UserJobs!
@@ -422,37 +451,135 @@ public class AdminController : Controller
         return Redirect($"/Admin/RecruitmentProcess/{JobId}");
     }
 
-    // [HttpPost]
-    // public async Task SendEmailHRInterview(UserJob CJ)
-    // {
-    //     string myEmailAccount = "projectadmreruiter@gmail.com";
-    //     string myEmailPassword = "qucnsmdddmobmnfo";
+    [HttpPost]
+    public async Task<ActionResult> SendHRInterview(string UserId, int JobId, DateTime date, DateTime time, string location)
+    {
+        string myEmailAccount = "projectadmreruiter@gmail.com";
+        string myEmailPassword = "qucnsmdddmobmnfo";
 
+        UserJob UJ = (await _context.UserJobs!
+                             .FirstOrDefaultAsync(cj => cj.JobId == JobId && cj.UserId == UserId))!;
 
-    //     string emailTemplate = CJ.Job!.EmailHR!;
-    //     string emailBody = emailTemplate.Replace("[Candidate's Name]", CJ.User!.Name);
+        UJ.DateHRInterview = date;
+        UJ.TimeHRInterview = time;
+        UJ.LocationHRInterview = location;
 
-    //     //make instance message
-    //     MailMessage message = new MailMessage();
-    //     message.From = new MailAddress(myEmailAccount);
+        User objUser = (await _context.Users!.FindAsync(UJ.UserId))!;
+        Job objJob = (await _context.Jobs!.FindAsync(UJ.JobId))!;
 
-    //     //add recipient
-    //     message.To.Add(new MailAddress("nabilaaini18@gmail.com"));
+        string emailTemplate = UJ.Job!.EmailHR!;
+        string emailBody = emailTemplate
+                .Replace("[Applicant's Name]", objUser.Name)
+                .Replace("[Job Title]", objJob.JobTitle)
+                .Replace("[Date]", UJ.DateHRInterview.ToString())
+                .Replace("[Time]", UJ.TimeHRInterview.ToString())
+                .Replace("[Location]", UJ.LocationHRInterview);
 
-    //     // add subject and body
-    //     message.Subject = "Gilang Try Sending Gmail with C# Console";
-    //     message.Body = "Hello, this is my first time sending gmail with C# Console";
+        //make instance message
+        MailMessage message = new MailMessage
+        {
+            From = new MailAddress(myEmailAccount)
+        };
 
-    //     var SmtpClient = new SmtpClient("smtp.gmail.com")
-    //     {
-    //         Port = 587,
-    //         Credentials = new NetworkCredential(myEmailAccount, myEmailPassword),
-    //         EnableSsl = true,
-    //     };
+        //add recipient
+        message.To.Add(new MailAddress($"{objUser.Email}"));
+        // message.To.Add(new MailAddress("ignatius.c.k@gmail.com"));
 
-    //     //send message
-    //     SmtpClient.Send(message);
-    // }
+        // add subject and body
+        message.Subject = $"UPDATE Recruitment for {objJob.JobTitle}";
+        message.Body = emailBody;
+
+        var SmtpClient = new SmtpClient("smtp.gmail.com")
+        {
+            Port = 587,
+            Credentials = new NetworkCredential(myEmailAccount, myEmailPassword),
+            EnableSsl = true,
+        };
+
+        //send message
+        SmtpClient.Send(message);
+        await _context.SaveChangesAsync();
+
+        TempData["success"] = "Email sent";
+        return Redirect($"/Admin/RecruitmentProcess/{JobId}");
+    }
+
+    [HttpPost]
+    public async Task<ActionResult> SendUserInterview(string UserId, int JobId, DateTime date, DateTime time, string location)
+    {
+        string myEmailAccount = "projectadmreruiter@gmail.com";
+        string myEmailPassword = "qucnsmdddmobmnfo";
+
+        UserJob UJ = (await _context.UserJobs!
+                             .FirstOrDefaultAsync(cj => cj.JobId == JobId && cj.UserId == UserId))!;
+
+        UJ.DateUserInterview = date;
+        UJ.TimeUserInterview = time;
+        UJ.LocationUserInterview = location;
+
+        User objUser = (await _context.Users!.FindAsync(UJ.UserId))!;
+        Job objJob = (await _context.Jobs!.FindAsync(UJ.JobId))!;
+        Candidate objCandidate = (await _context.Candidates!.FirstOrDefaultAsync(c => c.UserId == objUser.Id))!;
+
+        string emailTemplate = UJ.Job!.EmailUser!;
+        string emailBodyCandidate = emailTemplate
+                .Replace("[Applicant's Name]", objUser.Name)
+                .Replace("[Job Title]", objJob.JobTitle)
+                .Replace("[Date]", UJ.DateUserInterview.ToString())
+                .Replace("[Time]", UJ.TimeUserInterview.ToString())
+                .Replace("[Location]", UJ.LocationUserInterview);
+
+        string emailBodyUser =
+        "Interview User \n \n" +
+        "Details  \n" +
+        $"Name      : {objUser.Name} \n" +
+        $"Edu       : {objCandidate.LastEducation} \n" +
+        $"GPA       : {objCandidate.GPA} \n" +
+        $"Time      : {UJ.TimeUserInterview} \n" +
+        $"Date      : {UJ.DateUserInterview} \n" +
+        $"Location  : {UJ.LocationUserInterview} \n";
+
+        //make instance message
+        MailMessage messageCandidate = new MailMessage
+        {
+            From = new MailAddress(myEmailAccount)
+        };
+
+        MailMessage messageUser = new MailMessage
+        {
+            From = new MailAddress(myEmailAccount)
+        };
+
+        //add recipient
+        // messageCandidate.To.Add(new MailAddress("ignatius.c.k@gmail.com"));
+        // messageUser.To.Add(new MailAddress("ignatius.adse@gmail.com"));
+        messageCandidate.To.Add(new MailAddress($"{objUser.Email}"));
+        messageUser.To.Add(new MailAddress($"{UJ.EmailInterviewUser}"));
+        // message.To.Add(new MailAddress("ignatius.c.k@gmail.com"));
+
+        // add subject and body
+        messageCandidate.Subject = $"User Interview : {objJob.JobTitle}";
+        messageCandidate.Body = emailBodyCandidate;
+
+        messageUser.Subject = $"User Interview : {objJob.JobTitle}";
+        messageUser.Body = emailBodyUser;
+
+        var smtpClient = new SmtpClient("smtp.gmail.com")
+        {
+            Port = 587,
+            Credentials = new NetworkCredential(myEmailAccount, myEmailPassword),
+            EnableSsl = true,
+        };
+
+        //send message
+        smtpClient.Send(messageCandidate);
+        smtpClient.Send(messageUser);
+
+        await _context.SaveChangesAsync();
+
+        TempData["success"] = "Email sent";
+        return Redirect($"/Admin/RecruitmentProcess/{JobId}");
+    }
 
     private void SendEmailRejection(User objUser, UserJob UJ, string jobTitle)
     {
@@ -497,5 +624,4 @@ public class AdminController : Controller
 
     //     return View(email);
     // }
-
 }

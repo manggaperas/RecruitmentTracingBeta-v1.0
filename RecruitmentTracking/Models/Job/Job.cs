@@ -34,6 +34,9 @@ public class Job
     public string? EmailOffering { get; set; }
     public string? EmailReject { get; set; }
 
+
+    public string? UserEmailInterview { get; set; }
+
     [ForeignKey("User")]
     public string? AdminId { get; set; }
     public User? User { get; set; }

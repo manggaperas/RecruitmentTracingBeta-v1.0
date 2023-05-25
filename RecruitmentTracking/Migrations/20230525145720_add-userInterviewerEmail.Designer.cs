@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RecruitmentTracking.Data;
 
@@ -10,9 +11,11 @@ using RecruitmentTracking.Data;
 namespace RecruitmentTracking.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230525145720_add-userInterviewerEmail")]
+    partial class adduserInterviewerEmail
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.5");
@@ -331,12 +334,6 @@ namespace RecruitmentTracking.Migrations
 
                     b.Property<int>("JobId")
                         .HasColumnType("INTEGER");
-
-                    b.Property<string>("LocationHRInterview")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("LocationUserInterview")
-                        .HasColumnType("TEXT");
 
                     b.Property<bool>("SendEmailStatus")
                         .HasColumnType("INTEGER");

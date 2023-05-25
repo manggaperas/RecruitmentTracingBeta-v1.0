@@ -12,11 +12,13 @@ public class UserJob
     public DateTime? DateHRInterview { get; set; }
     [DataType(DataType.Date)]
     public DateTime? TimeHRInterview { get; set; }
+    public string? LocationHRInterview { get; set; }
 
     [DataType(DataType.Date)]
     public DateTime? DateUserInterview { get; set; }
     [DataType(DataType.Date)]
     public DateTime? TimeUserInterview { get; set; }
+    public string? LocationUserInterview { get; set; }
 
     public string? EmailInterviewUser { get; set; }
     public bool SendEmailStatus { get; set; }
