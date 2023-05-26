@@ -554,7 +554,7 @@ public class AdminController : Controller
         // messageCandidate.To.Add(new MailAddress("ignatius.c.k@gmail.com"));
         // messageUser.To.Add(new MailAddress("ignatius.adse@gmail.com"));
         messageCandidate.To.Add(new MailAddress($"{objUser.Email}"));
-        messageUser.To.Add(new MailAddress($"{UJ.EmailInterviewUser}"));
+        messageUser.To.Add(new MailAddress("projectadmreruiter@gmail.com"));
         // message.To.Add(new MailAddress("ignatius.c.k@gmail.com"));
 
         // add subject and body

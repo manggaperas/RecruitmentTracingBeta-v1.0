@@ -269,7 +269,7 @@
                   <div class="d-flex justify-content-between">
 
                   <form class="d-flex justify-content-between" action="/Admin/SendUserInterview" method="post">
-                    <input type="text" class="round-lg form-control btn-sm me-2 w-1/3" id="datepicker" placeholder="Select Date" name="date" value=@candidate.DateUserInterview />
+                    <input type="text" class="round-lg form-control btn-sm me-2 w-1/3" id="datepicker" placeholder="Select Date" name="date" value=@candidate.EmailInterviewUser />
                     <input type="time" id="time" name="time" class="w-1/3 px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500 me-2" value=@candidate.TimeUserInterview>
                     <input type="text" class="form-control rounded-lg w-2/3" placeholder="Input location" name="location" value=@candidate.LocationUserInterview />
                     <input type="hidden" name="UserId" value= @candidate.UserId />

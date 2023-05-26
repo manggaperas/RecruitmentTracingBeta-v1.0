@@ -11380,25 +11380,24 @@
     ]
   },
   "packageFolders": {
-    "/home/ignatius/.nuget/packages/": {}
+    "C:\\Users\\FORMULATRIX\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/RecruitmentTracking.csproj",
+      "projectUniqueName": "c:\\Users\\FORMULATRIX\\Desktop\\RecruitmentTracking\\RecruitmentTracking\\RecruitmentTracking.csproj",
       "projectName": "RecruitmentTracking",
-      "projectPath": "/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/RecruitmentTracking.csproj",
-      "packagesPath": "/home/ignatius/.nuget/packages/",
-      "outputPath": "/home/ignatius/Desktop/Project Team/RecruitmentTracking/RecruitmentTracking/obj/",
+      "projectPath": "c:\\Users\\FORMULATRIX\\Desktop\\RecruitmentTracking\\RecruitmentTracking\\RecruitmentTracking.csproj",
+      "packagesPath": "C:\\Users\\FORMULATRIX\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\FORMULATRIX\\Desktop\\RecruitmentTracking\\RecruitmentTracking\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/ignatius/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\FORMULATRIX\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "/usr/share/dotnet/sdk/7.0.302/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -11473,7 +11472,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.302/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
