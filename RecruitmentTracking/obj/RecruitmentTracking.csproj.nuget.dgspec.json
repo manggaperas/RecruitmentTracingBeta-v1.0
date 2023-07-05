@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\FORMULATRIX\\Desktop\\RecruitmentTracking\\RecruitmentTracking\\RecruitmentTracking.csproj": {}
+    "c:\\TUTORIAL\\RecruitmentTracingBeta-v1.0\\RecruitmentTracking\\RecruitmentTracking.csproj": {}
   },
   "projects": {
-    "C:\\Users\\FORMULATRIX\\Desktop\\RecruitmentTracking\\RecruitmentTracking\\RecruitmentTracking.csproj": {
+    "c:\\TUTORIAL\\RecruitmentTracingBeta-v1.0\\RecruitmentTracking\\RecruitmentTracking.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\FORMULATRIX\\Desktop\\RecruitmentTracking\\RecruitmentTracking\\RecruitmentTracking.csproj",
+        "projectUniqueName": "c:\\TUTORIAL\\RecruitmentTracingBeta-v1.0\\RecruitmentTracking\\RecruitmentTracking.csproj",
         "projectName": "RecruitmentTracking",
-        "projectPath": "C:\\Users\\FORMULATRIX\\Desktop\\RecruitmentTracking\\RecruitmentTracking\\RecruitmentTracking.csproj",
-        "packagesPath": "C:\\Users\\FORMULATRIX\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\FORMULATRIX\\Desktop\\RecruitmentTracking\\RecruitmentTracking\\obj\\",
+        "projectPath": "c:\\TUTORIAL\\RecruitmentTracingBeta-v1.0\\RecruitmentTracking\\RecruitmentTracking.csproj",
+        "packagesPath": "C:\\Users\\Batch 2\\.nuget\\packages\\",
+        "outputPath": "c:\\TUTORIAL\\RecruitmentTracingBeta-v1.0\\RecruitmentTracking\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\FORMULATRIX\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Batch 2\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -38,6 +38,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Google.Apis.Auth": {
+              "target": "Package",
+              "version": "[1.61.0, )"
+            },
+            "Google.Apis.Gmail.v1": {
+              "target": "Package",
+              "version": "[1.61.0.3098, )"
+            },
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.5, )"
@@ -94,7 +102,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
