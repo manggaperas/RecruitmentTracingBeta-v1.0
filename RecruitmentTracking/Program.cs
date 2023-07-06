@@ -15,6 +15,24 @@ using System.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
+var config = builder.Configuration;
+// builder.Services.AddAuthentication().AddGoogle(googleOptions =>
+// {
+// 	googleOptions.ClientId = config["Authentication.Google.ClientId"];
+// 	googleOptions.ClientSecret = config["Authentication.Google.ClientSecret"];
+// }
+// );
+
+// builder.Services.AddAuthentication()
+//    .AddGoogle(options =>
+//    {
+//        IConfigurationSection googleAuthNSection =
+//        config.GetSection("Authentication:Google");
+//        options.ClientId = googleAuthNSection["ClientId"];
+//        options.ClientSecret = googleAuthNSection["ClientSecret"];
+//    });
+
+
 builder.Services.AddControllersWithViews();
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");

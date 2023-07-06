@@ -2201,3 +2201,4 @@ C:\TUTORIAL\RecruitmentTracingBeta-v1.0\RecruitmentTracking\bin\Debug\net7.0\Goo
 C:\TUTORIAL\RecruitmentTracingBeta-v1.0\RecruitmentTracking\bin\Debug\net7.0\Google.Apis.Auth.dll
 C:\TUTORIAL\RecruitmentTracingBeta-v1.0\RecruitmentTracking\bin\Debug\net7.0\Google.Apis.Core.dll
 C:\TUTORIAL\RecruitmentTracingBeta-v1.0\RecruitmentTracking\bin\Debug\net7.0\Google.Apis.Gmail.v1.dll
+C:\TUTORIAL\RecruitmentTracingBeta-v1.0\RecruitmentTracking\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.Google.dll
