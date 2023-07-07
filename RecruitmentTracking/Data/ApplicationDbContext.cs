@@ -6,16 +6,17 @@ namespace RecruitmentTracking.Data;
 
 public class ApplicationDbContext : IdentityDbContext<User>
 {
-    public ApplicationDbContext()
-    {
-    }
+	public ApplicationDbContext()
+	{
+	}
 
-    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
-    : base(options)
-    {
-    }
-    //public DbSet<User>? Users { get; set; } = default;
-    public DbSet<Job>? Jobs { get; set; }
-    public DbSet<UserJob>? UserJobs { get; set; }
-    public DbSet<Candidate> Candidates { get; set; }
+	public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+	: base(options)
+	{
+	}
+
+	//public DbSet<User>? Users { get; set; } = default;
+	public DbSet<Job>? Jobs { get; set; }
+	public DbSet<UserJob>? UserJobs { get; set; }
+	public DbSet<Candidate> Candidates { get; set; }
 }

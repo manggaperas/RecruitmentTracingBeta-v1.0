@@ -5,6 +5,8 @@ using RecruitmentTracking.Models;
 using Microsoft.EntityFrameworkCore.Sqlite;
 using System.Configuration;
 //using RPauth.Data;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.Extensions.Configuration;
 
 // using Google.Apis.Auth.OAuth2;
 // using Google.Apis.Gmail.v1;
@@ -16,22 +18,6 @@ using System.Configuration;
 var builder = WebApplication.CreateBuilder(args);
 
 var config = builder.Configuration;
-// builder.Services.AddAuthentication().AddGoogle(googleOptions =>
-// {
-// 	googleOptions.ClientId = config["Authentication.Google.ClientId"];
-// 	googleOptions.ClientSecret = config["Authentication.Google.ClientSecret"];
-// }
-// );
-
-// builder.Services.AddAuthentication()
-//    .AddGoogle(options =>
-//    {
-//        IConfigurationSection googleAuthNSection =
-//        config.GetSection("Authentication:Google");
-//        options.ClientId = googleAuthNSection["ClientId"];
-//        options.ClientSecret = googleAuthNSection["ClientSecret"];
-//    });
-
 
 builder.Services.AddControllersWithViews();
 // Add services to the container.
@@ -43,6 +29,17 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = true)
 	.AddRoles<IdentityRole>()
 	.AddEntityFrameworkStores<ApplicationDbContext>();
+
+builder.Services.AddAuthentication()
+   .AddGoogle(options =>
+   {
+	   IConfigurationSection googleAuthNSection =
+	   config.GetSection("Authentication:Google");
+	   options.ClientId = googleAuthNSection["ClientId"];
+	   options.ClientSecret = googleAuthNSection["ClientSecret"];
+	   options.CorrelationCookie.SameSite = SameSiteMode.None;
+   });
+
 
 var app = builder.Build();
 
