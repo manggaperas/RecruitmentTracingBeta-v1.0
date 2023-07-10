@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "c:\\TUTORIAL\\RecruitmentTracingBeta-v1.0\\RecruitmentTracking\\RecruitmentTracking.csproj": {}
+    "C:\\Users\\Admin\\source\\repos\\RecruitmentTrackingBeta-v1.0\\RecruitmentTracking\\RecruitmentTracking.csproj": {}
   },
   "projects": {
-    "c:\\TUTORIAL\\RecruitmentTracingBeta-v1.0\\RecruitmentTracking\\RecruitmentTracking.csproj": {
+    "C:\\Users\\Admin\\source\\repos\\RecruitmentTrackingBeta-v1.0\\RecruitmentTracking\\RecruitmentTracking.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\TUTORIAL\\RecruitmentTracingBeta-v1.0\\RecruitmentTracking\\RecruitmentTracking.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\RecruitmentTrackingBeta-v1.0\\RecruitmentTracking\\RecruitmentTracking.csproj",
         "projectName": "RecruitmentTracking",
-        "projectPath": "c:\\TUTORIAL\\RecruitmentTracingBeta-v1.0\\RecruitmentTracking\\RecruitmentTracking.csproj",
-        "packagesPath": "C:\\Users\\Batch 2\\.nuget\\packages\\",
-        "outputPath": "c:\\TUTORIAL\\RecruitmentTracingBeta-v1.0\\RecruitmentTracking\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\source\\repos\\RecruitmentTrackingBeta-v1.0\\RecruitmentTracking\\RecruitmentTracking.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\source\\repos\\RecruitmentTrackingBeta-v1.0\\RecruitmentTracking\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Batch 2\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -45,6 +47,10 @@
             "Google.Apis.Gmail.v1": {
               "target": "Package",
               "version": "[1.61.0.3098, )"
+            },
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.1.0, )"
             },
             "Microsoft.AspNetCore.Authentication.Google": {
               "target": "Package",

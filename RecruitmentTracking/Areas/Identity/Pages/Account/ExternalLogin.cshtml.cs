@@ -18,10 +18,12 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
 using RecruitmentTracking.Models;
+using RecruitmentTracking.Areas.Identity.Services;
 
-namespace RecruitmentTracking.Areas.Identity.Pages.Account;
+namespace RecruitmentTracking.Areas.Identity.Pages.Account
+{
 
-	[AllowAnonymous]
+    [AllowAnonymous]
 	public class ExternalLoginModel : PageModel
 	{
 		private readonly SignInManager<User> _signInManager;
@@ -86,7 +88,7 @@ namespace RecruitmentTracking.Areas.Identity.Pages.Account;
 			[EmailAddress]
 			public string Email { get; set; }
 		}
-		
+
 		public IActionResult OnGet() => RedirectToPage("./Login");
 
 		public IActionResult OnPost(string provider, string returnUrl = null)
@@ -138,8 +140,8 @@ namespace RecruitmentTracking.Areas.Identity.Pages.Account;
 				return Page();
 			}
 		}
-		
-		public async Task<IActionResult> OnGetCallbackAsync2(string returnUrl = null)
+
+		/*public async Task<IActionResult> OnGetCallbackAsync2(string returnUrl = null)
 		{
 			returnUrl ??= "~/";
 
@@ -180,10 +182,10 @@ namespace RecruitmentTracking.Areas.Identity.Pages.Account;
 				}
 				return RedirectToPage("./Profile");
 			}
-		}
-		
+		}*/
 
-		public async Task<IActionResult> OnPostConfirmationAsync(string returnUrl = null)
+
+		/*public async Task<IActionResult> OnPostConfirmationAsync(string returnUrl = null)
 		{
 			returnUrl = returnUrl ?? Url.Content("~/");
 			// Get the information about the user from the external login provider
@@ -240,7 +242,7 @@ namespace RecruitmentTracking.Areas.Identity.Pages.Account;
 			ProviderDisplayName = info.ProviderDisplayName;
 			ReturnUrl = returnUrl;
 			return Page();
-		}
+		}*/
 
 		private User CreateUser()
 		{
@@ -265,4 +267,5 @@ namespace RecruitmentTracking.Areas.Identity.Pages.Account;
 			return (IUserEmailStore<User>)_userStore;
 		}
 	}
+}
 

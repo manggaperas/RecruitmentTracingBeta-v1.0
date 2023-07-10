@@ -7,6 +7,10 @@ using System.Configuration;
 //using RPauth.Data;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using RecruitmentTracking.Areas.Identity.Services;
+using RecruitmentTracking;
 
 // using Google.Apis.Auth.OAuth2;
 // using Google.Apis.Gmail.v1;
@@ -39,6 +43,12 @@ builder.Services.AddAuthentication()
 	   options.ClientSecret = googleAuthNSection["ClientSecret"];
 	   options.CorrelationCookie.SameSite = SameSiteMode.None;
    });
+
+// Konfigurasi MailSettings dari appsettings.json
+builder.Services.Configure<MailSettings>(config.GetSection("MailSettings"));
+
+// Registrasi layanan email
+builder.Services.AddTransient<IEmailSender, MailtrapEmailSender>();
 
 
 var app = builder.Build();
