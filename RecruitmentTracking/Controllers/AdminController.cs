@@ -109,7 +109,7 @@ public class AdminController : Controller
     }
 
     // Add Feature, if candidate apply job > 0, job can't be closed
-    [HttpDelete]
+    [HttpPost]
     public async Task<IActionResult> DeleteJob(int id)
     {
         if ((await _context.UserJobs!.Where(cj => cj.JobId == id).AnyAsync())!)
