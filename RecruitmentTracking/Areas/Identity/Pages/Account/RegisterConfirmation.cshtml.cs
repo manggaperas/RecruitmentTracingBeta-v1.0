@@ -4,6 +4,7 @@
 
 using System;
 using System.Text;
+using System.Text.Encodings.Web;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -11,6 +12,7 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
+using RecruitmentTracking.Areas.Identity.Services;
 using RecruitmentTracking.Models;
 
 namespace RecruitmentTracking.Areas.Identity.Pages.Account
@@ -19,12 +21,12 @@ namespace RecruitmentTracking.Areas.Identity.Pages.Account
     public class RegisterConfirmationModel : PageModel
     {
         private readonly UserManager<User> _userManager;
-        private readonly IEmailSender _sender;
+        private readonly IEmailSender _emailSender;
 
-        public RegisterConfirmationModel(UserManager<User> userManager, IEmailSender sender)
+        public RegisterConfirmationModel(UserManager<User> userManager, IEmailSender emailSender)
         {
             _userManager = userManager;
-            _sender = sender;
+			_emailSender = emailSender;
         }
 
         /// <summary>
@@ -45,7 +47,7 @@ namespace RecruitmentTracking.Areas.Identity.Pages.Account
         /// </summary>
         public string EmailConfirmationUrl { get; set; }
 
-        public async Task<IActionResult> OnGetAsync(string email, string returnUrl = null)
+        /*public async Task<IActionResult> OnGetAsync(string email, string returnUrl = null)
         {
             if (email == null)
             {
@@ -75,6 +77,36 @@ namespace RecruitmentTracking.Areas.Identity.Pages.Account
             }
 
             return Page();
-        }
-    }
+        }*/
+
+		[AllowAnonymous]
+		public async Task<IActionResult> OnGetAsync(string email)
+		{
+			if (email == null)
+			{
+				return RedirectToPage("/Index");
+			}
+
+			var user = await _userManager.FindByEmailAsync(email);
+			if (user == null)
+			{
+				return NotFound($"Unable to load user with email '{email}'.");
+			}
+
+			// Kirim email konfirmasi pendaftaran
+			var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+			var callbackUrl = Url.Page(
+				"/Account/ConfirmEmail",
+				pageHandler: null,
+				values: new { userId = user.Id, code },
+				protocol: Request.Scheme);
+
+			await _emailSender.SendEmailAsync(
+				email,
+				"Confirm Your Email",
+				$"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
+
+			return Page();
+		}
+	}
 }
