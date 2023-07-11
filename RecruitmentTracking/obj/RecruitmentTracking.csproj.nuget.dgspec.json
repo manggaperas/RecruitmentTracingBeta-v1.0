@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\dell1\\OneDrive\\Documents\\RecruitmentTracingBeta-v1.0\\RecruitmentTracking\\RecruitmentTracking.csproj": {}
+    "C:\\Users\\dell1\\OneDrive\\Documents\\RecruitmentTracingBeta-v1.0\\RecruitmentTracking\\RecruitmentTracking.csproj": {}
   },
   "projects": {
-    "c:\\Users\\dell1\\OneDrive\\Documents\\RecruitmentTracingBeta-v1.0\\RecruitmentTracking\\RecruitmentTracking.csproj": {
+    "C:\\Users\\dell1\\OneDrive\\Documents\\RecruitmentTracingBeta-v1.0\\RecruitmentTracking\\RecruitmentTracking.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\dell1\\OneDrive\\Documents\\RecruitmentTracingBeta-v1.0\\RecruitmentTracking\\RecruitmentTracking.csproj",
+        "projectUniqueName": "C:\\Users\\dell1\\OneDrive\\Documents\\RecruitmentTracingBeta-v1.0\\RecruitmentTracking\\RecruitmentTracking.csproj",
         "projectName": "RecruitmentTracking",
-        "projectPath": "c:\\Users\\dell1\\OneDrive\\Documents\\RecruitmentTracingBeta-v1.0\\RecruitmentTracking\\RecruitmentTracking.csproj",
+        "projectPath": "C:\\Users\\dell1\\OneDrive\\Documents\\RecruitmentTracingBeta-v1.0\\RecruitmentTracking\\RecruitmentTracking.csproj",
         "packagesPath": "C:\\Users\\dell1\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\dell1\\OneDrive\\Documents\\RecruitmentTracingBeta-v1.0\\RecruitmentTracking\\obj\\",
+        "outputPath": "C:\\Users\\dell1\\OneDrive\\Documents\\RecruitmentTracingBeta-v1.0\\RecruitmentTracking\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dell1\\AppData\\Roaming\\NuGet\\NuGet.Config"
