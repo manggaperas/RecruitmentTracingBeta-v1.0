@@ -27,38 +27,31 @@
     <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
         @foreach (var job in Model)
         {
-            <div class="col">
-                <div class="card h-[350px] w-full">
-                    <div class="card-header">
-                        <h5 class="font-medium text-xl">@job.JobTitle</h5>
-                        <span class="text-gray-600 flex items-center space-x-1">
-                            <i class="bi bi-geo-alt"></i>
-                            <h7 class="card-text text-sm">Location: @job.Location</h7>
-                        </span>
-                    </div>
-                    <div class="card-body flex flex-column justify-between">
-                        <div class="card-text">
-                            <p class="line-clamp-5"> @job.JobDescription</p>
-                        </div>
-                        <div class="flex justify-end mt-3 space-x-2">
-                            <a type="button" class="btn bg-amber-500 text-white rounded-lg hover:bg-amber-600" href="@Url.Action("ApplyJob", new { id =job.JobId })">Apply</a>
-                            <a type="button" class="btn border-2 border-amber-500 text-amber-500 rounded-lg hover:bg-amber-500 hover:text-white" href="@Url.Action("DetailJob", new { id = job.JobId })">Details</a>
-                        </div>
-                    </div>
-                    <div class="card-footer text-muted">
-                        <div class="flex justify-between">
-                            <span class="flex space-x-1 items-center">
-                                <i class="bi bi-clock"></i>
-                                <h7 class="card-text">Posted Time : @job.JobPostedDate</h7>
-                            </span>
-                            <span class="flex space-x-1 items-center">
-                                <i class="bi bi-person"></i>
-                                <h7 class="card-text">Total Applicant : @job.CandidateCout</h7>
-                            </span>                          
-                        </div>
-                    </div>
-                </div>
+        <div class="col">
+        <div class="card h-[350px] w-full">
+            <div class="card-header">
+            <h5 class="font-medium text-xl">@job.JobTitle</h5>
+                <span class="text-gray-600 flex items-center space-x-1">
+                <i class="bi bi-geo-alt"></i>
+                <h7 class="card-text text-sm">Location: @job.Location</h7>
+            </span>
             </div>
+            <div class="card-body flex flex-column justify-between">
+            <div class="card-text">
+                <p class="line-clamp-5"> @job.JobDescription</p>
+            </div>
+              @* <div class="flex mt-3 space-x-2"> *@
+                <div class="d-flex mb-0 mt-0 space-x-2">
+                <span class="me-auto p-2 space-x-1 items-center">
+                <i class="bi bi-person"></i>
+                <h7 class="card-text">Total Applicant : @job.CandidateCout</h7>
+                </span>
+                <a type="button" class="btn bg-amber-500 text-white rounded-lg hover:bg-amber-600" href="@Url.Action("ApplyJob", new { id =job.JobId })">Apply</a>
+                <a type="button" class="btn border-2 border-amber-500 text-amber-500 rounded-lg hover:bg-amber-500 hover:text-white" href="@Url.Action("DetailJob", new { id = job.JobId })" >Details</a>
+            </div>
+            </div>
+            </div>
+        </div>
         }
     </div>
 </div>

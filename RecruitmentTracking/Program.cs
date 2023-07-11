@@ -2,6 +2,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using RecruitmentTracking.Data;
 using RecruitmentTracking.Models;
+using Microsoft.AspNetCore.CookiePolicy;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore.Sqlite;
 using System.Configuration;
 //using RPauth.Data;
@@ -35,14 +37,17 @@ builder.Services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfi
 	.AddEntityFrameworkStores<ApplicationDbContext>();
 
 builder.Services.AddAuthentication()
-   .AddGoogle(options =>
-   {
-	   IConfigurationSection googleAuthNSection =
-	   config.GetSection("Authentication:Google");
-	   options.ClientId = googleAuthNSection["ClientId"];
-	   options.ClientSecret = googleAuthNSection["ClientSecret"];
-	   options.CorrelationCookie.SameSite = SameSiteMode.None;
-   });
+.AddCookie(options => {
+	options.ExpireTimeSpan = TimeSpan.FromMinutes(5);
+})
+.AddGoogle(options =>
+{
+	IConfigurationSection googleAuthNSection =
+	config.GetSection("Authentication:Google");
+	options.ClientId = googleAuthNSection["ClientId"];
+	options.ClientSecret = googleAuthNSection["ClientSecret"];
+	options.CorrelationCookie.SameSite = SameSiteMode.None;
+});
 
 // Konfigurasi MailSettings dari appsettings.json
 builder.Services.Configure<MailSettings>(config.GetSection("MailSettings"));
@@ -67,6 +72,13 @@ else
 	// The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
 	app.UseHsts();
 }
+
+app.UseCookiePolicy(new CookiePolicyOptions
+{
+	MinimumSameSitePolicy = SameSiteMode.Unspecified,
+	HttpOnly = HttpOnlyPolicy.None,
+	Secure = CookieSecurePolicy.None
+});
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

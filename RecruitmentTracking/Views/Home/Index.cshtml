@@ -5,24 +5,14 @@
   var searchstring = @Context.Request.Query["searchstring"];
 }
     <!-- image with search job and location search inside -->
-
     <div class="pt-32 pb-20 px-5 bg-custom-background">
-      <form asp-asp-controller="Home" asp-action="SearchJob" method="get">
+      <form asp-controller="Home" asp-action="SearchJob" method="get">
       <div class="w-full container flex justify-between space-y-3 flex-col lg:space-x-3 lg:space-y-0 lg:flex-row">
         <div class="w-full">
           <input type="text" name="searchstring" value="@searchstring" class="form-control rounded-lg" placeholder="Search Job" aria-label="City"/>
         </div>
-        @* <div class="dropdown w-1/3">
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Choose location</option>
-            <option value="Bandung">Bandung</option>
-            <option value="Salatiga">Salatiga</option>
-            <option value="Semarang">Semarang</option>
-          </select>
-        </div> *@
         <button type="submit" class="w-1/3 btn bg-amber-500 text-white hover:bg-amber-600 rounded-lg">Search<i
             class="bi bi-search mx-2"></i></i></button>
-        
       </div>
       </form>
     </div>
@@ -44,40 +34,21 @@
               </span>
               </div>
               <div class="card-body flex flex-column justify-between">
-              @* <h6>Employee count: @job.CandidateCout</h6> *@
               <div class="card-text">
                 <p class="line-clamp-5"> @job.JobDescription</p>
               </div>
-              <div class="flex justify-end mt-3 space-x-2">
-                @* @if(User.Identity.IsAuthenticated)
-                { *@
+              @* <div class="flex mt-3 space-x-2"> *@
+                <div class="d-flex mb-0 mt-0 space-x-2">
+                <span class="me-auto p-2 space-x-1 items-center">
+                <i class="bi bi-person"></i>
+                <h7 class="card-text">Total Applicant : @job.CandidateCout</h7>
+                </span>
                   <a type="button" class="btn bg-amber-500 text-white rounded-lg hover:bg-amber-600" href="@Url.Action("ApplyJob", new { id =job.JobId })">Apply</a>
-                @* }
-                else
-                {
-                  <a type="button" class="btn btn-primary" href="/Login">Apply</a>
-                } *@
                 <a type="button" class="btn border-2 border-amber-500 text-amber-500 rounded-lg hover:bg-amber-500 hover:text-white" href="@Url.Action("DetailJob", new { id = job.JobId })" >Details</a>
               </div>
             </div>
-            <div class="card-footer text-muted">
-            <div class="flex justify-between">
-              <span class="flex space-x-1 items-center">
-                <i class="bi bi-clock"></i>
-                <h7 class="card-text">Due Date : @job.JobExpiredDate</h7>
-              </span>
-              <span class="flex space-x-1 items-center">
-                <i class="bi bi-person"></i>
-                <h7 class="card-text">Total Applicant : @job.CandidateCout</h7>
-              </span>
-            </div>
-            <div class="mt-2">
-              <i class="bi bi-clock"></i>
-              <h7 class="card-text">Posted Time : @job.JobPostedDate</h7>
             </div>
           </div>
-          </div>
-        </div>
         }
       </div>
     </div>

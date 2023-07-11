@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dell1\\OneDrive\\Documents\\RecruitmentTracingBeta-v1.0\\RecruitmentTracking\\RecruitmentTracking.csproj": {}
+    "c:\\Users\\dell1\\OneDrive\\Documents\\RecruitmentTracingBeta-v1.0\\RecruitmentTracking\\RecruitmentTracking.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dell1\\OneDrive\\Documents\\RecruitmentTracingBeta-v1.0\\RecruitmentTracking\\RecruitmentTracking.csproj": {
+    "c:\\Users\\dell1\\OneDrive\\Documents\\RecruitmentTracingBeta-v1.0\\RecruitmentTracking\\RecruitmentTracking.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dell1\\OneDrive\\Documents\\RecruitmentTracingBeta-v1.0\\RecruitmentTracking\\RecruitmentTracking.csproj",
+        "projectUniqueName": "c:\\Users\\dell1\\OneDrive\\Documents\\RecruitmentTracingBeta-v1.0\\RecruitmentTracking\\RecruitmentTracking.csproj",
         "projectName": "RecruitmentTracking",
-        "projectPath": "C:\\Users\\dell1\\OneDrive\\Documents\\RecruitmentTracingBeta-v1.0\\RecruitmentTracking\\RecruitmentTracking.csproj",
+        "projectPath": "c:\\Users\\dell1\\OneDrive\\Documents\\RecruitmentTracingBeta-v1.0\\RecruitmentTracking\\RecruitmentTracking.csproj",
         "packagesPath": "C:\\Users\\dell1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dell1\\OneDrive\\Documents\\RecruitmentTracingBeta-v1.0\\RecruitmentTracking\\obj\\",
+        "outputPath": "c:\\Users\\dell1\\OneDrive\\Documents\\RecruitmentTracingBeta-v1.0\\RecruitmentTracking\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dell1\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -53,6 +53,10 @@
             "Microsoft.AspNetCore.Authentication.Google": {
               "target": "Package",
               "version": "[7.0.8, )"
+            },
+            "Microsoft.AspNetCore.CookiePolicy": {
+              "target": "Package",
+              "version": "[2.2.8, )"
             },
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
