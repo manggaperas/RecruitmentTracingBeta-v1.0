@@ -246,6 +246,24 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "Microsoft.AspNetCore.CookiePolicy/2.2.8": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http": "2.2.0",
+          "Microsoft.Extensions.Logging.Abstractions": "2.2.0",
+          "Microsoft.Extensions.Options": "2.2.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.CookiePolicy.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.CookiePolicy.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Cryptography.Internal/7.0.5": {
         "type": "package",
         "compile": {
@@ -4767,6 +4785,19 @@
         "lib/net7.0/Microsoft.AspNetCore.Authentication.Google.xml",
         "microsoft.aspnetcore.authentication.google.7.0.8.nupkg.sha512",
         "microsoft.aspnetcore.authentication.google.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.CookiePolicy/2.2.8": {
+      "sha512": "71BSJnZquxKXyqvC8CRPVZz+WqIxpzwNZWPMAxDdINWAMAXjXFi53bIiVW2+uiSypyIavECkt1ty/V12Yc1vnw==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.cookiepolicy/2.2.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.CookiePolicy.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.CookiePolicy.xml",
+        "microsoft.aspnetcore.cookiepolicy.2.2.8.nupkg.sha512",
+        "microsoft.aspnetcore.cookiepolicy.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Cryptography.Internal/7.0.5": {
@@ -12292,6 +12323,7 @@
       "Google.Apis.Gmail.v1 >= 1.61.0.3098",
       "MailKit >= 4.1.0",
       "Microsoft.AspNetCore.Authentication.Google >= 7.0.8",
+      "Microsoft.AspNetCore.CookiePolicy >= 2.2.8",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 7.0.5",
       "Microsoft.AspNetCore.Identity >= 2.2.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 7.0.5",
@@ -12355,6 +12387,10 @@
           "Microsoft.AspNetCore.Authentication.Google": {
             "target": "Package",
             "version": "[7.0.8, )"
+          },
+          "Microsoft.AspNetCore.CookiePolicy": {
+            "target": "Package",
+            "version": "[2.2.8, )"
           },
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
             "target": "Package",

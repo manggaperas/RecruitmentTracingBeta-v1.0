@@ -12,6 +12,7 @@
           "Google.Apis.Gmail.v1": "1.61.0.3098",
           "MailKit": "4.1.0",
           "Microsoft.AspNetCore.Authentication.Google": "7.0.8",
+          "Microsoft.AspNetCore.CookiePolicy": "2.2.8",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "7.0.5",
           "Microsoft.AspNetCore.Identity": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.5",
@@ -173,6 +174,13 @@
             "assemblyVersion": "7.0.8.0",
             "fileVersion": "7.0.823.31807"
           }
+        }
+      },
+      "Microsoft.AspNetCore.CookiePolicy/2.2.8": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Http": "2.2.0",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Options": "7.0.1"
         }
       },
       "Microsoft.AspNetCore.Cryptography.Internal/7.0.5": {
@@ -2899,6 +2907,13 @@
       "sha512": "sha512-4yiXtRVf5HwrdOcZ04SA2ON3bMweYzhIvSDGnIdP0jsYUW83yvMuTXXNoVP42oqc5fNUEz7q2RtWc0woZHCS1w==",
       "path": "microsoft.aspnetcore.authentication.google/7.0.8",
       "hashPath": "microsoft.aspnetcore.authentication.google.7.0.8.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.CookiePolicy/2.2.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-71BSJnZquxKXyqvC8CRPVZz+WqIxpzwNZWPMAxDdINWAMAXjXFi53bIiVW2+uiSypyIavECkt1ty/V12Yc1vnw==",
+      "path": "microsoft.aspnetcore.cookiepolicy/2.2.8",
+      "hashPath": "microsoft.aspnetcore.cookiepolicy.2.2.8.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Cryptography.Internal/7.0.5": {
       "type": "package",

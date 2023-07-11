@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wXlTrZSUQU6w4ad57c+vN+LmL7n9bjb1e1RlhtqVPsNpe1WdxsHBjj/YMwx/rYjNb+FrruSbCco63pPpJiz/Zw==",
+  "dgSpecHash": "PMEb5dCsNDUzQykkZWPBZvIyA6sU3vRd19qENUK4JosTUAVRwYCYNhyvy6Biyhge3loH2zwoSLk27UsXiam2Iw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dell1\\OneDrive\\Documents\\RecruitmentTracingBeta-v1.0\\RecruitmentTracking\\RecruitmentTracking.csproj",
+  "projectFilePath": "c:\\Users\\dell1\\OneDrive\\Documents\\RecruitmentTracingBeta-v1.0\\RecruitmentTracking\\RecruitmentTracking.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dell1\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\dell1\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
@@ -18,6 +18,7 @@
     "C:\\Users\\dell1\\.nuget\\packages\\microsoft.aspnetcore.authentication.cookies\\2.2.0\\microsoft.aspnetcore.authentication.cookies.2.2.0.nupkg.sha512",
     "C:\\Users\\dell1\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
     "C:\\Users\\dell1\\.nuget\\packages\\microsoft.aspnetcore.authentication.google\\7.0.8\\microsoft.aspnetcore.authentication.google.7.0.8.nupkg.sha512",
+    "C:\\Users\\dell1\\.nuget\\packages\\microsoft.aspnetcore.cookiepolicy\\2.2.8\\microsoft.aspnetcore.cookiepolicy.2.2.8.nupkg.sha512",
     "C:\\Users\\dell1\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.5\\microsoft.aspnetcore.cryptography.internal.7.0.5.nupkg.sha512",
     "C:\\Users\\dell1\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\7.0.5\\microsoft.aspnetcore.cryptography.keyderivation.7.0.5.nupkg.sha512",
     "C:\\Users\\dell1\\.nuget\\packages\\microsoft.aspnetcore.dataprotection\\2.2.0\\microsoft.aspnetcore.dataprotection.2.2.0.nupkg.sha512",

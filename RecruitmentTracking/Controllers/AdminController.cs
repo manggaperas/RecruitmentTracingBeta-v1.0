@@ -110,15 +110,15 @@ public class AdminController : Controller
 	}
 
 	// Add Feature, if candidate apply job > 0, job can't be closed
-	[HttpPost]
+	[HttpDelete]
 	public async Task<IActionResult> DeleteJob(int id)
 	{
-		if ((await _context.UserJobs!.Where(cj => cj.JobId == id).AnyAsync())!)
-		{
-			TempData["warning"] = "Job can't be closed because there are candidates who have applied for this job.";
-			//return Redirect("/Admin");
-			return Redirect("/Admin/JobClosed");
-		}
+		// if ((await _context.UserJobs!.Where(cj => cj.JobId == id).AnyAsync())!)
+		// {
+		// 	TempData["warning"] = "Job can't be closed because there are candidates who have applied for this job.";
+		// 	//return Redirect("/Admin");
+		// 	return Redirect("/Admin/JobClosed");
+		// }
 
 		Job objJob = _context.Jobs!.Find(id)!;
 		_context.Jobs.Remove(objJob);

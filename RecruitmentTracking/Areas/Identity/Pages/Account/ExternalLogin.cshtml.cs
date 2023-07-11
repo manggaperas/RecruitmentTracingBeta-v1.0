@@ -23,7 +23,7 @@ using RecruitmentTracking.Areas.Identity.Services;
 namespace RecruitmentTracking.Areas.Identity.Pages.Account
 {
 
-    [AllowAnonymous]
+	[AllowAnonymous]
 	public class ExternalLoginModel : PageModel
 	{
 		private readonly SignInManager<User> _signInManager;
@@ -89,8 +89,10 @@ namespace RecruitmentTracking.Areas.Identity.Pages.Account
 			public string Email { get; set; }
 		}
 
+		[HttpGet]
 		public IActionResult OnGet() => RedirectToPage("./Login");
 
+		[HttpPost]
 		public IActionResult OnPost(string provider, string returnUrl = null)
 		{
 			// Request a redirect to the external login provider.
@@ -101,7 +103,7 @@ namespace RecruitmentTracking.Areas.Identity.Pages.Account
 
 		public async Task<IActionResult> OnGetCallbackAsync(string returnUrl = null, string remoteError = null)
 		{
-			returnUrl = returnUrl ?? Url.Content("~/");
+			returnUrl ??= "~/";
 			if (remoteError != null)
 			{
 				ErrorMessage = $"Error from external provider: {remoteError}";
@@ -141,7 +143,7 @@ namespace RecruitmentTracking.Areas.Identity.Pages.Account
 			}
 		}
 
-		/*public async Task<IActionResult> OnGetCallbackAsync2(string returnUrl = null)
+		public async Task<IActionResult> OnGetCallbackAsync2(string returnUrl = null)
 		{
 			returnUrl ??= "~/";
 
@@ -165,6 +167,7 @@ namespace RecruitmentTracking.Areas.Identity.Pages.Account
 			{
 				var email = info.Principal.FindFirstValue(ClaimTypes.Email);
 				var user = new User { UserName = email, Email = email };
+				
 				var createResult = await _userManager.CreateAsync(user);
 				if (createResult.Succeeded)
 				{
@@ -182,10 +185,10 @@ namespace RecruitmentTracking.Areas.Identity.Pages.Account
 				}
 				return RedirectToPage("./Profile");
 			}
-		}*/
+		}
 
 
-		/*public async Task<IActionResult> OnPostConfirmationAsync(string returnUrl = null)
+		public async Task<IActionResult> OnPostConfirmationAsync(string returnUrl = null)
 		{
 			returnUrl = returnUrl ?? Url.Content("~/");
 			// Get the information about the user from the external login provider
@@ -199,6 +202,9 @@ namespace RecruitmentTracking.Areas.Identity.Pages.Account
 			if (ModelState.IsValid)
 			{
 				var user = CreateUser();
+				user.Email = Input.Email;
+				
+				await _userManager.AddToRoleAsync(user, "Candidate");
 
 				await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
 				await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
@@ -206,7 +212,7 @@ namespace RecruitmentTracking.Areas.Identity.Pages.Account
 				var result = await _userManager.CreateAsync(user);
 				if (result.Succeeded)
 				{
-					result = await _userManager.AddLoginAsync(user, info);
+					await _userManager.AddLoginAsync(user, info);
 					if (result.Succeeded)
 					{
 						_logger.LogInformation("User created an account using {Name} provider.", info.LoginProvider);
@@ -242,7 +248,7 @@ namespace RecruitmentTracking.Areas.Identity.Pages.Account
 			ProviderDisplayName = info.ProviderDisplayName;
 			ReturnUrl = returnUrl;
 			return Page();
-		}*/
+		}
 
 		private User CreateUser()
 		{
