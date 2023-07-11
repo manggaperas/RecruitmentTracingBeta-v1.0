@@ -59,35 +59,31 @@ public class HomeController : Controller
     }
 
     [HttpPost("/Search")]
-    public async Task<IActionResult> Index(string searchString)
+    public async Task<IActionResult> SearchJob(string searchstring)
     {
-        Console.WriteLine($"{searchString}");
-
-        if (_context.Jobs == null)
-        {
-            return Problem("not found");
-        }
-
-        var jobs = from m in _context.Jobs
-                   select m;
+        var jobs = from j in _context.Jobs select j;
 
         List<JobViewModel> listJob = new();
-        foreach (Job job in jobs.Where(s => s.JobTitle != null && s.JobTitle.Contains(searchString, StringComparison.OrdinalIgnoreCase)).ToList())
-        {
-            JobViewModel data = new()
-            {
-                JobId = job.JobId,
-                JobTitle = job.JobTitle,
-                JobDescription = job.JobDescription,
-                JobRequirement = job.JobRequirement,
-                Location = job.Location,
-                JobPostedDate = job.JobPostedDate,
-                JobExpiredDate = job.JobExpiredDate,
-                CandidateCout = job.candidateCount,
-            };
-            listJob.Add(data);
-        }
 
+        if (!String.IsNullOrEmpty(searchstring))
+        {
+            var filteredjobs = jobs.ToList().Where(j => j.JobTitle != null && j.JobTitle.Contains(searchstring, StringComparison.OrdinalIgnoreCase));
+            foreach (var job in filteredjobs)
+            {
+                JobViewModel data = new()
+                {
+                    JobId = job.JobId,
+                    JobTitle = job.JobTitle,
+                    JobDescription = job.JobDescription,
+                    JobRequirement = job.JobRequirement,
+                    Location = job.Location,
+                    CandidateCout = job.candidateCount,
+                };
+
+                listJob.Add(data);
+            }
+        }
+        System.Console.WriteLine(listJob.Count);
         return View(listJob);
     }
 
